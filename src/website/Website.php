@@ -18,17 +18,32 @@ class Website
 
             $htmlPage = substr(basename($pageLoop), 0, -4) . '.html';
 
-            $page = new Page($pageLoop);
-            $view = $page->fillView(new View('pages/' . $pageLoop));
+            $view = $this->getViewFilled($pageLoop);
 
             $this->generatePage($view, $targetPath, $htmlPage);
         }
+    }
+
+    public function getViewFilled($pageLoop)
+    {
+
+        $page = new Page($pageLoop);
+        $view = $page->fillView(new View('pages/' . $pageLoop));
+
+        return $view;
     }
 
     public function generatePage($view, $targetPath, $htmlPage)
     {
         $layout = file_get_contents(__DIR__ . '/../layout/default.html');
         $main = $view->show();
+
+        if ($htmlPage == 'index.html') {
+
+
+            $main .= $this->getViewFilled('games.php')->show();
+        }
+
         $nav = $this->getNavForPage($htmlPage);
 
         $page = str_replace(['#nav', '#content'], [$nav, $main], $layout);
