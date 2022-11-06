@@ -23,8 +23,9 @@
 
 
                         <p class="content-centered">
-                            <a class="github-repo button is-info " target="_blank" href="<?php echo $content['github'] ?>">Projet Github</a>
-
+                            <?php if (isset($content['github'])) : ?>
+                                <a class="github-repo button is-info " target="_blank" href="<?php echo $content['github'] ?>">Projet Github</a>
+                            <?php endif; ?>
                             <?php if (isset($content['demo'])) : ?>
                                 <a class="button is-success" href="<?php echo $content['demo'] ?>" target="_blank">DEMO</a>
                             <?php endif; ?>

@@ -31,7 +31,7 @@ class AppListComponent extends ComponentAbstract implements ComponentInterface
                 self::MOBILE_TITLE => 'Carnet d\'entrainement',
                 self::MOBILE_BODY => 'Utilisez cette application pour suivre vos évolutions au fil des scéances',
                 self::MOBILE_IDPLAYSTORE => 'mika.dupot.muscu',
-                self::MOBILE_GITHUB => 'https://github.com/imikado/dupot_muscuSupercapote',
+                //private self::MOBILE_GITHUB => 'https://github.com/imikado/dupot_muscuSupercapote',
 
                 self::MOBILE_LAYOUT => self::MOBILE_LAYOUT_VER,
 
