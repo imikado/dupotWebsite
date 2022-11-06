@@ -1,61 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Arr&ecirc;ter de tourner autour...</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
-    />
 
-    <style>
-      .github {
-        background: url("css/images/GitHub-Mark-32px.png") no-repeat center;
-        padding: 0px 24px;
-      }
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arr&ecirc;ter de tourner autour...</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
 
-      .twitter {
-        background: url("css/images/Twitter-social-icons-circle-blue.png")
-          no-repeat center;
-        padding: 0px 24px;
-      }
+  <style>
+    .github {
+      background: url("css/images/GitHub-Mark-32px.png") no-repeat center;
+      padding: 0px 24px;
+    }
 
-      .twitter-repo {
-        background: url("css/images/Twitter-social-icons-circle-white.png")
-          no-repeat 10px;
-        padding-left: 50px;
-      }
+    .twitter {
+      background: url("css/images/Twitter-social-icons-circle-blue.png") no-repeat center;
+      padding: 0px 24px;
+    }
 
-      .github-repo {
-        background: url("css/images/GitHub-Mark-32px.png") no-repeat 10px;
-        padding-left: 50px;
-      }
+    .twitter-repo {
+      background: url("css/images/Twitter-social-icons-circle-white.png") no-repeat 10px;
+      padding-left: 50px;
+    }
 
-      .itchio {
-        background: url("css/images/itchio.png") no-repeat center;
-        padding: 0px 24px;
-      }
+    .github-repo {
+      background: url("css/images/GitHub-Mark-32px.png") no-repeat 10px;
+      padding-left: 50px;
+    }
 
-      .buttons {
-        text-align: center;
-      }
+    .itchio {
+      background: url("css/images/itchio.png") no-repeat center;
+      padding: 0px 24px;
+    }
 
-      .is-justified {
-        text-align: justify;
-      }
+    .buttons {
+      text-align: center;
+    }
 
-      .icon-td {
-        width: 80px;
-      }
+    .is-justified {
+      text-align: justify;
+    }
 
-      .content-centered {
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <nav class="navbar navbar-wrapper navbar-default navbar-fade is-transparent" role="navigation" aria-label="main navigation">
+    .icon-td {
+      width: 80px;
+    }
+
+    .content-centered {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-wrapper navbar-default navbar-fade is-transparent" role="navigation" aria-label="main navigation">
 
 
 
@@ -115,33 +112,33 @@
 
 
 </nav>
+  <section class="section">
+    <div class="container"><style>
+    .bandeau_accueil {
+        background: #037d03;
+    }
 
-    <section class="section">
-      <div class="container"><style>
-.bandeau_accueil{
-  background:#037d03;
-}
-.bandeau_accueil2{
-  margin-top:10px;
-  background:#202531;
-}
+    .bandeau_accueil2 {
+        margin-top: 10px;
+        background: #202531;
+    }
 
-.bandeau_accueil3{
-  margin-top:10px;
-  margin-bottom:10px;
-  background:#a28325;
-}
+    .bandeau_accueil3 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background: #a28325;
+    }
 </style>
 
 
-<p class="bandeau_accueil"><img class="image" src="css/images/bandeau_accueil.png"/><p>
+<p class="bandeau_accueil"><img class="image" src="css/images/bandeau_accueil.png" />
+<p>
 
-<p class="bandeau_accueil2"><img class="image" src="css/images/bandeau_accueil2.png"/><p>
+<p class="bandeau_accueil2"><img class="image" src="css/images/bandeau_accueil2.png" />
+<p>
 
-<p class="bandeau_accueil3"><img class="image" src="css/images/bandeau_accueil3.png"/><p>
-
- 
- <div class="columns  is-multiline  ">
+<p class="bandeau_accueil3"><img class="image" src="css/images/bandeau_accueil3.png" />
+<p><div class="columns  is-multiline  ">
 
     
 
@@ -486,32 +483,33 @@
 
     
 </div></div>
-    </section>
+  </section>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        // Get all "navbar-burger" elements
-        const $navbarBurgers = Array.prototype.slice.call(
-          document.querySelectorAll(".navbar-burger"),
-          0
-        );
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(
+        document.querySelectorAll(".navbar-burger"),
+        0
+      );
 
-        // Check if there are any navbar burgers
-        if ($navbarBurgers.length > 0) {
-          // Add a click event on each of them
-          $navbarBurgers.forEach((el) => {
-            el.addEventListener("click", () => {
-              // Get the target from the "data-target" attribute
-              const target = el.dataset.target;
-              const $target = document.getElementById(target);
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+        // Add a click event on each of them
+        $navbarBurgers.forEach((el) => {
+          el.addEventListener("click", () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
 
-              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-              el.classList.toggle("is-active");
-              $target.classList.toggle("is-active");
-            });
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle("is-active");
+            $target.classList.toggle("is-active");
           });
-        }
-      });
-    </script>
-  </body>
+        });
+      }
+    });
+  </script>
+</body>
+
 </html>

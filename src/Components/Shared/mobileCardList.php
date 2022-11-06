@@ -1,6 +1,6 @@
 <div class="columns  is-multiline  ">
 
-    <?php foreach ($this->propsList['contentList'] as $i => $content) : ?>
+    <?php foreach ($this->paramList['contentList'] as $i => $content) : ?>
 
 
         <div class="column is-one-quarter">
@@ -23,7 +23,11 @@
 
 
                         <p class="content-centered">
-                            <a class="github-repo button is-info " href="#">Projet Github</a>
+                            <a class="github-repo button is-info " target="_blank" href="<?php echo $content['github'] ?>">Projet Github</a>
+
+                            <?php if (isset($content['demo'])) : ?>
+                                <a class="button is-success" href="<?php echo $content['demo'] ?>" target="_blank">DEMO</a>
+                            <?php endif; ?>
                         </p>
                         <p class="content-centered">
                             <a href="https://play.google.com/store/apps/details?id=<?php echo $content['idplaystore'] ?>" target="_blank"><img src="css/images/google-playstore.png" /></a>

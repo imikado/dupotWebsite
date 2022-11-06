@@ -1,0 +1,18 @@
+{
+    "name": "dupot/dupot-website",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "MyWebsite\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mika",
+            "email": "imikado@gmail.com"
+        }
+    ],
+    "require": {
+        "dupot/static-generation-framework": "1.*.*"
+    }
+}

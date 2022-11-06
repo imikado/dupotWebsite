@@ -20,7 +20,7 @@
 
     <div class="navbar-menu  " id="navbar-menu">
 
-        <?php foreach ($this->propsList['linkList'] as $label => $link) : ?>
+        <?php foreach ($this->paramList['linkList'] as $label => $link) : ?>
 
 
 
@@ -34,7 +34,7 @@
             <?php elseif ($label == 'Itchio') : ?>
                 <a class="navbar-item itchio" target="_blank" href="<?php echo $link ?>">&nbsp;</a>
             <?php else : ?>
-                <a class="navbar-item <?php if ($link == $this->propsList['pageSelected']) : ?>is-active<?php endif; ?>" href="<?php echo $link ?>"><?php echo $label ?></a>
+                <a class="navbar-item <?php if ($link == $this->paramList['pageSelected']) : ?>is-active<?php endif; ?>" href="<?php echo $link ?>"><?php echo $label ?></a>
 
             <?php endif; ?>
         <?php endforeach; ?>

@@ -1,16 +1,12 @@
 <?php
 
-namespace website\tools;
+namespace MyWebsite\Components;
 
-class Page
+use Dupot\StaticGenerationFramework\Component\ComponentAbstract;
+use Dupot\StaticGenerationFramework\Component\ComponentInterface;
+
+class GameListComponent extends ComponentAbstract implements ComponentInterface
 {
-
-    protected $page;
-
-    const INDEX_ICON = 'icon';
-    const INDEX_TITLE = 'title';
-    const INDEX_BODY = 'body';
-
     const MOBILE_BREAK = 'break';
 
     const MOBILE_ICON = 'icon';
@@ -26,35 +22,7 @@ class Page
     const MOBILE_LAYOUT_VER = 'vertical';
     const MOBILE_LAYOUT_HOR = 'horizontal';
 
-
-    const ABOUT_IMAGE = 'image';
-    const ABOUT_TITLE = 'title';
-    const ABOUT_BODY = 'body';
-    const ABOUT_LINK = 'link';
-    const ABOUT_LINK_LABEL = 'link_label';
-
-    public function __construct($page)
-    {
-        $this->page = $page;
-    }
-
-    public function fillView(View $view)
-    {
-        $method = 'get' . ucfirst(basename($this->page, '.php'));
-        $propsList = $this->$method();
-
-        foreach ($propsList as $var => $value) {
-            $view->assign($var, $value);
-        }
-        return $view;
-    }
-
-    public function getIndex()
-    {
-        return [];
-    }
-
-    public function getGames()
+    public function render(): string
     {
         $contentList = array(
             array(
@@ -166,95 +134,13 @@ class Page
 
         );
 
-        return ['contentList' => $this->htmlList($contentList)];
-    }
-
-    public function getMobile()
-    {
-        $contentList = array(
-            array(
-                self::MOBILE_ICON => 'mobile_muscu_icon.png',
-                self::MOBILE_IMAGE => 'mobile_muscu_icon.png',
-                self::MOBILE_TITLE => 'Carnet d\'entrainement',
-                self::MOBILE_BODY => 'Utilisez cette application pour suivre vos évolutions au fil des scéances',
-                self::MOBILE_IDPLAYSTORE => 'mika.dupot.muscu',
-                self::MOBILE_LAYOUT => self::MOBILE_LAYOUT_VER,
-
-            ),
-
-
+        return $this->renderViewWithParamList(
+            __DIR__ . '/Shared/mobileCardList.php',
+            [
+                'contentList' => $this->htmlList($contentList),
+            ]
         );
-        return ['contentList' => $this->htmlList($contentList)];
     }
-
-    public function getAbout()
-    {
-        $contentList = array(
-            array(
-                self::ABOUT_IMAGE => 'css/images/about_supercapote.png',
-                self::ABOUT_TITLE => 'Supercapote',
-                self::ABOUT_BODY => $this->encode('Mon site de prévention'),
-                self::ABOUT_LINK => 'https://supercapote.com',
-                self::ABOUT_LINK_LABEL => 'supercapote.com',
-
-            ),
-
-            array(
-                self::ABOUT_IMAGE => 'css/images/about_mkframework.png',
-                self::ABOUT_TITLE => 'MkFramework',
-                self::ABOUT_BODY => 'Framework php opensource, rétrocompatible depuis 2009',
-                self::ABOUT_LINK => 'https://mkframework.com/',
-                self::ABOUT_LINK_LABEL => 'mkframework.com',
-            ),
-
-
-
-        );
-        $contentList2 = array(
-
-
-
-
-            array(
-                self::ABOUT_IMAGE => 'css/images/about_linuxmag.png',
-                self::ABOUT_TITLE => 'Linux Magazine/Pratique',
-                self::ABOUT_BODY => $this->encode('Le magazine où vous pouvez me lire'),
-                self::ABOUT_LINK => 'https://boutique.ed-diamond.com/',
-                self::ABOUT_LINK_LABEL => 'boutique.ed-diamond.com',
-
-            ),
-
-            array(
-                self::ABOUT_IMAGE => 'css/images/about_nipsource.png',
-                self::ABOUT_TITLE => 'NipSource',
-                self::ABOUT_BODY => 'Notre ancien podcast sur l\' opensource',
-                self::ABOUT_LINK => 'https://nipcast.com/category/nipsource/',
-                self::ABOUT_LINK_LABEL => 'nipcast.com',
-
-            ),
-
-            array(
-                self::ABOUT_IMAGE => 'css/images/about_techcafe.png',
-                self::ABOUT_TITLE => 'TechCaf&eacute;',
-                self::ABOUT_BODY => 'Membre actif sur le podcast TecCaf&eacute;',
-                self::ABOUT_LINK => 'https://techcafe.fr/',
-                self::ABOUT_LINK_LABEL => 'techcafe.fr',
-
-            ),
-
-
-
-
-
-        );
-
-        return [
-            'contentList' => $this->htmlList($contentList),
-            'contentList2' => $this->htmlList($contentList2)
-
-        ];
-    }
-
 
     private function htmlList($array)
     {
