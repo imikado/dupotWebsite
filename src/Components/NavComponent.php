@@ -4,6 +4,9 @@ namespace MyWebsite\Components;
 
 use Dupot\StaticGenerationFramework\Component\ComponentAbstract;
 use Dupot\StaticGenerationFramework\Component\ComponentInterface;
+use MyWebsite\Pages\AboutPage;
+use MyWebsite\Pages\AppsPage;
+use MyWebsite\Pages\GamesPage;
 
 class NavComponent extends ComponentAbstract implements ComponentInterface
 {
@@ -18,9 +21,9 @@ class NavComponent extends ComponentAbstract implements ComponentInterface
     public function render(): string
     {
         $linkList = [
-            'Jeux' => 'games.html',
-            'Apps' => 'mobile.html',
-            'A propos' => 'about.html',
+            'Jeux' => GamesPage::FILENAME,
+            'Apps' => AppsPage::FILENAME,
+            'A propos' => AboutPage::FILENAME,
             'Twitter' => 'https://twitter.com/dupot_org',
             'Github' => 'https://github.com/imikado',
             'Itchio' => 'https://dupot-org.itch.io/'

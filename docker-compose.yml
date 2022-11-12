@@ -6,5 +6,5 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./docs/:/var/www/html
+      - ./:/var/www/html
       - ./vhosts/:/etc/apache2/sites-enabled/
