@@ -57,7 +57,7 @@ class GameListComponent extends ComponentAbstract implements ComponentInterface
                 self::MOBILE_BODY => 'Avec un casque de réalité virtuelle, trouvez les différentes clés pour sortir de cet appartement',
                 self::MOBILE_IDPLAYSTORE => 'org.godotengine.littleescapevr',
                 self::MOBILE_LAYOUT => self::MOBILE_LAYOUT_HOR,
-                self::MOBILE_GITHUB => 'https://github.com/imikado/articleLMGodotLittleEscapeVR'
+                self::MOBILE_GITHUB => 'https://github.com/imikado/dupotLittleEscapeVR'
 
             ),
 
