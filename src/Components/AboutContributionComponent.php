@@ -49,7 +49,7 @@ class AboutContributionComponent extends ComponentAbstract implements ComponentI
         );
 
         return $this->renderViewWithParamList(
-            __DIR__ . '/About/sectionList.php',
+            __DIR__ . '/Views/sectionList.php',
             [
                 'title' => $title,
                 'contentList' => $this->htmlList($contentList),

@@ -5,8 +5,10 @@ namespace MyWebsite\Components;
 use Dupot\StaticGenerationFramework\Component\ComponentAbstract;
 use Dupot\StaticGenerationFramework\Component\ComponentInterface;
 use MyWebsite\Pages\AboutPage;
+use MyWebsite\Pages\AppsDestkopPage;
 use MyWebsite\Pages\AppsPage;
 use MyWebsite\Pages\GamesPage;
+use MyWebsite\Pages\ResourcesPage;
 
 class NavComponent extends ComponentAbstract implements ComponentInterface
 {
@@ -22,7 +24,9 @@ class NavComponent extends ComponentAbstract implements ComponentInterface
     {
         $linkList = [
             'Jeux' => GamesPage::FILENAME,
-            'Apps' => AppsPage::FILENAME,
+            'Apps mobile' => AppsPage::FILENAME,
+            'Apps desktop' => AppsDestkopPage::FILENAME,
+            'Resources' => ResourcesPage::FILENAME,
             'A propos' => AboutPage::FILENAME,
             'Twitter' => 'https://twitter.com/dupot_org',
             'Github' => 'https://github.com/imikado',
@@ -31,7 +35,7 @@ class NavComponent extends ComponentAbstract implements ComponentInterface
         ];
 
         return $this->renderViewWithParamList(
-            __DIR__ . '/Nav/nav.php',
+            __DIR__ . '/Views/nav.php',
             [
                 'linkList' => $linkList,
                 'pageSelected' => $this->pageSelected

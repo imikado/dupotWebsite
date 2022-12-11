@@ -38,7 +38,7 @@ class AboutSiteListComponent extends ComponentAbstract implements ComponentInter
 
         );
         return $this->renderViewWithParamList(
-            __DIR__ . '/About/sectionList.php',
+            __DIR__ . '/Views/sectionList.php',
             [
                 'title' => $title,
                 'contentList' => $this->htmlList($contentList),

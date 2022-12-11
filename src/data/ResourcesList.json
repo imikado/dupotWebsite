@@ -1,0 +1,8 @@
+[
+    {
+        "icon": "dupotStaticGeneration_icon.png",
+        "title": "Dupot static-generation-framework",
+        "body": "Framework de generation de site statique en php",
+        "github": "https://github.com/imikado/dupotStaticGenerationFramework"
+    }
+]

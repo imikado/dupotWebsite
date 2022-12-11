@@ -10,7 +10,7 @@ class AboutIntroComponent extends ComponentAbstract implements ComponentInterfac
     public function render(): string
     {
         return $this->renderViewWithParamList(
-            __DIR__ . '/About/intro.php',
+            __DIR__ . '/Views/intro.php',
             []
         );
     }

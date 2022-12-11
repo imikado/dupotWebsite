@@ -10,7 +10,7 @@ class HomeBannerComponent extends ComponentAbstract implements ComponentInterfac
     public function render(): string
     {
         return $this->renderViewWithParamList(
-            __DIR__ . '/HomeBanner/banner.php',
+            __DIR__ . '/Views/banner.php',
             []
         );
     }

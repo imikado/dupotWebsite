@@ -19,6 +19,7 @@ class GamesPage extends PageAbstract implements PageInterface
 
     public function render(): string
     {
+
         return $this->renderLayoutWithParamList(
             __DIR__ . '/layout/default.php',
             [
