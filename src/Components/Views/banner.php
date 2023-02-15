@@ -16,11 +16,11 @@
 </style>
 
 
-<p class="bandeau_accueil"><img class="image" src="css/images/bandeau_accueil.png" />
+<p class="bandeau_accueil"><img class="responsive-img image" src="css/images/bandeau_accueil.png" />
 <p>
 
-<p class="bandeau_accueil2"><img class="image" src="css/images/bandeau_accueil2.png" />
+<p class="bandeau_accueil2"><img class="responsive-img image" src="css/images/bandeau_accueil2.png" />
 <p>
 
-<p class="bandeau_accueil3"><img class="image" src="css/images/bandeau_accueil3.png" />
+<p class="bandeau_accueil3"><img class="responsive-img image" src="css/images/bandeau_accueil3.png" />
 <p>
