@@ -3,6 +3,9 @@
         "icon": "dupotDevTools_icon.png",
         "title": "Dupot dev tools",
         "body": "Le couteau suisse du dev",
-        "github": "https://github.com/imikado/dupotDevTools"
+        "github": "https://github.com/imikado/dupotDevTools",
+        "modal": {
+            "src": "/data/content/dupotDevTools.md"
+        }
     }
 ]

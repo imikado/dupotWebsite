@@ -175,7 +175,16 @@
     <div class="container">
 
 
-      <div class="row">
+      <style>
+    .modalContent ul li {
+
+        list-style: square;
+        list-style-position: inside;
+        margin-left: 20px;
+    }
+</style>
+
+<div class="row">
 
     
 
@@ -189,8 +198,8 @@
 
 
                 <div class="card-content">
-                    <span class="card-title activator orange-text text-darken-4">Dupot dev tools<i class="material-icons right">more_vert</i></span>
-                </div>
+                                            <a class="waves-effect waves-light card-title modal-trigger" href="#modal0">Dupot dev tools<i class="material-icons right">more_vert</i></a>
+                                    </div>
                 <div class="card-reveal">
                     <span class="card-title orange-text text-darken-4">Dupot dev tools<i class="material-icons right">close</i></span>
 
@@ -214,6 +223,63 @@
 
 
     </div>
+
+
+            <div id="modal0" class="modal">
+            <div class="modal-content modalContent">
+                <h2>Dupot-dev-tools</h2>
+<p>Ce projet est le couteau suisse du développeur, il vous propose des petits outils pratique dans votre quotidien.</p>
+<h4>Des outils de conversion</h4>
+<ul>
+<li>HTML vers du texte</li>
+<li>HTML vers PDF</li>
+<li>YAML vers JSON (et vice versa)</li>
+</ul>
+<h4>Des outils de encoding</h4>
+<ul>
+<li>base64</li>
+<li>html</li>
+<li>jwt</li>
+<li>url</li>
+</ul>
+<h4>Des outils de formatage</h4>
+<ul>
+<li>json</li>
+<li>xml</li>
+<li>graphQL</li>
+<li>sql</li>
+</ul>
+<h4>Des outils de generation de graphiques</h4>
+<ul>
+<li>avec l'outil graphviz</li>
+</ul>
+<h4>Des outils de documentation</h4>
+<ul>
+<li>interface pour le fameux TLDR</li>
+</ul>
+<h4>Des outils de manipulation de chaine de caractères</h4>
+<ul>
+<li>hash (md5,sha1, sha256..)</li>
+</ul>            </div>
+            <div class="modal-footer">
+
+                                    <p class="content-centered">
+                        <a class="github-repo btn waves-effect waves-ligh" target="_blank" href="https://github.com/imikado/dupotDevTools">Projet Github</a>
+                    </p>
+                                
+                
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fermer</a>
+            </div>
+        </div>
+
+    
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems, []);
+    });
+</script>
     </div>
 
   </div>

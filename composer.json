@@ -13,6 +13,7 @@
         }
     ],
     "require": {
-        "dupot/static-generation-framework": "2.*.*"
+        "dupot/static-generation-framework": "2.*.*",
+        "erusev/parsedown": "^1.7"
     }
 }

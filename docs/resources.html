@@ -175,7 +175,16 @@
     <div class="container">
 
 
-      <div class="row">
+      <style>
+    .modalContent ul li {
+
+        list-style: square;
+        list-style-position: inside;
+        margin-left: 20px;
+    }
+</style>
+
+<div class="row">
 
     
 
@@ -189,8 +198,8 @@
 
 
                 <div class="card-content">
-                    <span class="card-title activator orange-text text-darken-4">Dupot static-generation-framework<i class="material-icons right">more_vert</i></span>
-                </div>
+                                            <span class="card-title activator orange-text text-darken-4">Dupot static-generation-framework<i class="material-icons right">more_vert</i></span>
+                                    </div>
                 <div class="card-reveal">
                     <span class="card-title orange-text text-darken-4">Dupot static-generation-framework<i class="material-icons right">close</i></span>
 
@@ -225,8 +234,8 @@
 
 
                 <div class="card-content">
-                    <span class="card-title activator orange-text text-darken-4">Krita SpritesheetExporter<i class="material-icons right">more_vert</i></span>
-                </div>
+                                            <span class="card-title activator orange-text text-darken-4">Krita SpritesheetExporter<i class="material-icons right">more_vert</i></span>
+                                    </div>
                 <div class="card-reveal">
                     <span class="card-title orange-text text-darken-4">Krita SpritesheetExporter<i class="material-icons right">close</i></span>
 
@@ -250,6 +259,18 @@
 
 
     </div>
+
+
+    
+
+    
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems, []);
+    });
+</script>
     </div>
 
   </div>
