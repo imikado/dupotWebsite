@@ -8,28 +8,28 @@ Ce projet est le couteau suisse du développeur, il vous propose des petits outi
 - HTML vers PDF
 - YAML vers JSON (et vice versa)
 
-#### Des outils de encoding
+#### Des outils d'encodage
 
-- base64
-- html
-- jwt
-- url
+- Base64
+- Html
+- Jwt
+- Url
 
 #### Des outils de formatage
 
-- json
-- xml
-- graphQL
-- sql
+- Json
+- Xml
+- GraphQL
+- Sql
 
 #### Des outils de generation de graphiques
 
-- avec l'outil graphviz
+- génération avec l'outil graphviz
 
 #### Des outils de documentation
 
-- interface pour le fameux TLDR
+- prompt pour le fameux TLDR
 
 #### Des outils de manipulation de chaine de caractères
 
-- hash (md5,sha1, sha256..)
+- outil de hash (md5,sha1, sha256..)
