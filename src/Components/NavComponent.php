@@ -8,6 +8,7 @@ use MyWebsite\Pages\AboutPage;
 use MyWebsite\Pages\AppsDestkopPage;
 use MyWebsite\Pages\AppsPage;
 use MyWebsite\Pages\GamesPage;
+use MyWebsite\Pages\ProjectArticlesPage;
 use MyWebsite\Pages\ResourcesPage;
 
 class NavComponent extends ComponentAbstract implements ComponentInterface
@@ -27,6 +28,7 @@ class NavComponent extends ComponentAbstract implements ComponentInterface
             'Apps mobile' => AppsPage::FILENAME,
             'Apps desktop' => AppsDestkopPage::FILENAME,
             'Resources' => ResourcesPage::FILENAME,
+            'Article\'s projects' => ProjectArticlesPage::FILENAME,
             'A propos' => AboutPage::FILENAME,
             'Twitter' => 'https://twitter.com/dupot_org',
             'Github' => 'https://github.com/imikado',

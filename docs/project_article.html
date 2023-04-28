@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dupot.org: Arr&ecirc;ter de tourner autour...</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <style>
+    .logo {
+      background: url('css/images/logo.png') no-repeat 0px center;
+      padding-left: 55px;
+    }
+
+
+    #popup {
+      position: absolute;
+      background: #FFF;
+      border: 3px solid #444;
+      top: 10px;
+      left: 40px;
+    }
+
+    #popup a {
+      color: white;
+    }
+
+    #popup p {
+      background: #444;
+      margin: 0px;
+      text-align: right;
+      padding-right: 3px;
+    }
+
+    .main {
+      min-height: 500px;
+    }
+
+    .github {
+      background: url("css/images/GitHub-Mark-32px.png") no-repeat center;
+      padding: 0px 24px;
+    }
+
+    .twitter {
+      background: url("css/images/Twitter-social-icons-circle-blue.png") no-repeat center;
+      padding: 0px 24px;
+    }
+
+    .twitter-repo {
+      background: url("css/images/Twitter-social-icons-circle-white.png") no-repeat 10px;
+      padding-left: 50px;
+    }
+
+    .github-repo {
+      background: url("css/images/GitHub-Mark-32px.png") no-repeat 10px #0277bd;
+      padding-left: 50px;
+    }
+
+    .itchio {
+      background: url("css/images/itchio.png") no-repeat center;
+      padding: 0px 24px;
+    }
+
+    .buttons {
+      text-align: center;
+    }
+
+    .is-justified {
+      text-align: justify;
+    }
+
+    .icon-td {
+      width: 80px;
+    }
+
+    .content-centered {
+      text-align: center;
+    }
+
+    body {
+      background: #fff3e0;
+    }
+
+    h1,
+    h2 {
+      color: #e65100;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-wrapper white logo">
+        <a href="#" class="brand-logo">&nbsp;</a>
+
+
+        <ul id="nav-mobile" class="sidenav" style="transform: translateX(-105%);">
+
+                            <li ><a href="games.html">Jeux</a></li>
+                            <li ><a href="mobile.html">Apps mobile</a></li>
+                            <li ><a href="desktop.html">Apps desktop</a></li>
+                            <li ><a href="resources.html">Resources</a></li>
+                            <li class="active" ><a href="project_article.html">Article's projects</a></li>
+                            <li ><a href="about.html">A propos</a></li>
+                            <li ><a href="https://twitter.com/dupot_org">Twitter</a></li>
+                            <li ><a href="https://github.com/imikado">Github</a></li>
+                            <li ><a href="https://dupot-org.itch.io/">Itchio</a></li>
+            
+
+        </ul>
+
+
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            
+                <li >
+                                            <a class="orange-text text-darken-4" href="games.html">Jeux</a>
+
+                                    </li>
+
+            
+                <li >
+                                            <a class="orange-text text-darken-4" href="mobile.html">Apps mobile</a>
+
+                                    </li>
+
+            
+                <li >
+                                            <a class="orange-text text-darken-4" href="desktop.html">Apps desktop</a>
+
+                                    </li>
+
+            
+                <li >
+                                            <a class="orange-text text-darken-4" href="resources.html">Resources</a>
+
+                                    </li>
+
+            
+                <li class="active" >
+                                            <a class="orange-text text-darken-4" href="project_article.html">Article's projects</a>
+
+                                    </li>
+
+            
+                <li >
+                                            <a class="orange-text text-darken-4" href="about.html">A propos</a>
+
+                                    </li>
+
+            
+                <li >
+                                            <a class="twitter" target="_blank" href="https://twitter.com/dupot_org">&nbsp;</a>
+                                    </li>
+
+            
+                <li >
+                                            <a class="github" target="_blank" href="https://github.com/imikado">&nbsp;</a>
+                                    </li>
+
+            
+                <li >
+                                            <a class="itchio" target="_blank" href="https://dupot-org.itch.io/">&nbsp;</a>
+                                    </li>
+
+            
+        </ul>
+
+        <a style="float:right" href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons orange-text">menu</i></a>
+
+
+
+    </div>
+</nav>
+  <div class="header">&nbsp;</div>
+
+  <div class="main">
+    <div class="container">
+
+
+      <div class="content">
+    <h1 class="title  is-1">Introduction</h1>
+
+    <div class="row">
+        <div class="col">
+            <div class="card ">
+
+                <div class="card-content text-justify">
+
+                    J'&eacute;cris plus ou moins r&eacute;guli&egrave;rement des article pour Linux Pratique/Magazine<br />
+                        J'ai pris pour habitude de proposer sur mon GitHub les sources pour chaque article. <br />
+                        Vous pouvez ci-dessous retrouver les sources pour chacun des articles avec la r&eacute;f&eacute;rence au magazine concern&eacute;
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</div><style>
+    .modalContent ul li {
+
+        list-style: square;
+        list-style-position: inside;
+        margin-left: 20px;
+    }
+</style>
+
+<div class="row">
+
+    
+
+        <div class="col s12">
+            <div class="card">
+                
+                <div class="card-content">
+                                            <span class="card-title activator orange-text text-darken-4">
+
+                                                            2022 octobre<br />
+                            
+                            Linux Magazine HS 121</span>
+                    
+                                            <p>Créer une application GraphQL avec Kotlin</p>
+
+                        
+                            <blockquote>Un backend graphQL écrit en Kotlin</blockquote>
+                                                <p>&nbsp;</p>
+                                                    <p class="content-end">
+                                <a class="github-repo btn waves-effect waves-ligh" target="_blank" href="https://github.com/imikado/articleLMgraphQLwithKotlin">Projet Github</a>
+                            </p>
+                                            
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+    
+
+        <div class="col s12">
+            <div class="card">
+                
+                <div class="card-content">
+                                            <span class="card-title activator orange-text text-darken-4">
+
+                                                            2022 juillet<br />
+                            
+                            Linux Magazine 258</span>
+                    
+                                            <p>Créer un Escape Game VR avec Godot</p>
+
+                        
+                            <blockquote>Jeu mobile android: un Escape Game VR, développé avec Godot</blockquote>
+                                                <p>&nbsp;</p>
+                                                    <p class="content-end">
+                                <a class="github-repo btn waves-effect waves-ligh" target="_blank" href="https://github.com/imikado/articleLMGodotLittleEscapeVR">Projet Github</a>
+                            </p>
+                                            
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+    
+
+        <div class="col s12">
+            <div class="card">
+                
+                <div class="card-content">
+                                            <span class="card-title activator orange-text text-darken-4">
+
+                                                            2022 mai<br />
+                            
+                            Linux Magazine 257</span>
+                    
+                                            <p>Faire de la clean architecture avec Symfony</p>
+
+                        
+                            <blockquote>Exemple de projet symfony en respectant la clean architecture</blockquote>
+                                                <p>&nbsp;</p>
+                                                    <p class="content-end">
+                                <a class="github-repo btn waves-effect waves-ligh" target="_blank" href="https://github.com/imikado/articleLMCleanArchitectureSymfony">Projet Github</a>
+                            </p>
+                                            
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+    
+
+        <div class="col s12">
+            <div class="card">
+                
+                <div class="card-content">
+                                            <span class="card-title activator orange-text text-darken-4">
+
+                                                            2022 Janvier<br />
+                            
+                            Linux Magazine 255</span>
+                    
+                                            <p>Créer une application React avec Recoil plutôt que Redux</p>
+
+                        
+                            <blockquote>Project React.js utilisant Recoil comme gestionnaire de state partagé </blockquote>
+                                                <p>&nbsp;</p>
+                                                    <p class="content-end">
+                                <a class="github-repo btn waves-effect waves-ligh" target="_blank" href="https://github.com/imikado/articleLMreactJsRecoil">Projet Github</a>
+                            </p>
+                                            
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+    
+
+        <div class="col s12">
+            <div class="card">
+                
+                <div class="card-content">
+                                            <span class="card-title activator orange-text text-darken-4">
+
+                                                            2021 Décembre<br />
+                            
+                            Linux Magazine 254</span>
+                    
+                                            <p>Créer une application avec graphQL plutôt que REST</p>
+
+                        
+                            <blockquote>Une application front/back graphQL-symfony/react: partie Backend </blockquote>
+                                                <p>&nbsp;</p>
+                                                    <p class="content-end">
+                                <a class="github-repo btn waves-effect waves-ligh" target="_blank" href="https://github.com/imikado/articleLMgraphQLbackend">Projet Github</a>
+                            </p>
+                                            
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+    
+
+        <div class="col s12">
+            <div class="card">
+                
+                <div class="card-content">
+                                            <span class="card-title activator orange-text text-darken-4">
+
+                                                            2021 Décembre<br />
+                            
+                            Linux Magazine 254</span>
+                    
+                                            <p>Créer une application avec graphQL plutôt que REST</p>
+
+                        
+                            <blockquote>Une application front/back graphQL-symfony/react: partie Frontend </blockquote>
+                                                <p>&nbsp;</p>
+                                                    <p class="content-end">
+                                <a class="github-repo btn waves-effect waves-ligh" target="_blank" href="https://github.com/imikado/articleLMgraphQLfrontend">Projet Github</a>
+                            </p>
+                                            
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+    
+
+        <div class="col s12">
+            <div class="card">
+                
+                <div class="card-content">
+                                            <span class="card-title activator orange-text text-darken-4">
+
+                                                            2021 Mars,Juin, Juillet<br />
+                            
+                            Linux Magazine 247,249,250</span>
+                    
+                                            <p>Godot : comment créer un jeu d’aventure en pixel art partie 1,2,3</p>
+
+                        
+                            <blockquote>Création d'un jeu mobile d'aventure en pixel art, développé avec Godot</blockquote>
+                                                <p>&nbsp;</p>
+                                                    <p class="content-end">
+                                <a class="github-repo btn waves-effect waves-ligh" target="_blank" href="https://github.com/imikado/articleLMGodotLittleAdventure">Projet Github</a>
+                            </p>
+                                            
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+    
+
+        <div class="col s12">
+            <div class="card">
+                
+                <div class="card-content">
+                                            <span class="card-title activator orange-text text-darken-4">
+
+                                                            2020 Septembre<br />
+                            
+                            Linux Magazine HS 110</span>
+                    
+                                            <p>Découvrez React Native en créant une liste de courses</p>
+
+                        
+                            <blockquote>Une application de liste de courses avec React native</blockquote>
+                                                <p>&nbsp;</p>
+                                                    <p class="content-end">
+                                <a class="github-repo btn waves-effect waves-ligh" target="_blank" href="https://github.com/imikado/articleLMintroductionReactNative">Projet Github</a>
+                            </p>
+                                            
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+    
+
+        <div class="col s12">
+            <div class="card">
+                
+                <div class="card-content">
+                                            <span class="card-title activator orange-text text-darken-4">
+
+                                                            2020 Mai<br />
+                            
+                            Linux Magazine HS 108</span>
+                    
+                                            <p>Introduction au framework Javascript Vue.js</p>
+
+                        
+                            <blockquote>Une application de type kanban-board écrit avec Vue.js</blockquote>
+                                                <p>&nbsp;</p>
+                                                    <p class="content-end">
+                                <a class="github-repo btn waves-effect waves-ligh" target="_blank" href="https://github.com/imikado/articleLMintroductionVueJsKanban">Projet Github</a>
+                            </p>
+                                            
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+    
+
+        <div class="col s12">
+            <div class="card">
+                
+                <div class="card-content">
+                                            <span class="card-title activator orange-text text-darken-4">
+
+                                                            2020 Février,Mars,Avril<br />
+                            
+                            Linux Magazine 235,236,237</span>
+                    
+                                            <p>Apprendre a développer sous Android - partie 1,2 et 3 </p>
+
+                                                <p>&nbsp;</p>
+                                                    <p class="content-end">
+                                <a class="github-repo btn waves-effect waves-ligh" target="_blank" href="https://github.com/imikado/articleLMcreerJeuAndroidExemple">Projet Github</a>
+                            </p>
+                                            
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+    
+
+        <div class="col s12">
+            <div class="card">
+                
+                <div class="card-content">
+                                            <span class="card-title activator orange-text text-darken-4">
+
+                                                            2019 Septembre<br />
+                            
+                            Linux Magazine 230</span>
+                    
+                                            <p>Introduction à socket.io, partie serveur</p>
+
+                                                <p>&nbsp;</p>
+                                                    <p class="content-end">
+                                <a class="github-repo btn waves-effect waves-ligh" target="_blank" href="https://github.com/imikado/articleLMsocketio_server">Projet Github</a>
+                            </p>
+                                            
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+    
+
+        <div class="col s12">
+            <div class="card">
+                
+                <div class="card-content">
+                                            <span class="card-title activator orange-text text-darken-4">
+
+                                                            2019 Septembre<br />
+                            
+                            Linux Magazine 230</span>
+                    
+                                            <p>Introduction à socket.io, partie client</p>
+
+                                                <p>&nbsp;</p>
+                                                    <p class="content-end">
+                                <a class="github-repo btn waves-effect waves-ligh" target="_blank" href="https://github.com/imikado/articleLMsocketio_client">Projet Github</a>
+                            </p>
+                                            
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    (function($) {
+      $(function() {
+        $('.sidenav').sidenav();
+      }); // end of document ready
+    })(jQuery);
+  </script>
+
+
+</body>
+
+</html>

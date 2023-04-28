@@ -6,6 +6,12 @@
         "github": "https://github.com/imikado/dupotStaticGenerationFramework"
     },
     {
+        "icon": "dupotStaticManagement_icon.png",
+        "title": "Dupot static-management-framework",
+        "body": "Framework d'administration pour générer des site statiques en php",
+        "github": "https://github.com/imikado/dupotStaticManagementFramework"
+    },
+    {
         "icon": "kritaSpritesheetExporter_icon.png",
         "title": "Krita SpritesheetExporter",
         "body": "Plugin Krita qui permet l'export d'animation en sprite horizontal",
