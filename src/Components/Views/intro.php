@@ -13,14 +13,14 @@
 
                     <p>
 
-                        <?php echo str_replace('Ben Curdy', '<a href="https://twitter.com/bcurdy" target="_blank">Ben Curdy</a>', nl2br(htmlentities("Développeur autodidacte, j'ai commencé à apprendre le developpement php dans les années 2000, d'abord pour mon premier site personnel, un modeste journal en ligne puis pour faire d'autres projets personnels divers et variés (roman participatif..).
-Féru de nouvelles technologies, j'ai continué mon apprentissage du javascript, puis Flash et son language dynamique actionscript... 
-Mes diverses expériences m'ont permis petit à petit d'en faire aujourd'hui mon métier.
+                        <?php echo str_replace('Ben Curdy', '<a href="https://twitter.com/bcurdy" target="_blank">Ben Curdy</a>', nl2br(htmlentities("Développeur autodidacte, j'ai commencé à apprendre le developpement php dans les années 2000, d'abord pour mon premier site personnel, un modeste journal en ligne (L'info est à vous) puis pour faire d'autres projets personnels divers et variés (roman participatif: au fil des mots, site de prévention...).
+Féru de nouvelles technologies, j'ai continué mon apprentissage du PHP, Javascript, puis Flash et son language dynamique ActionScript d'abord via Macromedia Flash puis passant sous GNU/Linux en utilisant MTASC puis Haxe pour générer mes swf... 
+Mes divers projets et expériences m'ont permis petit à petit d'en faire aujourd'hui mon métier.
 
-Sur mon temps personnel, je créé des applications/jeux mobiles, écris pour le magazine Linux Pratique/Magazine, développe mon framework php opensource et mon site de prévention.
+Sur mon temps personnel, je créé des applications/jeux mobiles, écris des articles pour le magazine Linux Pratique/Magazine, développe mon framework php opensource, mon site de prévention et d'autres projets opensource (dispo sur mon GitHub).
 
 Amateur de logiciel libre, vous avez pu m'entendre en tant qu'animateur du podcast opensource nipSource (de la galaxie nipCast, merci à Ben Curdy de nous avoir fait confiance ;)
-Je développe au quotidien avec des solutions libres comme Visual Studio Code, Godot, Android Studio le tout sous Linux Mint
+Je développe au quotidien avec des solutions libres comme Visual Studio Code, Godot, Android Studio le tout sous Linux Mint ou Kubuntu selon l'humeur du moment
 
 Et accessoirement: membre actif de la communauté TechCafé
 "))); ?>
