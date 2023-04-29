@@ -18,7 +18,7 @@
         "icon": "mobile_littleEscapeVR_icon.png",
         "title": "Little Escape VR",
         "body": "Avec un casque de réalité virtuelle mobile, trouvez les différentes clés et code pour sortir de cet appartement",
-        "idplaystore": "dupot.org.mika.littleescapevr",
+        "idplaystore": "org.godotengine.littleescapevr",
         "github": "https://github.com/imikado/dupotLittleEscapeVR"
     },
     {
