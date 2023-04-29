@@ -1,5 +1,12 @@
 [
     {
+        "date": "2023 mars",
+        "magazine": "Linux Magazine HS 124",
+        "article": "Découvrez comment héberger facilement vos sites web statiques à moindre coût avec Github Pages.",
+        "body": "Un simple projet de site statique utilisant le framework dupot/static-generation-framework",
+        "github": "https://github.com/imikado/articleLMmyBlogWebsite"
+    },
+    {
         "date": "2022 octobre",
         "magazine": "Linux Magazine HS 121",
         "article": "Créer une application GraphQL avec Kotlin",
