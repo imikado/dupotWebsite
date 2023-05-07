@@ -7,7 +7,7 @@
 
                 <div class="card-content">
 
-                    <div style="margin-left:10px;float:right">
+                    <div style="float:right">
                         <figure class="image is-72x72"><img class="is-rounded" src="css/images/avatarpro_web3.jpg" /></figure>
                     </div>
 
