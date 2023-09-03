@@ -34,5 +34,9 @@
     {
         "id": "shootThemUp",
         "label": "ShootThemUp"
+    },
+    {
+        "id": "beatMatchToPass",
+        "label": "Beat match to pass"
     }
 ]
