@@ -1,0 +1,38 @@
+[
+    {
+        "id": "littleAdventure",
+        "label": "Little Adventure"
+    },
+    {
+        "id": "littleEscape",
+        "label": "Little Escape"
+    },
+    {
+        "id": "bomby",
+        "label": "Bomby"
+    },
+    {
+        "id": "colaman",
+        "label": "Colaman"
+    },
+    {
+        "id": "eatman",
+        "label": "Eatman"
+    },
+    {
+        "id": "chess",
+        "label": "Echec"
+    },
+    {
+        "id": "crazyLogistic",
+        "label": "Logistique en folie"
+    },
+    {
+        "id": "sortBox",
+        "label": "Range les caisses"
+    },
+    {
+        "id": "shootThemUp",
+        "label": "ShootThemUp"
+    }
+]
