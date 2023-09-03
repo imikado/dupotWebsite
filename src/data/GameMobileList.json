@@ -40,19 +40,5 @@
         "title": "Range les caisses",
         "body": "Pousser les caisses jusqu'aux emplacements",
         "idplaystore": "mika.dupot.rangelescaisses"
-    },
-    {
-        "icon": "mobile_echec_icon.png",
-        "title": "Jeux d'echec",
-        "body": "Simple jeu d'echec",
-        "idplaystore": "com.mkdevs.echec",
-        "github": "https: //github.com/imikado/dupotEchec"
-    },
-    {
-        "icon": "mobile_eatman_icon.png",
-        "title": "Eatman",
-        "body": "Un simple pacman-like où il faut manger les carrotes et éviter les brocolis",
-        "idplaystore": "com.mkdevs.echec",
-        "github": "https: //github.com/imikado/dupotEchec"
     }
 ]
