@@ -1,11 +1,19 @@
 [
     {
+        "icon": "mobile_beatMatchToPass_icon.png",
+        "title": "Beat Match to Pass",
+        "body": "Eliminer le nombre d'enemies nécessire pour désactiver les barrières et atteindre la fin de chaque niveau.",
+        "idplaystore": "org.dupot.beatandmatchtopass",
+        "github": "https://github.com/imikado/dupotBeatAndMatchToPass",
+        "itchio": "https://dupot-org.itch.io/beat-and-match-to-pass"
+    },
+    {
         "icon": "mobile_littleAdventure_icon.png",
         "title": "Little Adventure",
         "body": "Aidez Gordon à trouver les pièces pour réparer le puit du village",
         "idplaystore": "dupot.org.mika.littleadventure",
         "github": "https://github.com/imikado/articleLMGodotLittleAdventure",
-        "demo": "https://dupot-org.itch.io/little-adventure"
+        "itchio": "https://dupot-org.itch.io/little-adventure"
     },
     {
         "icon": "mobile_littleEscape_icon.png",

@@ -47,6 +47,12 @@
                         </p>
                     <?php endif; ?>
 
+                    <?php if (isset($content->itchio)) : ?>
+                        <p class="content-centered">
+                            <a class=" btn waves-effect waves-ligh" href="<?php echo $content->itchio ?>" target="_blank"><img src="css/images/button-itchio.png" /></a>
+                        </p>
+                    <?php endif; ?>
+
                     <?php if (isset($content->idplaystore)) : ?>
                         <p class="content-centered">
                             <a href="https://play.google.com/store/apps/details?id=<?php echo $content->idplaystore ?>" target="_blank"><img src="css/images/google-playstore.png" /></a>
