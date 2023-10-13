@@ -5,6 +5,10 @@
         list-style-position: inside;
         margin-left: 20px;
     }
+
+    .logos {
+        margin-top: 30px;
+    }
 </style>
 
 <div class="row">
@@ -17,8 +21,6 @@
                 <div class="card-image">
                     <img src="images/<?php echo $content->icon ?>" alt="Placeholder image">
                 </div>
-
-
 
 
                 <div class="card-content">
@@ -34,42 +36,33 @@
 
                     <p class="is-justified"><?php echo $content->body ?></p>
 
+                    <p class="content-centered logos">
 
+                        <?php if (isset($content->github)) : ?>
 
-                    <?php if (isset($content->github)) : ?>
-                        <p class="content-centered">
                             <a target="_blank" href="<?php echo $content->github ?>"><img src="css/images/button-github.png" /></a>
-                        </p>
-                    <?php endif; ?>
-                    <?php if (isset($content->demo)) : ?>
-                        <p class="content-centered">
+
+                        <?php endif; ?>
+                        <?php if (isset($content->demo)) : ?>
                             <a class=" btn waves-effect waves-ligh" href="<?php echo $content->demo ?>" target="_blank">DEMO</a>
-                        </p>
-                    <?php endif; ?>
+                        <?php endif; ?>
 
-                    <?php if (isset($content->itchio)) : ?>
-                        <p class="content-centered">
+                        <?php if (isset($content->itchio)) : ?>
                             <a href="<?php echo $content->itchio ?>" target="_blank"><img src="css/images/button-itchio-black.png" /></a>
-                        </p>
-                    <?php endif; ?>
+                        <?php endif; ?>
 
-                    <?php if (isset($content->idplaystore)) : ?>
-                        <p class="content-centered">
+                        <?php if (isset($content->idplaystore)) : ?>
                             <a href="https://play.google.com/store/apps/details?id=<?php echo $content->idplaystore ?>" target="_blank"><img src="css/images/google-playstore.png" /></a>
-                        </p>
-                    <?php endif; ?>
+                        <?php endif; ?>
 
-                    <?php if (isset($content->flathub)) : ?>
-                        <p class="content-centered">
+                        <?php if (isset($content->flathub)) : ?>
                             <a href="<?php echo $content->flathub ?>" target="_blank"><img src="css/images/flathub-badge-en.png" /></a>
-                        </p>
-                    <?php endif; ?>
+                        <?php endif; ?>
 
-                    <?php if (isset($content->snapcraft)) : ?>
-                        <p class="content-centered">
+                        <?php if (isset($content->snapcraft)) : ?>
                             <a href="<?php echo $content->snapcraft ?>" target="_blank"><img src="css/images/snap-store-black.png" /></a>
-                        </p>
-                    <?php endif; ?>
+                        <?php endif; ?>
+                    </p>
 
 
                 </div>
