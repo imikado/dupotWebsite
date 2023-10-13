@@ -38,7 +38,7 @@
 
                     <?php if (isset($content->github)) : ?>
                         <p class="content-centered">
-                            <a class="github-repo btn waves-effect waves-ligh" target="_blank" href="<?php echo $content->github ?>">Projet Github</a>
+                            <a target="_blank" href="<?php echo $content->github ?>"><img src="css/images/button-github.png" /></a>
                         </p>
                     <?php endif; ?>
                     <?php if (isset($content->demo)) : ?>
@@ -58,6 +58,19 @@
                             <a href="https://play.google.com/store/apps/details?id=<?php echo $content->idplaystore ?>" target="_blank"><img src="css/images/google-playstore.png" /></a>
                         </p>
                     <?php endif; ?>
+
+                    <?php if (isset($content->flathub)) : ?>
+                        <p class="content-centered">
+                            <a href="<?php echo $content->flathub ?>" target="_blank"><img src="css/images/flathub-badge-en.png" /></a>
+                        </p>
+                    <?php endif; ?>
+
+                    <?php if (isset($content->snapcraft)) : ?>
+                        <p class="content-centered">
+                            <a href="<?php echo $content->snapcraft ?>" target="_blank"><img src="css/images/snap-store-black.png" /></a>
+                        </p>
+                    <?php endif; ?>
+
 
                 </div>
 

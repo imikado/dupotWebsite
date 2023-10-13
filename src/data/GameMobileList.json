@@ -5,7 +5,9 @@
         "body": "Eliminer le nombre d'enemies nécessire pour désactiver les barrières et atteindre la fin de chaque niveau.",
         "idplaystore": "org.dupot.beatandmatchtopass",
         "github": "https://github.com/imikado/dupotBeatAndMatchToPass",
-        "itchio": "https://dupot-org.itch.io/beat-and-match-to-pass"
+        "itchio": "https://dupot-org.itch.io/beat-and-match-to-pass",
+        "flathub": "https://flathub.org/fr/apps/org.dupot.beatmatchtopass",
+        "snapcraft": "https://snapcraft.io/dupot-beat-match-to-pass"
     },
     {
         "icon": "mobile_littleAdventure_icon.png",
@@ -13,7 +15,8 @@
         "body": "Aidez Gordon à trouver les pièces pour réparer le puit du village",
         "idplaystore": "dupot.org.mika.littleadventure",
         "github": "https://github.com/imikado/articleLMGodotLittleAdventure",
-        "itchio": "https://dupot-org.itch.io/little-adventure"
+        "itchio": "https://dupot-org.itch.io/little-adventure",
+        "flathub": "https://flathub.org/fr/apps/org.dupot.littleadventure"
     },
     {
         "icon": "mobile_littleEscape_icon.png",
