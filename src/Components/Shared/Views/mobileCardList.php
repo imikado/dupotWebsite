@@ -9,6 +9,10 @@
     .logos {
         margin-top: 30px;
     }
+
+    .block {
+        height: 180px;
+    }
 </style>
 
 <div class="row">
@@ -34,7 +38,7 @@
                     <span class="card-title orange-text text-darken-4"><?php echo $content->title ?><i class="material-icons right">close</i></span>
 
 
-                    <p class="is-justified"><?php echo $content->body ?></p>
+                    <p class="is-justified block"><?php echo $content->body ?></p>
 
                     <p class="content-centered logos">
 
