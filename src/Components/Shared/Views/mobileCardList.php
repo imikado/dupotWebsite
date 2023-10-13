@@ -49,7 +49,7 @@
 
                     <?php if (isset($content->itchio)) : ?>
                         <p class="content-centered">
-                            <a href="<?php echo $content->itchio ?>" target="_blank"><img src="css/images/button-itchio.png" /></a>
+                            <a href="<?php echo $content->itchio ?>" target="_blank"><img src="css/images/button-itchio-black.png" /></a>
                         </p>
                     <?php endif; ?>
 
