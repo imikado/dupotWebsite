@@ -40,7 +40,7 @@ class AboutContributionComponent extends ComponentAbstract implements ComponentI
             array(
                 self::ABOUT_IMAGE => 'css/images/about_techcafe.png',
                 self::ABOUT_TITLE => 'TechCaf&eacute;',
-                self::ABOUT_BODY => 'Membre actif sur le podcast TecCaf&eacute;',
+                self::ABOUT_BODY => 'Membre actif de la communauté TecCaf&eacute;',
                 self::ABOUT_LINK => 'https://techcafe.fr/',
                 self::ABOUT_LINK_LABEL => 'techcafe.fr',
 

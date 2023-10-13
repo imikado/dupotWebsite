@@ -43,7 +43,7 @@
                         <p>&nbsp;</p>
                         <?php if (isset($content->github)) : ?>
                             <p class="content-end">
-                                <a class="github-repo btn waves-effect waves-ligh" target="_blank" href="<?php echo $content->github ?>">Projet Github</a>
+                                <a target="_blank" href="<?php echo $content->github ?>"><img src="css/images/button-github.png" /></a>
                             </p>
                         <?php endif; ?>
                     <?php endif; ?>
