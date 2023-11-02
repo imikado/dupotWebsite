@@ -1,5 +1,6 @@
 <?php
 
+use MyWebsite\Apis\DataApi;
 use MyWebsite\Pages\AboutPage;
 use MyWebsite\Pages\AppsDestkopPage;
 use MyWebsite\Pages\AppsPage;
@@ -8,6 +9,8 @@ use MyWebsite\Pages\HomePage;
 use MyWebsite\Pages\PolicyPage;
 use MyWebsite\Pages\ProjectArticlesPage;
 use MyWebsite\Pages\ResourcesPage;
+use MyWebsite\Pages\TutorialListPage;
+use MyWebsite\Pages\TutorialPage;
 
 require __DIR__ . '/../vendor/autoload.php';
 
@@ -20,6 +23,7 @@ $pagesList = [
     new ResourcesPage(),
     new AboutPage(),
     new ProjectArticlesPage(),
+    new TutorialListPage()
 
 ];
 
@@ -34,4 +38,13 @@ foreach ($policyList as $policyLoop) {
 foreach ($pagesList as $pageLoop) {
     print("Generate " . $pageLoop->getFilename() . "\n");
     $pageLoop->generateTo(__DIR__ . '/../docs/');
+}
+
+$tutorialApi = new DataApi(__DIR__ . '//data/TutorialList.json');
+$tutorialList = $tutorialApi->findAll();
+
+foreach ($tutorialList as $tutorialLoop) {
+    $tutorialPage = new TutorialPage($tutorialLoop->id);
+    print("Generate " . $tutorialPage->getFilename() . "\n");
+    $tutorialPage->generateTo(__DIR__ . '/../docs/');
 }

@@ -5,19 +5,19 @@ namespace MyWebsite\Components;
 use Dupot\StaticGenerationFramework\Component\ComponentAbstract;
 use Dupot\StaticGenerationFramework\Component\ComponentInterface;
 use MyWebsite\Apis\DataApi;
-use MyWebsite\Components\Shared\MobileCardListComponent;
+use MyWebsite\Components\Shared\ArticleCardListComponent;
 
-class GameListComponent extends ComponentAbstract implements ComponentInterface
+class TutorialListComponent extends ComponentAbstract implements ComponentInterface
 {
     public function render(): string
     {
-        $dataApi = new DataApi(__DIR__ . '/../data/GameMobileList.json');
+        $dataApi = new DataApi(__DIR__ . '/../data/TutorialList.json');
 
         $props = (object)[
             'contentList' => $dataApi->findAll()
         ];
 
-        $component = new MobileCardListComponent($props);
+        $component = new ArticleCardListComponent($props);
         return $component->render();
     }
 }
