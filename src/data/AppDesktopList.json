@@ -7,5 +7,14 @@
         "modal": {
             "src": "/data/content/dupotDevTools.md"
         }
+    },
+    {
+        "icon": "dupotKanban_icon.jpg",
+        "title": "GDrive Dupot-Kanban",
+        "body": "Créer des kanban sur votre Google Drive",
+        "github": "https://github.com/imikado/articleLMkanbanWithGdrive",
+        "modal": {
+            "src": "/data/content/dupotKanban.md"
+        }
     }
 ]
