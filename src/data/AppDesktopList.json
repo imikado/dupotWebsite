@@ -16,5 +16,14 @@
         "modal": {
             "src": "/data/content/dupotKanban.md"
         }
+    },
+    {
+        "icon": "dupotEasyFlatpak_icon.jpg",
+        "title": "Dupot Easy Flatpak",
+        "body": "Un store graphique pour installer vos flatpak",
+        "github": "https://github.com/imikado/dupotEasyFlatpak",
+        "modal": {
+            "src": "/data/content/dupotEasyFlatpak.md"
+        }
     }
 ]
