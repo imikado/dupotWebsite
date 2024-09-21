@@ -41,11 +41,16 @@
                             <blockquote><?php echo $content->body ?></blockquote>
                         <?php endif; ?>
                         <p>&nbsp;</p>
-                        <?php if (isset($content->github)) : ?>
-                            <p class="content-end">
+                        <p class="content-end">
+                            <?php if (isset($content->github)) : ?>
                                 <a target="_blank" href="<?php echo $content->github ?>"><img src="css/images/button-github.png" /></a>
-                            </p>
-                        <?php endif; ?>
+                            <?php endif; ?>
+
+                            <?php if (isset($content->flathub)) : ?>
+                                <a href="<?php echo $content->flathub ?>" target="_blank"><img src="css/images/flathub-badge-en.png" /></a>
+                            <?php endif; ?>
+                        </p>
+
                     <?php endif; ?>
 
                 </div>

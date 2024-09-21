@@ -22,6 +22,8 @@
         "title": "Dupot Easy Flatpak",
         "body": "Un store graphique pour installer vos flatpak",
         "github": "https://github.com/imikado/dupotEasyFlatpak",
+        "flathub": "https://flathub.org/apps/org.dupot.easyflatpak",
+
         "modal": {
             "src": "/data/content/dupotEasyFlatpak.md"
         }
