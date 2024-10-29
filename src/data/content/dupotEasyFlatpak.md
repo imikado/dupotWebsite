@@ -8,10 +8,10 @@ Par exemple pour certaines applications de jeux comme Steam ou Heroic games laun
 
 ### Screenshots
 
-- [Application](/images/screenshots/dupotEasyFlatpak/Screenshot_01.png "Application").
-- [Catégorie](/images/screenshots/dupotEasyFlatpak/Screenshot_02.png "Application").
+- [Application](/images/screenshots/dupotEasyFlatpak/Screenshot_home.png "Application").
+- [Catégorie](/images/screenshots/dupotEasyFlatpak/Screenshot_category.png "Application").
 - [Applications installées](/images/screenshots/dupotEasyFlatpak/Screenshot_03.png "Application").
-- [Recherche](/images/screenshots/dupotEasyFlatpak/Screenshot_04.png "Application").
-- [Confirmation d'installation](/images/screenshots/dupotEasyFlatpak/Screenshot_05.png "Application").
-- [Accompagnement à l'installation](/images/screenshots/dupotEasyFlatpak/Screenshot_06.png "Application").
-- [Détail d'installation](/images/screenshots/dupotEasyFlatpak/Screenshot_07.png "Application").
+- [Recherche](/images/screenshots/dupotEasyFlatpak/Screenshot_installed_applications.png "Application").
+- [Confirmation d'installation](/images/screenshots/dupotEasyFlatpak/Screenshot_update_availables.png "Application").
+- [Accompagnement à l'installation](/images/screenshots/dupotEasyFlatpak/Screenshot_search.png "Application").
+- [Détail d'installation](/images/screenshots/dupotEasyFlatpak/Screenshot_application_steam.png "Application").
