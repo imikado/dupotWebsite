@@ -1,5 +1,12 @@
 [
     {
+        "date": "2024 novembre",
+        "magazine": "Linux Magazine 170",
+        "article": "Kanban : Créer une Google Drive App",
+        "body": "Aprenez comment créer votre propre extension Google Drive",
+        "github": "https://github.com/imikado/articleLMkanbanWithGdrive"
+    },
+    {
         "date": "2023 mars",
         "magazine": "Linux Magazine HS 124",
         "article": "Découvrez comment héberger facilement vos sites web statiques à moindre coût avec Github Pages.",
