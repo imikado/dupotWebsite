@@ -3,7 +3,6 @@
         "icon": "mobile_beatMatchToPass_icon.png",
         "title": "Beat Match to Pass",
         "body": "Eliminer le nombre d'enemies nécessire pour désactiver les barrières et atteindre la fin de chaque niveau.",
-        "idplaystore": "org.dupot.beatandmatchtopass",
         "github": "https://github.com/imikado/dupotBeatAndMatchToPass",
         "itchio": "https://dupot-org.itch.io/beat-and-match-to-pass",
         "flathub": "https://flathub.org/fr/apps/org.dupot.beatmatchtopass",
@@ -13,43 +12,8 @@
         "icon": "mobile_littleAdventure_icon.png",
         "title": "Little Adventure",
         "body": "Aidez Gordon à trouver les pièces pour réparer le puit du village",
-        "idplaystore": "dupot.org.mika.littleadventure",
         "github": "https://github.com/imikado/articleLMGodotLittleAdventure",
         "itchio": "https://dupot-org.itch.io/little-adventure",
         "flathub": "https://flathub.org/fr/apps/org.dupot.littleadventure"
-    },
-    {
-        "icon": "mobile_littleEscape_icon.png",
-        "title": "Little Escape",
-        "body": "Trouvez les différentes clés et code pour sortir de cet appartement",
-        "idplaystore": "dupot.org.mika.littleescape",
-        "github": "https://github.com/imikado/dupotLittleEscape"
-    },
-    {
-        "icon": "mobile_littleEscapeVR_icon.png",
-        "title": "Little Escape VR",
-        "body": "Avec un casque de réalité virtuelle mobile, trouvez les différentes clés et code pour sortir de cet appartement",
-        "idplaystore": "org.godotengine.littleescapevr",
-        "github": "https://github.com/imikado/dupotLittleEscapeVR"
-    },
-    {
-        "icon": "mobile_logistiqueenfolie_icon.png",
-        "title": "Logistique en folie",
-        "body": "Remplissez les cartons de commande avant leur expédition",
-        "idplaystore": "mika.dupot.logistiqueenfolie",
-        "github": "https://github.com/imikado/dupotLogistiqueEnFolie"
-    },
-    {
-        "icon": "mobile_colaman_icon.png",
-        "title": "Colaman",
-        "body": "Bomberman-like Bis jouable uniquement en réseau LAN (un des joueurs héberge la partie, et les autres se connecte à son device)",
-        "idplaystore": "mika.dupot.colaman",
-        "github": "https://github.com/imikado/dupotColaman"
-    },
-    {
-        "icon": "mobile_rangelescaisses_icon.png",
-        "title": "Range les caisses",
-        "body": "Pousser les caisses jusqu'aux emplacements",
-        "idplaystore": "mika.dupot.rangelescaisses"
     }
 ]

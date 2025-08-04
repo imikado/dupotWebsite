@@ -26,7 +26,7 @@ class NavComponent extends ComponentAbstract implements ComponentInterface
     {
         $linkList = [
             'Jeux' => GamesPage::FILENAME,
-            'Apps mobile' => AppsPage::FILENAME,
+            //'Apps mobile' => AppsPage::FILENAME,
             'Apps desktop & web' => AppsDestkopPage::FILENAME,
 
             'Tutos' => TutorialListPage::FILENAME,
@@ -34,7 +34,7 @@ class NavComponent extends ComponentAbstract implements ComponentInterface
             'Ressources d\'articles' => ProjectArticlesPage::FILENAME,
             'Librairies & co' => ResourcesPage::FILENAME,
             'A propos' => AboutPage::FILENAME,
-            'Twitter' => 'https://twitter.com/dupot_org',
+            //'Twitter' => 'https://twitter.com/dupot_org',
             'Github' => 'https://github.com/imikado',
             'Itchio' => 'https://dupot-org.itch.io/'
 

@@ -9,21 +9,11 @@
         }
     },
     {
-        "icon": "dupotKanban_icon.jpg",
-        "title": "GDrive Dupot-Kanban",
-        "body": "Créer des kanban sur votre Google Drive",
-        "github": "https://github.com/imikado/articleLMkanbanWithGdrive",
-        "modal": {
-            "src": "/data/content/dupotKanban.md"
-        }
-    },
-    {
         "icon": "dupotEasyFlatpak_icon.jpg?v=20241029",
         "title": "Dupot Easy Flatpak",
         "body": "Un store graphique pour installer vos flatpak",
         "github": "https://github.com/imikado/dupotEasyFlatpak",
         "flathub": "https://flathub.org/apps/org.dupot.easyflatpak",
-
         "modal": {
             "src": "/data/content/dupotEasyFlatpak.md"
         }
