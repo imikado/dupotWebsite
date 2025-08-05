@@ -29,6 +29,15 @@ class AboutContributionComponent extends ComponentAbstract implements ComponentI
             ),
 
             array(
+                self::ABOUT_IMAGE => 'css/images/about_glfos.png',
+                self::ABOUT_TITLE => 'Gaming Linux FR',
+                self::ABOUT_BODY => 'Membre actif de la communauté Gaming Linux FR',
+                self::ABOUT_LINK => 'https://www.gaminglinux.fr',
+                self::ABOUT_LINK_LABEL => 'www.gaminglinux.fr',
+
+            ),
+
+            array(
                 self::ABOUT_IMAGE => 'css/images/about_nipsource.png',
                 self::ABOUT_TITLE => 'NipSource',
                 self::ABOUT_BODY => 'Notre ancien podcast sur l\' opensource',
@@ -45,6 +54,9 @@ class AboutContributionComponent extends ComponentAbstract implements ComponentI
                 self::ABOUT_LINK_LABEL => 'techcafe.fr',
 
             ),
+
+
+
 
         );
 
