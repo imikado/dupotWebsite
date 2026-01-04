@@ -1,4 +1,13 @@
 [
+     {
+        "icon": "mobile_saveTheSheep_icon.png",
+        "title": "Save the sheep",
+        "body": "Proteger le mouton pour l'aider à finir chaque niveau.",
+        "github": "https://github.com/imikado/dupotSaveTheSheep",
+        "itchio": "https://dupot-org.itch.io/save-the-sheep",
+        "flathubOFF": "https://flathub.org/fr/apps/org.dupot.beatmatchtopass",
+        "snapcraftOFF": "https://snapcraft.io/dupot-beat-match-to-pass"
+    },
     {
         "icon": "mobile_beatMatchToPass_icon.png",
         "title": "Beat Match to Pass",
