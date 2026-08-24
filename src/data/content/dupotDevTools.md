@@ -2,34 +2,10 @@
 
 Ce projet est le couteau suisse du développeur, il vous propose des petits outils pratique dans votre quotidien.
 
-#### Des outils de conversion
+### Screenshots
 
-- HTML vers du texte
-- HTML vers PDF
-- YAML vers JSON (et vice versa)
-
-#### Des outils d'encodage
-
-- Base64
-- Html
-- Jwt
-- Url
-
-#### Des outils de formatage
-
-- Json
-- Xml
-- GraphQL
-- Sql
-
-#### Des outils de generation de graphiques
-
-- génération avec l'outil graphviz
-
-#### Des outils de documentation
-
-- prompt pour le fameux TLDR
-
-#### Des outils de manipulation de chaine de caractères
-
-- outil de hash (md5,sha1, sha256..)
+![image](/images/screenshots/dupotDevTools/database_section.png?v=20260824)
+![image](/images/screenshots/dupotDevTools/sqlviewer_new_connection.png?v=20260824)
+![image](/images/screenshots/dupotDevTools/sqlviewer_add_table.png?v=20260824)
+![image](/images/screenshots/dupotDevTools/sqlviewer_joins.png?v=20260824)
+![image](/images/screenshots/dupotDevTools/sqlviewer_request.png?v=20260824)

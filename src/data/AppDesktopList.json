@@ -1,6 +1,6 @@
 [
     {
-        "icon": "dupotDevTools_icon.png",
+        "icon": "dupotDevTools_icon.jpg?v=20260824_2225",
         "title": "Dupot dev tools",
         "body": "Le couteau suisse du dev",
         "github": "https://github.com/imikado/dupotDevTools",
@@ -9,7 +9,7 @@
         }
     },
     {
-        "icon": "dupotEasyFlatpak_icon.jpg?v=20260515",
+        "icon": "dupotEasyFlatpak_icon.jpg?v=20260824_2225",
         "title": "Dupot Easy Flatpak",
         "body": "Un store graphique pour installer vos flatpak",
         "github": "https://github.com/imikado/dupotEasyFlatpak",
@@ -19,7 +19,7 @@
         }
     },
     {
-        "icon": "dupotFileBrowser_icon.jpg?v=20260824",
+        "icon": "dupotFileBrowser_icon.jpg?v=20260824_2225",
         "title": "Dupot File browser",
         "body": "Un navigateur de fichier bien différent",
         "github": "https://github.com/imikado/dupotFileBrowser",
