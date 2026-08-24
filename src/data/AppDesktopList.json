@@ -17,5 +17,14 @@
         "modal": {
             "src": "/data/content/dupotEasyFlatpak.md"
         }
+    },
+    {
+        "icon": "dupotFileBrowser_icon.jpg?v=20260824",
+        "title": "Dupot File browser",
+        "body": "Un navigateur de fichier bien différent",
+        "github": "https://github.com/imikado/dupotFileBrowser",
+        "modal": {
+            "src": "/data/content/dupotFileBrowser.md"
+        }
     }
 ]
