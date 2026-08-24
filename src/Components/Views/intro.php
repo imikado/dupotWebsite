@@ -8,7 +8,7 @@
                 <div class="card-content">
 
                     <div style="float:right">
-                        <figure class="image is-72x72"><img class="is-rounded" src="css/images/avatarpro_web3.jpg" /></figure>
+                        <figure class="image is-72x72"><img class="is-rounded" src="css/images/avatarpro_web3.jpg?v=20260824_2250" /></figure>
                     </div>
 
                     <p>
@@ -17,12 +17,12 @@
 Féru de nouvelles technologies, j'ai continué mon apprentissage du PHP, Javascript, puis Flash et son language dynamique ActionScript d'abord via Macromedia Flash puis passant sous GNU/Linux en utilisant MTASC puis Haxe pour générer mes swf... 
 Mes divers projets et expériences m'ont permis petit à petit d'en faire aujourd'hui mon métier.
 
-Sur mon temps personnel, je créé des applications/jeux mobiles, écris des articles pour le magazine Linux Pratique/Magazine, développe mon framework php opensource, mon site de prévention et d'autres projets opensource (dispo sur mon GitHub).
+Sur mon temps personnel, je créé des applications et jeux linux, écris des articles pour le magazine Linux Pratique/Magazine, développe mon framework php opensource, mon site de prévention et d'autres projets opensource (dispo sur mon GitHub).
 
 Amateur de logiciel libre, vous avez pu m'entendre en tant qu'animateur du podcast opensource nipSource (de la galaxie nipCast, merci à Ben Curdy de nous avoir fait confiance ;)
-Je développe au quotidien avec des solutions libres comme Visual Studio Code, Godot, Android Studio le tout sous Linux Mint ou Kubuntu selon l'humeur du moment
+Je développe au quotidien avec des solutions libres comme Visual Studio Code, Godot le tout sous LMDE ou Kubuntu selon l'humeur du moment
 
-Et accessoirement: membre actif de la communauté TechCafé
+Et accessoirement: dans l'équipe d'une jeune distribution GNU/Linux française GLF OS, et membre actif des communautés Gaming Linux FR et TechCafé
 "))); ?>
 
                     </p>
