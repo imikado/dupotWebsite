@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dupot.org: Arr&ecirc;ter de tourner autour...</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZVG5R211FM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-ZVG5R211FM');
+  </script>
+  <style>
+    .logo {
+      background: url('css/images/logo.png') no-repeat 0px center;
+      padding-left: 55px;
+    }
+
+
+    #popup {
+      position: absolute;
+      background: #FFF;
+      border: 3px solid #444;
+      top: 10px;
+      left: 40px;
+    }
+
+    #popup a {
+      color: white;
+    }
+
+    #popup p {
+      background: #444;
+      margin: 0px;
+      text-align: right;
+      padding-right: 3px;
+    }
+
+    .main {
+      min-height: 500px;
+    }
+
+    .github {
+      background: url("css/images/GitHub-Mark-32px.png") no-repeat center;
+      padding: 0px 24px;
+    }
+
+    .twitter {
+      background: url("css/images/Twitter-social-icons-circle-blue.png") no-repeat center;
+      padding: 0px 24px;
+    }
+
+    .twitter-repo {
+      background: url("css/images/Twitter-social-icons-circle-white.png") no-repeat 10px;
+      padding-left: 50px;
+    }
+
+    .github-repo {
+      background: url("css/images/GitHub-Mark-32px.png") no-repeat 10px #0277bd;
+      padding-left: 50px;
+    }
+
+    .itchio {
+      background: url("css/images/itchio.png") no-repeat center;
+      padding: 0px 24px;
+    }
+
+    .buttons {
+      text-align: center;
+    }
+
+    .is-justified {
+      text-align: justify;
+    }
+
+    .icon-td {
+      width: 80px;
+    }
+
+    .content-centered {
+      text-align: center;
+    }
+
+    body {
+      background: #fff3e0;
+    }
+
+    h1,
+    h2 {
+      color: #e65100;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-wrapper white logo">
+        <a href="#" class="brand-logo">&nbsp;</a>
+
+
+        <ul id="nav-mobile" class="sidenav" style="transform: translateX(-105%);">
+
+                            <li ><a href="games.html">Jeux</a></li>
+                            <li ><a href="desktop.html">Logiciels</a></li>
+                            <li ><a href="tutorials.html">Tutos</a></li>
+                            <li ><a href="project_article.html">Ressources d'articles</a></li>
+                            <li ><a href="resources.html">Librairies & co</a></li>
+                            <li ><a href="about.html">A propos</a></li>
+                            <li ><a href="https://github.com/imikado">Github</a></li>
+                            <li ><a href="https://dupot-org.itch.io/">Itchio</a></li>
+            
+
+        </ul>
+
+
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            
+                <li >
+                                            <a class="orange-text text-darken-4" href="games.html">Jeux</a>
+
+                                    </li>
+
+            
+                <li >
+                                            <a class="orange-text text-darken-4" href="desktop.html">Logiciels</a>
+
+                                    </li>
+
+            
+                <li >
+                                            <a class="orange-text text-darken-4" href="tutorials.html">Tutos</a>
+
+                                    </li>
+
+            
+                <li >
+                                            <a class="orange-text text-darken-4" href="project_article.html">Ressources d'articles</a>
+
+                                    </li>
+
+            
+                <li >
+                                            <a class="orange-text text-darken-4" href="resources.html">Librairies & co</a>
+
+                                    </li>
+
+            
+                <li >
+                                            <a class="orange-text text-darken-4" href="about.html">A propos</a>
+
+                                    </li>
+
+            
+                <li >
+                                            <a class="github" target="_blank" href="https://github.com/imikado">&nbsp;</a>
+                                    </li>
+
+            
+                <li >
+                                            <a class="itchio" target="_blank" href="https://dupot-org.itch.io/">&nbsp;</a>
+                                    </li>
+
+            
+        </ul>
+
+        <a style="float:right" href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons orange-text">menu</i></a>
+
+
+
+    </div>
+</nav>
+  <div class="header">&nbsp;</div>
+
+  <div class="main">
+    <div class="container">
+
+
+      <style>
+    pre {
+        background-color: #eee;
+    }
+</style>
+<div class="content">
+
+    <div class="row">
+        <div class="col">
+            <div class="card ">
+
+                <div class="card-content">
+
+
+                    <h2>Publier un jeu Godot sur Snap (store ubuntu)</h2>
+<p>Cet article vous montre comment publier un jeu Godot sur le store Ubuntu (snap), je n'aborde pas ici d'autre moteur de jeu,  mais ce tuto peut vous aider à comprendre la mécanique utilisée.</p>
+<h4>Créer un compte Ubuntu One</h4>
+<p>Pour publier sur le Snap Store, vous avez besoin d'un compte Ubuntu One, si ce n'est pas déjà fait, créez en un sur <a href="https://login.ubuntu.com">https://login.ubuntu.com</a></p>
+<h4>Organiser votre projet</h4>
+<p>Comme pour un export classique, on va créer un peu d'arborescence pour ranger les fichiers</p>
+<pre><code>mkdir -p export/linux/snap
+cd export/linux/snap
+mkdir -p snap/gui</code></pre>
+<h4>Exporter votre jeu vers Linux</h4>
+<p>Dans Godot, faites un export Linux et définissez comme destination le répertoire export/linux/snap</p>
+<p>Vous avez 2 fichiers: votre_jeu.x86_64 et votre_jeu.pck</p>
+<h4>Installer snapd et snapcraft</h4>
+<p>snapd est le service qui permet d'installer et de faire tourner des snaps, snapcraft est l'outil qui sert à faire le build</p>
+<p>Sur les distribution ubuntu et dérivés (mint..), snapd est déjà installé, sinon, par example sur ma LMDE (basée sur debian), besoin de mon coté d'installer également lxd</p>
+<pre><code>sudo apt install snapd</code></pre>
+<p>Passons à snapcraft, lui même distribué sous forme de snap</p>
+<pre><code>sudo snap install snapcraft --classic</code></pre>
+<p>Sur ma distribution basée sur debian j'ai du installer lxd et m'assurer d'avoir les bonnes permissions avec:</p>
+<pre><code>sudo apt install snapd lxd
+lxd init --auto</code></pre>
+<h4>Créer le fichier snapcraft.yaml</h4>
+<p>On créé maintenant la fiche de construction snapcraft.yaml dans export/linux/snap</p>
+<pre><code>vi snap/snapcraft.yaml</code></pre>
+<p>Contenu de snap/snapcraft.yaml</p>
+<pre><code>title: Votre jeu
+name: votredomaine-votre-jeu
+version: '1.0'
+summary: Résumé court de votre jeu
+description: |
+  La description de votre jeu
+
+grade: stable
+confinement: strict
+base: core22
+
+apps:
+  votredomaine-votre-jeu:
+    command: votre_jeu.x86_64
+    extensions: [gnome]
+    plugs:
+      - opengl
+      - audio-playback
+      - x11
+      - wayland
+      - joystick
+
+parts:
+  game:
+    plugin: dump
+    source: .
+    organize:
+      votre_jeu.x86_64: votre_jeu.x86_64
+      votre_jeu.pck: votre_jeu.pck
+    stage:
+      - votre_jeu.x86_64
+      - votre_jeu.pck
+    prime:
+      - votre_jeu.x86_64
+      - votre_jeu.pck
+    stage-packages:
+      - libc6</code></pre>
+<p>Ici on décrit</p>
+<ul>
+<li>le nom du snap (votredomaine-votre-jeu) et sa version</li>
+<li>une commande à lancer une fois le snap installé, ici directement le binaire exporté par Godot</li>
+<li>des accès système (plugs) dont votre jeu peut avoir besoin: opengl pour l'affichage, audio-playback pour le son, x11/wayland pour l'affichage, joystick si vous gérez les manettes</li>
+<li>une partie (part) qui vient récupérer les fichiers exportés (le .x86_64 et le .pck) et les inclure dans le snap</li>
+</ul>
+<p>L'extension gnome apporte les librairies graphiques et audio courantes, ça évite de devoir toutes les lister soi même</p>
+<h4>Builder votre snap</h4>
+<p>Aller dans export/linux/snap</p>
+<pre><code>cd /path/vers/votre/jeu/export/linux/snap
+snapcraft pack</code></pre>
+<p>snapcraft va télécharger un environnement de build (via LXD ou multipass la première fois), puis fabriquer votre paquet</p>
+<p>Vous devriez obtenir un fichier votredomaine-votre-jeu_1.0_amd64.snap</p>
+<h4>Tester votre snap en local</h4>
+<p>Pour tester l'installation de l'application en snap</p>
+<pre><code>sudo snap install votredomaine-votre-jeu_1.0_amd64.snap --dangerous</code></pre>
+<p>Le flag --dangerous permet d'installer un snap qui n'est pas signé par le store, indispensable en local</p>
+<p>pour lancer, simplement</p>
+<pre><code>votredomaine-votre-jeu</code></pre>
+<h4>Créer un compte développeur et enregistrer le nom</h4>
+<p>On se connecte avec le compte Ubuntu One</p>
+<pre><code>snapcraft login</code></pre>
+<p>Puis on réserve le nom de votre snap sur le store, nom du style xx.votredomain.votrejeu</p>
+<pre><code>snapcraft register votredomaine-votre-jeu</code></pre>
+<h4>Publier votre snap</h4>
+<p>On envoie le paquet construit précédemment sur le store, en le publiant directement sur le canal stable</p>
+<pre><code>snapcraft upload votredomaine-votre-jeu_1.0_amd64.snap --release=stable</code></pre>
+<p>Il existe aussi d'autres canaux (edge, beta, candidate) qui permettent de publier des versions de test avant de les faire passer en stable</p>
+<pre><code>snapcraft upload votredomaine-votre-jeu_1.0_amd64.snap --release=edge</code></pre>
+<p>vous devriez avoir une ligne du type</p>
+<pre><code>Revision N created for 'votredomaine-votre-jeu' and released to 'stable'</code></pre>
+<pre><code>snapcraft release votredomaine-votre-jeu N stable</code></pre>
+<p>Une fois publié, je vous invite à vous rendre sur <a href="https://snapcraft.io/">https://snapcraft.io/</a> pour aller ajouter les screenshot et autres améliorations concernant la fiche de votre application</p>
+<pre><code>sudo snap install votredomaine-votre-jeu</code></pre>
+<h4>Conclusion</h4>
+<p>Comme vous voyez il est très simple de publier des snaps</p>                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+    </div>
+
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    (function($) {
+      $(function() {
+        $('.sidenav').sidenav();
+      }); // end of document ready
+    })(jQuery);
+  </script>
+
+
+</body>
+
+</html>
