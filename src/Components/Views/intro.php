@@ -1,20 +1,11 @@
-<div class="content">
-    <h1 class="title  is-1">Pr&eacute;sentation</h1>
+<h1>Présentation</h1>
 
-    <div class="row">
-        <div class="col">
-            <div class="card ">
-
-                <div class="card-content">
-
-                    <div style="float:right">
-                        <figure class="image is-72x72"><img class="is-rounded" src="css/images/avatarpro_web3.jpg?v=20260824_2253" /></figure>
-                    </div>
-
-                    <p>
-
-                        <?php echo str_replace('Ben Curdy', '<a href="https://twitter.com/bcurdy" target="_blank">Ben Curdy</a>', nl2br(htmlentities("Développeur autodidacte, j'ai commencé à apprendre le developpement php dans les années 2000, d'abord pour mon premier site personnel, un modeste journal en ligne (L'info est à vous) puis pour faire d'autres projets personnels divers et variés (roman participatif: au fil des mots, site de prévention...).
-Féru de nouvelles technologies, j'ai continué mon apprentissage du PHP, Javascript, puis Flash et son language dynamique ActionScript d'abord via Macromedia Flash puis passant sous GNU/Linux en utilisant MTASC puis Haxe pour générer mes swf... 
+<div class="card content-card">
+    <div class="avatar-row">
+        <img src="css/images/avatarpro_web3.jpg?v=20260824_2253" alt="Michael Bertocchi">
+        <div class="avatar-text">
+            <?php echo str_replace('Ben Curdy', '<a href="https://twitter.com/bcurdy" target="_blank">Ben Curdy</a>', nl2br(htmlentities("Développeur autodidacte, j'ai commencé à apprendre le developpement php dans les années 2000, d'abord pour mon premier site personnel, un modeste journal en ligne (L'info est à vous) puis pour faire d'autres projets personnels divers et variés (roman participatif: au fil des mots, site de prévention...).
+Féru de nouvelles technologies, j'ai continué mon apprentissage du PHP, Javascript, puis Flash et son language dynamique ActionScript d'abord via Macromedia Flash puis passant sous GNU/Linux en utilisant MTASC puis Haxe pour générer mes swf...
 Mes divers projets et expériences m'ont permis petit à petit d'en faire aujourd'hui mon métier.
 
 Sur mon temps personnel, je créé des applications et jeux linux, écris des articles pour le magazine Linux Pratique/Magazine, développe mon framework php opensource, mon site de prévention et d'autres projets opensource (dispo sur mon GitHub).
@@ -24,14 +15,6 @@ Je développe au quotidien avec des solutions libres comme Visual Studio Code, G
 
 Et accessoirement: dans l'équipe d'une jeune distribution GNU/Linux française GLF OS, et membre actif des communautés Gaming Linux FR et TechCafé
 "))); ?>
-
-                    </p>
-
-                </div>
-
-
-            </div>
         </div>
     </div>
-
 </div>

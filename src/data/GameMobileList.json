@@ -1,28 +1,40 @@
 [
     {
+        "id": "saveTheSheep",
         "icon": "mobile_saveTheSheep_icon.png",
         "title": "Save the sheep",
         "body": "Proteger le mouton pour l'aider à finir chaque niveau.",
         "github": "https://github.com/imikado/dupotSaveTheSheep",
         "itchio": "https://dupot-org.itch.io/save-the-sheep",
         "flathub": "https://flathub.org/fr/apps/org.dupot.savethesheep",
-        "snapcraft": "https://snapcraft.io/dupot-save-the-sheep"
+        "snapcraft": "https://snapcraft.io/dupot-save-the-sheep",
+        "modal": {
+            "src": "/data/content/saveTheSheep.md"
+        }
     },
     {
+        "id": "beatMatchToPass",
         "icon": "mobile_beatMatchToPass_icon.png",
         "title": "Beat Match to Pass",
         "body": "Eliminer le nombre d'endaemies nécessire pour désactiver les barrières et atteindre la fin de chaque niveau.",
         "github": "https://github.com/imikado/dupotBeatAndMatchToPass",
         "itchio": "https://dupot-org.itch.io/beat-and-match-to-pass",
         "flathub": "https://flathub.org/fr/apps/org.dupot.beatmatchtopass",
-        "snapcraft": "https://snapcraft.io/dupot-beat-match-to-pass"
+        "snapcraft": "https://snapcraft.io/dupot-beat-match-to-pass",
+        "modal": {
+            "src": "/data/content/beatMatchToPass.md"
+        }
     },
     {
+        "id": "littleAdventure",
         "icon": "mobile_littleAdventure_icon.png",
         "title": "Little Adventure",
         "body": "Aidez Gordon à trouver les pièces pour réparer le puit du village",
         "github": "https://github.com/imikado/articleLMGodotLittleAdventure",
         "itchio": "https://dupot-org.itch.io/little-adventure",
-        "flathub": "https://flathub.org/fr/apps/org.dupot.littleadventure"
+        "flathub": "https://flathub.org/fr/apps/org.dupot.littleadventure",
+        "modal": {
+            "src": "/data/content/littleAdventure.md"
+        }
     }
 ]

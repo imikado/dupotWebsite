@@ -7,8 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dupot.org: Arr&ecirc;ter de tourner autour...</title>
 
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/theme.css">
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZVG5R211FM"></script>
   <script>
@@ -21,189 +24,85 @@
 
     gtag('config', 'G-ZVG5R211FM');
   </script>
-  <style>
-    .logo {
-      background: url('css/images/logo.png') no-repeat 0px center;
-      padding-left: 55px;
-    }
-
-
-    #popup {
-      position: absolute;
-      background: #FFF;
-      border: 3px solid #444;
-      top: 10px;
-      left: 40px;
-    }
-
-    #popup a {
-      color: white;
-    }
-
-    #popup p {
-      background: #444;
-      margin: 0px;
-      text-align: right;
-      padding-right: 3px;
-    }
-
-    .main {
-      min-height: 500px;
-    }
-
-    .github {
-      background: url("css/images/GitHub-Mark-32px.png") no-repeat center;
-      padding: 0px 24px;
-    }
-
-    .twitter {
-      background: url("css/images/Twitter-social-icons-circle-blue.png") no-repeat center;
-      padding: 0px 24px;
-    }
-
-    .twitter-repo {
-      background: url("css/images/Twitter-social-icons-circle-white.png") no-repeat 10px;
-      padding-left: 50px;
-    }
-
-    .github-repo {
-      background: url("css/images/GitHub-Mark-32px.png") no-repeat 10px #0277bd;
-      padding-left: 50px;
-    }
-
-    .itchio {
-      background: url("css/images/itchio.png") no-repeat center;
-      padding: 0px 24px;
-    }
-
-    .buttons {
-      text-align: center;
-    }
-
-    .is-justified {
-      text-align: justify;
-    }
-
-    .icon-td {
-      width: 80px;
-    }
-
-    .content-centered {
-      text-align: center;
-    }
-
-    body {
-      background: #fff3e0;
-    }
-
-    h1,
-    h2 {
-      color: #e65100;
-    }
-  </style>
 </head>
 
 <body>
 
-  <nav>
-    <div class="nav-wrapper white logo">
-        <a href="#" class="brand-logo">&nbsp;</a>
+  <nav class="site-nav">
+    <div class="nav-inner">
+        <a href="index.html" class="brand"><span class="brand-mark">d</span>uPot.org</a>
 
+        <ul class="nav-links">
+                                            <li >
+                    <a  href="games.html">Jeux</a>
+                </li>
+                                            <li >
+                    <a  href="desktop.html">Logiciels</a>
+                </li>
+                                            <li >
+                    <a  href="tutorials.html">Tutos</a>
+                </li>
+                                            <li >
+                    <a  href="project_article.html">Ressources d'articles</a>
+                </li>
+                                            <li >
+                    <a  href="resources.html">Librairies & co</a>
+                </li>
+                                            <li class="active">
+                    <a  href="about.html">A propos</a>
+                </li>
+                                                    </ul>
 
-        <ul id="nav-mobile" class="sidenav" style="transform: translateX(-105%);">
+        <div class="nav-social">
+                                                                                                                                                                                                                        <a class="nav-icon" title="Github" target="_blank" href="https://github.com/imikado"><img src="css/images/GitHub-Mark-Light-32px.png" alt="Github"></a>
+                                                                <a class="nav-icon" title="Itchio" target="_blank" href="https://dupot-org.itch.io/"><img src="css/images/itchio-textless-white.png" alt="Itchio"></a>
+                                    </div>
 
-                            <li ><a href="games.html">Jeux</a></li>
-                            <li ><a href="desktop.html">Logiciels</a></li>
-                            <li ><a href="tutorials.html">Tutos</a></li>
-                            <li ><a href="project_article.html">Ressources d'articles</a></li>
-                            <li ><a href="resources.html">Librairies & co</a></li>
-                            <li class="active" ><a href="about.html">A propos</a></li>
-                            <li ><a href="https://github.com/imikado">Github</a></li>
-                            <li ><a href="https://dupot-org.itch.io/">Itchio</a></li>
-            
+        <button type="button" class="nav-toggle" aria-label="Menu" aria-expanded="false">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>        </button>
+    </div>
 
-        </ul>
-
-
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-            
-                <li >
-                                            <a class="orange-text text-darken-4" href="games.html">Jeux</a>
-
-                                    </li>
-
-            
-                <li >
-                                            <a class="orange-text text-darken-4" href="desktop.html">Logiciels</a>
-
-                                    </li>
-
-            
-                <li >
-                                            <a class="orange-text text-darken-4" href="tutorials.html">Tutos</a>
-
-                                    </li>
-
-            
-                <li >
-                                            <a class="orange-text text-darken-4" href="project_article.html">Ressources d'articles</a>
-
-                                    </li>
-
-            
-                <li >
-                                            <a class="orange-text text-darken-4" href="resources.html">Librairies & co</a>
-
-                                    </li>
-
-            
-                <li class="active" >
-                                            <a class="orange-text text-darken-4" href="about.html">A propos</a>
-
-                                    </li>
-
-            
-                <li >
-                                            <a class="github" target="_blank" href="https://github.com/imikado">&nbsp;</a>
-                                    </li>
-
-            
-                <li >
-                                            <a class="itchio" target="_blank" href="https://dupot-org.itch.io/">&nbsp;</a>
-                                    </li>
-
-            
-        </ul>
-
-        <a style="float:right" href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons orange-text">menu</i></a>
-
-
-
+    <div class="nav-mobile">
+        <ul>
+                            <li >
+                    <a  href="games.html">Jeux</a>
+                </li>
+                            <li >
+                    <a  href="desktop.html">Logiciels</a>
+                </li>
+                            <li >
+                    <a  href="tutorials.html">Tutos</a>
+                </li>
+                            <li >
+                    <a  href="project_article.html">Ressources d'articles</a>
+                </li>
+                            <li >
+                    <a  href="resources.html">Librairies & co</a>
+                </li>
+                            <li class="active">
+                    <a  href="about.html">A propos</a>
+                </li>
+                            <li >
+                    <a  href="https://github.com/imikado">Github</a>
+                </li>
+                            <li >
+                    <a target="_blank" href="https://dupot-org.itch.io/">Itchio</a>
+                </li>
+                    </ul>
     </div>
 </nav>
-  <div class="header">&nbsp;</div>
 
   <div class="main">
     <div class="container">
 
+      <h1>Présentation</h1>
 
-      <div class="content">
-    <h1 class="title  is-1">Pr&eacute;sentation</h1>
-
-    <div class="row">
-        <div class="col">
-            <div class="card ">
-
-                <div class="card-content">
-
-                    <div style="float:right">
-                        <figure class="image is-72x72"><img class="is-rounded" src="css/images/avatarpro_web3.jpg?v=20260824_2253" /></figure>
-                    </div>
-
-                    <p>
-
-                        D&eacute;veloppeur autodidacte, j'ai commenc&eacute; &agrave; apprendre le developpement php dans les ann&eacute;es 2000, d'abord pour mon premier site personnel, un modeste journal en ligne (L'info est &agrave; vous) puis pour faire d'autres projets personnels divers et vari&eacute;s (roman participatif: au fil des mots, site de pr&eacute;vention...).<br />
-F&eacute;ru de nouvelles technologies, j'ai continu&eacute; mon apprentissage du PHP, Javascript, puis Flash et son language dynamique ActionScript d'abord via Macromedia Flash puis passant sous GNU/Linux en utilisant MTASC puis Haxe pour g&eacute;n&eacute;rer mes swf... <br />
+<div class="card content-card">
+    <div class="avatar-row">
+        <img src="css/images/avatarpro_web3.jpg?v=20260824_2253" alt="Michael Bertocchi">
+        <div class="avatar-text">
+            D&eacute;veloppeur autodidacte, j'ai commenc&eacute; &agrave; apprendre le developpement php dans les ann&eacute;es 2000, d'abord pour mon premier site personnel, un modeste journal en ligne (L'info est &agrave; vous) puis pour faire d'autres projets personnels divers et vari&eacute;s (roman participatif: au fil des mots, site de pr&eacute;vention...).<br />
+F&eacute;ru de nouvelles technologies, j'ai continu&eacute; mon apprentissage du PHP, Javascript, puis Flash et son language dynamique ActionScript d'abord via Macromedia Flash puis passant sous GNU/Linux en utilisant MTASC puis Haxe pour g&eacute;n&eacute;rer mes swf...<br />
 Mes divers projets et exp&eacute;riences m'ont permis petit &agrave; petit d'en faire aujourd'hui mon m&eacute;tier.<br />
 <br />
 Sur mon temps personnel, je cr&eacute;&eacute; des applications et jeux linux, &eacute;cris des articles pour le magazine Linux Pratique/Magazine, d&eacute;veloppe mon framework php opensource, mon site de pr&eacute;vention et d'autres projets opensource (dispo sur mon GitHub).<br />
@@ -212,145 +111,111 @@ Amateur de logiciel libre, vous avez pu m'entendre en tant qu'animateur du podca
 Je d&eacute;veloppe au quotidien avec des solutions libres comme Visual Studio Code, Godot le tout sous LMDE ou Kubuntu selon l'humeur du moment<br />
 <br />
 Et accessoirement: dans l'&eacute;quipe d'une jeune distribution GNU/Linux fran&ccedil;aise GLF OS, et membre actif des communaut&eacute;s Gaming Linux FR et TechCaf&eacute;<br />
-
-                    </p>
-
-                </div>
-
-
-            </div>
         </div>
     </div>
+</div>
+<h2 style="margin-top: 20px;">Sites</h2>
 
-</div><h2 class="">Sites</h2>
-
-
-<ul class="collection">
+<ul class="link-list">
 
     
-
-
-        <li class="collection-item avatar">
-            <img src="css/images/about_supercapote.png" alt="" class="circle">
-            <span class="title">Supercapote</span>
-            <p>Mon site de pr&eacute;vention<br />
-                <a href="https://supercapote.com" target="_blank" title="supercapote.com">supercapote.com</a>
-            </p>
-            <a href="https://supercapote.com" target="_blank" title="supercapote.com" class="secondary-content"><i class="material-icons">insert_link</i></a>
+        <li>
+            <img src="css/images/about_supercapote.png" alt="">
+            <div class="link-list-text">
+                <strong>Supercapote</strong>
+                <span>Mon site de pr&eacute;vention</span>
+            </div>
+            <a class="link-list-action" href="https://supercapote.com" target="_blank" title="supercapote.com">
+                supercapote.com <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"/><path d="M20 4L10 14"/><path d="M18 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h5"/></svg>            </a>
         </li>
 
-
-
     
-
-
-        <li class="collection-item avatar">
-            <img src="css/images/about_mkframework.png" alt="" class="circle">
-            <span class="title">MkFramework</span>
-            <p>Framework php opensource, r&eacute;trocompatible depuis 2009<br />
-                <a href="https://mkframework.com/" target="_blank" title="mkframework.com">mkframework.com</a>
-            </p>
-            <a href="https://mkframework.com/" target="_blank" title="mkframework.com" class="secondary-content"><i class="material-icons">insert_link</i></a>
+        <li>
+            <img src="css/images/about_mkframework.png" alt="">
+            <div class="link-list-text">
+                <strong>MkFramework</strong>
+                <span>Framework php opensource, r&eacute;trocompatible depuis 2009</span>
+            </div>
+            <a class="link-list-action" href="https://mkframework.com/" target="_blank" title="mkframework.com">
+                mkframework.com <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"/><path d="M20 4L10 14"/><path d="M18 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h5"/></svg>            </a>
         </li>
 
+    
+</ul><h2 style="margin-top: 20px;">Participations</h2>
 
+<ul class="link-list">
 
     
-</ul><h2 class="">Participations</h2>
-
-
-<ul class="collection">
-
-    
-
-
-        <li class="collection-item avatar">
-            <img src="css/images/about_linuxmag.png" alt="" class="circle">
-            <span class="title">Linux Magazine/Pratique</span>
-            <p>Le magazine o&ugrave; vous pouvez me lire<br />
-                <a href="https://boutique.ed-diamond.com/" target="_blank" title="boutique.ed-diamond.com">boutique.ed-diamond.com</a>
-            </p>
-            <a href="https://boutique.ed-diamond.com/" target="_blank" title="boutique.ed-diamond.com" class="secondary-content"><i class="material-icons">insert_link</i></a>
+        <li>
+            <img src="css/images/about_linuxmag.png" alt="">
+            <div class="link-list-text">
+                <strong>Linux Magazine/Pratique</strong>
+                <span>Le magazine o&ugrave; vous pouvez me lire</span>
+            </div>
+            <a class="link-list-action" href="https://boutique.ed-diamond.com/" target="_blank" title="boutique.ed-diamond.com">
+                boutique.ed-diamond.com <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"/><path d="M20 4L10 14"/><path d="M18 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h5"/></svg>            </a>
         </li>
 
-
-
     
-
-
-        <li class="collection-item avatar">
-            <img src="css/images/about_glf.png?v=20260824" alt="" class="circle">
-            <span class="title">Gaming Linux FR</span>
-            <p>Membre actif de la communaut&eacute; Gaming Linux FR<br />
-                <a href="https://www.gaminglinux.fr" target="_blank" title="www.gaminglinux.fr">www.gaminglinux.fr</a>
-            </p>
-            <a href="https://www.gaminglinux.fr" target="_blank" title="www.gaminglinux.fr" class="secondary-content"><i class="material-icons">insert_link</i></a>
+        <li>
+            <img src="css/images/about_glf.png?v=20260824" alt="">
+            <div class="link-list-text">
+                <strong>Gaming Linux FR</strong>
+                <span>Membre actif de la communaut&eacute; Gaming Linux FR</span>
+            </div>
+            <a class="link-list-action" href="https://www.gaminglinux.fr" target="_blank" title="www.gaminglinux.fr">
+                www.gaminglinux.fr <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"/><path d="M20 4L10 14"/><path d="M18 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h5"/></svg>            </a>
         </li>
 
-
-
     
-
-
-        <li class="collection-item avatar">
-            <img src="css/images/about_glfos.png?v=20260824" alt="" class="circle">
-            <span class="title">GLF OS</span>
-            <p>Dans l&#039;&eacute;quipe de la distribution GLF OS (bas&eacute;e sur NixOs)<br />
-                <a href="https://glfos.org/" target="_blank" title="glfos.org">glfos.org</a>
-            </p>
-            <a href="https://glfos.org/" target="_blank" title="glfos.org" class="secondary-content"><i class="material-icons">insert_link</i></a>
+        <li>
+            <img src="css/images/about_glfos.png?v=20260824" alt="">
+            <div class="link-list-text">
+                <strong>GLF OS</strong>
+                <span>Dans l&#039;&eacute;quipe de la distribution GNU/Linux GLF OS (bas&eacute;e sur NixOs)</span>
+            </div>
+            <a class="link-list-action" href="https://glfos.org/" target="_blank" title="glfos.org">
+                glfos.org <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"/><path d="M20 4L10 14"/><path d="M18 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h5"/></svg>            </a>
         </li>
 
-
-
     
-
-
-        <li class="collection-item avatar">
-            <img src="css/images/about_nipsource.png" alt="" class="circle">
-            <span class="title">NipSource</span>
-            <p>Notre ancien podcast sur l&#039; opensource<br />
-                <a href="https://nipcast.com/category/nipsource/" target="_blank" title="nipcast.com">nipcast.com</a>
-            </p>
-            <a href="https://nipcast.com/category/nipsource/" target="_blank" title="nipcast.com" class="secondary-content"><i class="material-icons">insert_link</i></a>
+        <li>
+            <img src="css/images/about_techcafe.png" alt="">
+            <div class="link-list-text">
+                <strong>TechCaf&eacute;</strong>
+                <span>Membre actif de la communaut&eacute; TecCaf&eacute;</span>
+            </div>
+            <a class="link-list-action" href="https://techcafe.fr/" target="_blank" title="techcafe.fr">
+                techcafe.fr <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"/><path d="M20 4L10 14"/><path d="M18 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h5"/></svg>            </a>
         </li>
 
+    
+</ul><h2 style="margin-top: 20px;">Anciens projets</h2>
 
+<ul class="link-list">
 
     
-
-
-        <li class="collection-item avatar">
-            <img src="css/images/about_techcafe.png" alt="" class="circle">
-            <span class="title">TechCaf&eacute;</span>
-            <p>Membre actif de la communaut&eacute; TecCaf&eacute;<br />
-                <a href="https://techcafe.fr/" target="_blank" title="techcafe.fr">techcafe.fr</a>
-            </p>
-            <a href="https://techcafe.fr/" target="_blank" title="techcafe.fr" class="secondary-content"><i class="material-icons">insert_link</i></a>
+        <li>
+            <img src="css/images/about_nipsource.png" alt="">
+            <div class="link-list-text">
+                <strong>NipSource</strong>
+                <span>Notre ancien podcast sur l&#039; opensource</span>
+            </div>
+            <a class="link-list-action" href="https://nipcast.com/category/nipsource/" target="_blank" title="nipcast.com">
+                nipcast.com <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"/><path d="M20 4L10 14"/><path d="M18 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h5"/></svg>            </a>
         </li>
-
-
 
     
 </ul>
     </div>
-
   </div>
 
+  <footer class="site-footer">
+    <div class="container">dupot.org &mdash; jeux &amp; applications opensource</div>
+  </footer>
 
-
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-  <script>
-    (function($) {
-      $(function() {
-        $('.sidenav').sidenav();
-      }); // end of document ready
-    })(jQuery);
-  </script>
-
+  <script src="js/nav.js"></script>
+  <script src="js/gallery.js"></script>
 
 </body>
 

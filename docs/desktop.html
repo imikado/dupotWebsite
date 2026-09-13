@@ -7,8 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dupot.org: Arr&ecirc;ter de tourner autour...</title>
 
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/theme.css">
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZVG5R211FM"></script>
   <script>
@@ -21,422 +24,126 @@
 
     gtag('config', 'G-ZVG5R211FM');
   </script>
-  <style>
-    .logo {
-      background: url('css/images/logo.png') no-repeat 0px center;
-      padding-left: 55px;
-    }
-
-
-    #popup {
-      position: absolute;
-      background: #FFF;
-      border: 3px solid #444;
-      top: 10px;
-      left: 40px;
-    }
-
-    #popup a {
-      color: white;
-    }
-
-    #popup p {
-      background: #444;
-      margin: 0px;
-      text-align: right;
-      padding-right: 3px;
-    }
-
-    .main {
-      min-height: 500px;
-    }
-
-    .github {
-      background: url("css/images/GitHub-Mark-32px.png") no-repeat center;
-      padding: 0px 24px;
-    }
-
-    .twitter {
-      background: url("css/images/Twitter-social-icons-circle-blue.png") no-repeat center;
-      padding: 0px 24px;
-    }
-
-    .twitter-repo {
-      background: url("css/images/Twitter-social-icons-circle-white.png") no-repeat 10px;
-      padding-left: 50px;
-    }
-
-    .github-repo {
-      background: url("css/images/GitHub-Mark-32px.png") no-repeat 10px #0277bd;
-      padding-left: 50px;
-    }
-
-    .itchio {
-      background: url("css/images/itchio.png") no-repeat center;
-      padding: 0px 24px;
-    }
-
-    .buttons {
-      text-align: center;
-    }
-
-    .is-justified {
-      text-align: justify;
-    }
-
-    .icon-td {
-      width: 80px;
-    }
-
-    .content-centered {
-      text-align: center;
-    }
-
-    body {
-      background: #fff3e0;
-    }
-
-    h1,
-    h2 {
-      color: #e65100;
-    }
-  </style>
 </head>
 
 <body>
 
-  <nav>
-    <div class="nav-wrapper white logo">
-        <a href="#" class="brand-logo">&nbsp;</a>
+  <nav class="site-nav">
+    <div class="nav-inner">
+        <a href="index.html" class="brand"><span class="brand-mark">d</span>uPot.org</a>
 
+        <ul class="nav-links">
+                                            <li >
+                    <a  href="games.html">Jeux</a>
+                </li>
+                                            <li class="active">
+                    <a  href="desktop.html">Logiciels</a>
+                </li>
+                                            <li >
+                    <a  href="tutorials.html">Tutos</a>
+                </li>
+                                            <li >
+                    <a  href="project_article.html">Ressources d'articles</a>
+                </li>
+                                            <li >
+                    <a  href="resources.html">Librairies & co</a>
+                </li>
+                                            <li >
+                    <a  href="about.html">A propos</a>
+                </li>
+                                                    </ul>
 
-        <ul id="nav-mobile" class="sidenav" style="transform: translateX(-105%);">
+        <div class="nav-social">
+                                                                                                                                                                                                                        <a class="nav-icon" title="Github" target="_blank" href="https://github.com/imikado"><img src="css/images/GitHub-Mark-Light-32px.png" alt="Github"></a>
+                                                                <a class="nav-icon" title="Itchio" target="_blank" href="https://dupot-org.itch.io/"><img src="css/images/itchio-textless-white.png" alt="Itchio"></a>
+                                    </div>
 
-                            <li ><a href="games.html">Jeux</a></li>
-                            <li class="active" ><a href="desktop.html">Logiciels</a></li>
-                            <li ><a href="tutorials.html">Tutos</a></li>
-                            <li ><a href="project_article.html">Ressources d'articles</a></li>
-                            <li ><a href="resources.html">Librairies & co</a></li>
-                            <li ><a href="about.html">A propos</a></li>
-                            <li ><a href="https://github.com/imikado">Github</a></li>
-                            <li ><a href="https://dupot-org.itch.io/">Itchio</a></li>
-            
+        <button type="button" class="nav-toggle" aria-label="Menu" aria-expanded="false">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>        </button>
+    </div>
 
-        </ul>
-
-
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-            
-                <li >
-                                            <a class="orange-text text-darken-4" href="games.html">Jeux</a>
-
-                                    </li>
-
-            
-                <li class="active" >
-                                            <a class="orange-text text-darken-4" href="desktop.html">Logiciels</a>
-
-                                    </li>
-
-            
-                <li >
-                                            <a class="orange-text text-darken-4" href="tutorials.html">Tutos</a>
-
-                                    </li>
-
-            
-                <li >
-                                            <a class="orange-text text-darken-4" href="project_article.html">Ressources d'articles</a>
-
-                                    </li>
-
-            
-                <li >
-                                            <a class="orange-text text-darken-4" href="resources.html">Librairies & co</a>
-
-                                    </li>
-
-            
-                <li >
-                                            <a class="orange-text text-darken-4" href="about.html">A propos</a>
-
-                                    </li>
-
-            
-                <li >
-                                            <a class="github" target="_blank" href="https://github.com/imikado">&nbsp;</a>
-                                    </li>
-
-            
-                <li >
-                                            <a class="itchio" target="_blank" href="https://dupot-org.itch.io/">&nbsp;</a>
-                                    </li>
-
-            
-        </ul>
-
-        <a style="float:right" href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons orange-text">menu</i></a>
-
-
-
+    <div class="nav-mobile">
+        <ul>
+                            <li >
+                    <a  href="games.html">Jeux</a>
+                </li>
+                            <li class="active">
+                    <a  href="desktop.html">Logiciels</a>
+                </li>
+                            <li >
+                    <a  href="tutorials.html">Tutos</a>
+                </li>
+                            <li >
+                    <a  href="project_article.html">Ressources d'articles</a>
+                </li>
+                            <li >
+                    <a  href="resources.html">Librairies & co</a>
+                </li>
+                            <li >
+                    <a  href="about.html">A propos</a>
+                </li>
+                            <li >
+                    <a  href="https://github.com/imikado">Github</a>
+                </li>
+                            <li >
+                    <a target="_blank" href="https://dupot-org.itch.io/">Itchio</a>
+                </li>
+                    </ul>
     </div>
 </nav>
-  <div class="header">&nbsp;</div>
 
   <div class="main">
     <div class="container">
 
-
-      <style>
-    .modalContent ul li {
-
-        list-style: square;
-        list-style-position: inside;
-        margin-left: 20px;
-    }
-
-    .logos {
-        margin-top: 30px;
-    }
-
-    .block {
-        height: 180px;
-    }
-</style>
-
-<div class="row">
+      <div class="grid grid-3">
 
     
-
-        <div class="col s12 m4">
-            <div class="card">
+                    <a class="card card-link" href="app_dupotDevTools.html">
                 <div class="card-image">
-                    <img src="images/dupotDevTools_icon.jpg?v=20260824_2225" alt="Placeholder image">
+                    <img src="images/dupotDevTools_icon.jpg?v=20260824_2225" alt="Dupot dev tools">
                 </div>
-
-
-                <div class="card-content">
-                                            <a class="waves-effect waves-light card-title modal-trigger" href="#modal0">Dupot dev tools<i class="material-icons right">more_vert</i></a>
-                                    </div>
-                <div class="card-reveal">
-                    <span class="card-title orange-text text-darken-4">Dupot dev tools<i class="material-icons right">close</i></span>
-
-
-                    <p class="is-justified block">Le couteau suisse du dev</p>
-
-                    <p class="content-centered logos">
-
-                        
-                            <a target="_blank" href="https://github.com/imikado/dupotDevTools"><img src="css/images/button-github.png" /></a>
-
-                                                
-                        
-                        
-                        
-                                            </p>
-
-
+                <div class="card-body">
+                    <h3 class="card-title">Dupot dev tools</h3>
+                    <p>Le couteau suisse du dev</p>
+                    <span class="card-more">En savoir plus <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
                 </div>
-
-
-
-
-            </div>
-        </div>
-
-
+            </a>
+        
     
-
-        <div class="col s12 m4">
-            <div class="card">
+                    <a class="card card-link" href="app_dupotEasyFlatpak.html">
                 <div class="card-image">
-                    <img src="images/dupotEasyFlatpak_icon.jpg?v=20260824_2225" alt="Placeholder image">
+                    <img src="images/dupotEasyFlatpak_icon.jpg?v=20260824_2225" alt="Easy Flatpak">
                 </div>
-
-
-                <div class="card-content">
-                                            <a class="waves-effect waves-light card-title modal-trigger" href="#modal1">Dupot Easy Flatpak<i class="material-icons right">more_vert</i></a>
-                                    </div>
-                <div class="card-reveal">
-                    <span class="card-title orange-text text-darken-4">Dupot Easy Flatpak<i class="material-icons right">close</i></span>
-
-
-                    <p class="is-justified block">Un store graphique pour installer vos flatpak</p>
-
-                    <p class="content-centered logos">
-
-                        
-                            <a target="_blank" href="https://github.com/imikado/dupotEasyFlatpak"><img src="css/images/button-github.png" /></a>
-
-                                                
-                        
-                        
-                                                    <a href="https://flathub.org/apps/org.dupot.easyflatpak" target="_blank"><img src="css/images/flathub-badge-en.png" /></a>
-                        
-                                            </p>
-
-
+                <div class="card-body">
+                    <h3 class="card-title">Easy Flatpak</h3>
+                    <p>Un store graphique pour installer vos flatpak</p>
+                    <span class="card-more">En savoir plus <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
                 </div>
-
-
-
-
-            </div>
-        </div>
-
-
+            </a>
+        
     
-
-        <div class="col s12 m4">
-            <div class="card">
+                    <a class="card card-link" href="app_dupotFileBrowser.html">
                 <div class="card-image">
-                    <img src="images/dupotFileBrowser_icon.jpg?v=20260824_2225" alt="Placeholder image">
+                    <img src="images/dupotFileBrowser_icon.jpg?v=20260824_2225" alt="Dupot File browser">
                 </div>
-
-
-                <div class="card-content">
-                                            <a class="waves-effect waves-light card-title modal-trigger" href="#modal2">Dupot File browser<i class="material-icons right">more_vert</i></a>
-                                    </div>
-                <div class="card-reveal">
-                    <span class="card-title orange-text text-darken-4">Dupot File browser<i class="material-icons right">close</i></span>
-
-
-                    <p class="is-justified block">Un navigateur de fichier bien différent</p>
-
-                    <p class="content-centered logos">
-
-                        
-                            <a target="_blank" href="https://github.com/imikado/dupotFileBrowser"><img src="css/images/button-github.png" /></a>
-
-                                                
-                        
-                        
-                        
-                                            </p>
-
-
+                <div class="card-body">
+                    <h3 class="card-title">Dupot File browser</h3>
+                    <p>Un navigateur de fichier bien différent</p>
+                    <span class="card-more">En savoir plus <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
                 </div>
-
-
-
-
-            </div>
-        </div>
-
-
+            </a>
+        
     </div>
 
-
-            <div id="modal0" class="modal">
-            <div class="modal-content modalContent">
-                <h2>Dupot-dev-tools</h2>
-<p>Ce projet est le couteau suisse du développeur, il vous propose des petits outils pratique dans votre quotidien.</p>
-<h3>Screenshots</h3>
-<p><img src="/images/screenshots/dupotDevTools/database_section.png?v=20260824" alt="image" />
-<img src="/images/screenshots/dupotDevTools/sqlviewer_new_connection.png?v=20260824" alt="image" />
-<img src="/images/screenshots/dupotDevTools/sqlviewer_add_table.png?v=20260824" alt="image" />
-<img src="/images/screenshots/dupotDevTools/sqlviewer_joins.png?v=20260824" alt="image" />
-<img src="/images/screenshots/dupotDevTools/sqlviewer_request.png?v=20260824" alt="image" /></p>            </div>
-            <div class="modal-footer">
-
-                                    <p class="content-centered">
-                        <a class="github-repo btn waves-effect waves-ligh" target="_blank" href="https://github.com/imikado/dupotDevTools">Projet Github</a>
-                    </p>
-                                
-
-                
-                
-                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fermer</a>
-            </div>
-        </div>
-
-    
-
-            <div id="modal1" class="modal">
-            <div class="modal-content modalContent">
-                <h2>Dupot Easy Flatpak</h2>
-<p>Ce projet est tout simplement un store graphique pour installer sous GNU/Linux vos applications Flatpak</p>
-<p>Il inclue pour certaines applications qui le nécessite un accompagnement afin de paramétrer des droits supplémentaires pour certaines d'ente elles.</p>
-<p>Par exemple pour certaines applications de jeux comme Steam ou Heroic games launher, il demande le chemin où vous stoquer vos jeux afin d'ajouter l'autorisation d'accès à celle-ci.</p>
-<h3>Screenshots</h3>
-<p><img src="/images/screenshots/dupotEasyFlatpak/Screenshot_home.png?v=20260515" alt="image" />
-<img src="/images/screenshots/dupotEasyFlatpak/Screenshot_category.png?v=20260515" alt="image" />
-<img src="/images/screenshots/dupotEasyFlatpak/Screenshot_search.png?v=20260515" alt="image" />
-<img src="/images/screenshots/dupotEasyFlatpak/Screenshot_application_steam.png?v=20260515" alt="image" />
-<img src="/images/screenshots/dupotEasyFlatpak/Screenshot_installed_applications.png?v=20260515" alt="image" /></p>            </div>
-            <div class="modal-footer">
-
-                                    <p class="content-centered">
-                        <a class="github-repo btn waves-effect waves-ligh" target="_blank" href="https://github.com/imikado/dupotEasyFlatpak">Projet Github</a>
-                    </p>
-                                
-
-                                    <p class="content-centered">
-                        <a href="https://flathub.org/apps/org.dupot.easyflatpak" target="_blank"><img src="css/images/flathub-badge-en.png" /></a>
-
-                    </p>
-                
-                
-                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fermer</a>
-            </div>
-        </div>
-
-    
-
-            <div id="modal2" class="modal">
-            <div class="modal-content modalContent">
-                <h2>Dupot file browser</h2>
-<p>Un navigateur de fichier linux différent</p>
-<h3>Screenshots</h3>
-<p><img src="/images/screenshots/dupotFileBrowser/homepage.png?v=20260824" alt="image" />
-<img src="/images/screenshots/dupotFileBrowser/columns_navigation.png?v=20260824" alt="image" />
-<img src="/images/screenshots/dupotFileBrowser/folder_menu.png?v=20260824" alt="image" />
-<img src="/images/screenshots/dupotFileBrowser/path_editable.png?v=20260824" alt="image" />
-<img src="/images/screenshots/dupotFileBrowser/add_color.png?v=20260824" alt="image" />
-<img src="/images/screenshots/dupotFileBrowser/file_properties.png?v=20260824" alt="image" />
-<img src="/images/screenshots/dupotFileBrowser/display_mode_list.png?v=20260824" alt="image" />
-<img src="/images/screenshots/dupotFileBrowser/display_mode_details.png?v=20260824" alt="image" />
-<img src="/images/screenshots/dupotFileBrowser/display_mode_icons.png?v=20260824" alt="image" />
-<img src="/images/screenshots/dupotFileBrowser/parameters.png?v=20260824" alt="image" /></p>            </div>
-            <div class="modal-footer">
-
-                                    <p class="content-centered">
-                        <a class="github-repo btn waves-effect waves-ligh" target="_blank" href="https://github.com/imikado/dupotFileBrowser">Projet Github</a>
-                    </p>
-                                
-
-                
-                
-                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fermer</a>
-            </div>
-        </div>
-
-    
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.modal');
-        var instances = M.Modal.init(elems, []);
-    });
-</script>
     </div>
-
   </div>
 
+  <footer class="site-footer">
+    <div class="container">dupot.org &mdash; jeux &amp; applications opensource</div>
+  </footer>
 
-
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-  <script>
-    (function($) {
-      $(function() {
-        $('.sidenav').sidenav();
-      }); // end of document ready
-    })(jQuery);
-  </script>
-
+  <script src="js/nav.js"></script>
+  <script src="js/gallery.js"></script>
 
 </body>
 

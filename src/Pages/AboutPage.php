@@ -5,6 +5,7 @@ namespace MyWebsite\Pages;
 use Dupot\StaticGenerationFramework\Page\PageAbstract;
 use Dupot\StaticGenerationFramework\Page\PageInterface;
 use MyWebsite\Components\AboutContributionComponent;
+use MyWebsite\Components\AboutPreviousContributionComponent;
 use MyWebsite\Components\AboutIntroComponent;
 use MyWebsite\Components\AboutSiteListComponent;
 use MyWebsite\Components\NavComponent;
@@ -28,7 +29,9 @@ class AboutPage extends PageAbstract implements PageInterface
                 'contentList' => [
                     new AboutIntroComponent(),
                     new AboutSiteListComponent(),
-                    new AboutContributionComponent()
+                    new AboutContributionComponent(),
+                    new AboutPreviousContributionComponent()
+
                 ]
             ]
         );

@@ -40,20 +40,13 @@ class AboutContributionComponent extends ComponentAbstract implements ComponentI
             array(
                 self::ABOUT_IMAGE => 'css/images/about_glfos.png?v=20260824',
                 self::ABOUT_TITLE => 'GLF OS',
-                self::ABOUT_BODY => 'Dans l\'équipe de la distribution GLF OS (basée sur NixOs)',
+                self::ABOUT_BODY => 'Dans l\'équipe de la distribution GNU/Linux GLF OS (basée sur NixOs)',
                 self::ABOUT_LINK => 'https://glfos.org/',
                 self::ABOUT_LINK_LABEL => 'glfos.org',
 
             ),
 
-            array(
-                self::ABOUT_IMAGE => 'css/images/about_nipsource.png',
-                self::ABOUT_TITLE => 'NipSource',
-                self::ABOUT_BODY => 'Notre ancien podcast sur l\' opensource',
-                self::ABOUT_LINK => 'https://nipcast.com/category/nipsource/',
-                self::ABOUT_LINK_LABEL => 'nipcast.com',
 
-            ),
 
             array(
                 self::ABOUT_IMAGE => 'css/images/about_techcafe.png',

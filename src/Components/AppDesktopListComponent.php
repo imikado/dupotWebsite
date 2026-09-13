@@ -11,10 +11,9 @@ use MyWebsite\Components\Shared\MobileCardListComponent;
 class AppDesktopListComponent extends ComponentAbstract implements ComponentInterface
 {
 
-    public function render(): string
+    public static function loadList()
     {
         $dataApi = new DataApi(__DIR__ . '/../data/AppDesktopList.json');
-
         $markdownApi = new MarkdownApi();
 
         $appDesktopList = $dataApi->findAll();
@@ -24,8 +23,13 @@ class AppDesktopListComponent extends ComponentAbstract implements ComponentInte
             }
         }
 
+        return $appDesktopList;
+    }
+
+    public function render(): string
+    {
         $props = (object)[
-            'contentList' => $appDesktopList
+            'contentList' => self::loadList()
         ];
 
         $component = new MobileCardListComponent($props);

@@ -1,5 +1,6 @@
 [
     {
+        "id": "dupotDevTools",
         "icon": "dupotDevTools_icon.jpg?v=20260824_2225",
         "title": "Dupot dev tools",
         "body": "Le couteau suisse du dev",
@@ -9,8 +10,9 @@
         }
     },
     {
+        "id": "dupotEasyFlatpak",
         "icon": "dupotEasyFlatpak_icon.jpg?v=20260824_2225",
-        "title": "Dupot Easy Flatpak",
+        "title": "Easy Flatpak",
         "body": "Un store graphique pour installer vos flatpak",
         "github": "https://github.com/imikado/dupotEasyFlatpak",
         "flathub": "https://flathub.org/apps/org.dupot.easyflatpak",
@@ -19,6 +21,7 @@
         }
     },
     {
+        "id": "dupotFileBrowser",
         "icon": "dupotFileBrowser_icon.jpg?v=20260824_2225",
         "title": "Dupot File browser",
         "body": "Un navigateur de fichier bien différent",

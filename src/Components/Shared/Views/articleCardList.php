@@ -1,43 +1,20 @@
-<style>
-    .modalContent ul li {
-
-        list-style: square;
-        list-style-position: inside;
-        margin-left: 20px;
-    }
-
-    .logos {
-        margin-top: 30px;
-    }
-
-    .block {
-        height: 180px;
-    }
-</style>
-
-
 <?php
 
+use MyWebsite\Apis\IconApi;
 use MyWebsite\Pages\TutorialPage;
 
-foreach ($this->paramList['contentList'] as $i => $content) : ?>
+?>
+<div class="grid grid-2">
 
+    <?php foreach ($this->paramList['contentList'] as $content) : ?>
 
-
-    <div class="row">
-
-        <div class="card darken-1">
-            <div class="card-content">
-                <span class="card-title"><?php echo $content->title ?></span>
+        <a class="card card-link" href="<?php echo TutorialPage::getFilenameById($content->id) ?>">
+            <div class="card-body">
+                <h3 class="card-title"><?php echo $content->title ?></h3>
                 <p><?php echo $content->header ?></p>
+                <span class="card-more">Lire la suite <?php echo IconApi::render('arrow-right') ?></span>
             </div>
-            <div class="card-action">
-                <a href="<?php echo TutorialPage::getFilenameById($content->id) ?>">Lire la suite...</a>
-            </div>
-        </div>
-    </div>
+        </a>
 
-
-
-
-<?php endforeach; ?>
+    <?php endforeach; ?>
+</div>

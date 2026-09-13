@@ -7,6 +7,7 @@ use Dupot\StaticGenerationFramework\Page\PageInterface;
 use MyWebsite\Components\GameListComponent;
 use MyWebsite\Components\HomeBannerComponent;
 use MyWebsite\Components\NavComponent;
+use MyWebsite\Components\SectionTitleComponent;
 
 class HomePage extends PageAbstract implements PageInterface
 {
@@ -25,6 +26,7 @@ class HomePage extends PageAbstract implements PageInterface
                 'nav' => new NavComponent($this->getFilename()),
                 'contentList' => [
                     new HomeBannerComponent(),
+                    new SectionTitleComponent('Jeux en vedette', 'Voir tous les jeux', GamesPage::FILENAME),
                     new GameListComponent()
                 ]
             ]

@@ -8,10 +8,10 @@ Par exemple pour certaines applications de jeux comme Steam ou Heroic games laun
 
 ### Screenshots
 
-![image](/images/screenshots/dupotEasyFlatpak/Screenshot_home.png?v=20260515)
-![image](/images/screenshots/dupotEasyFlatpak/Screenshot_category.png?v=20260515)
-![image](/images/screenshots/dupotEasyFlatpak/Screenshot_search.png?v=20260515)
-![image](/images/screenshots/dupotEasyFlatpak/Screenshot_application_steam.png?v=20260515)
-![image](/images/screenshots/dupotEasyFlatpak/Screenshot_installed_applications.png?v=20260515)
+![image](/images/screenshots/apps/dupotEasyFlatpak/Screenshot_home.png?v=20260515)
+![image](/images/screenshots/apps/dupotEasyFlatpak/Screenshot_category.png?v=20260515)
+![image](/images/screenshots/apps/dupotEasyFlatpak/Screenshot_search.png?v=20260515)
+![image](/images/screenshots/apps/dupotEasyFlatpak/Screenshot_application_steam.png?v=20260515)
+![image](/images/screenshots/apps/dupotEasyFlatpak/Screenshot_installed_applications.png?v=20260515)
 
 

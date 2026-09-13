@@ -1,43 +1,50 @@
-<nav>
-    <div class="nav-wrapper white logo">
-        <a href="#" class="brand-logo">&nbsp;</a>
+<?php
 
+use MyWebsite\Apis\IconApi;
 
-        <ul id="nav-mobile" class="sidenav" style="transform: translateX(-105%);">
+$linkList = $this->paramList['linkList'];
+$pageSelected = $this->paramList['pageSelected'];
 
-            <?php foreach ($this->paramList['linkList'] as $label => $link) : ?>
-                <li <?php if ($link == $this->paramList['pageSelected']) : ?>class="active" <?php endif; ?>><a href="<?php echo $link ?>"><?php echo $label ?></a></li>
-            <?php endforeach; ?>
+$externalLabels = ['Itchio'];
+$iconOnlyLabels = ['Github', 'Itchio'];
+$socialIcons = [
+    'Github' => 'css/images/GitHub-Mark-Light-32px.png',
+    'Itchio' => 'css/images/itchio-textless-white.png',
+];
+?>
+<nav class="site-nav">
+    <div class="nav-inner">
+        <a href="index.html" class="brand"><span class="brand-mark">d</span>uPot.org</a>
 
-
-        </ul>
-
-
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <?php foreach ($this->paramList['linkList'] as $label => $link) : ?>
-
-                <li <?php if ($link == $this->paramList['pageSelected']) : ?>class="active" <?php endif; ?>>
-                    <?php if ($label == 'Github') : ?>
-                        <a class="github" target="_blank" href="<?php echo $link ?>">&nbsp;</a>
-                    <?php elseif ($label == 'Twitter') : ?>
-                        <a class="twitter" target="_blank" href="<?php echo $link ?>">&nbsp;</a>
-                    <?php elseif ($label == 'Github') : ?>
-                        <a class="github" target="_blank" href="<?php echo $link ?>">&nbsp;</a>
-                    <?php elseif ($label == 'Itchio') : ?>
-                        <a class="itchio" target="_blank" href="<?php echo $link ?>">&nbsp;</a>
-                    <?php else : ?>
-                        <a class="orange-text text-darken-4" href="<?php echo $link ?>"><?php echo $label ?></a>
-
-                    <?php endif; ?>
+        <ul class="nav-links">
+            <?php foreach ($linkList as $label => $link) : ?>
+                <?php if (in_array($label, $iconOnlyLabels)) continue; ?>
+                <li <?php if ($link == $pageSelected) : ?>class="active"<?php endif; ?>>
+                    <a <?php if (in_array($label, $externalLabels)) : ?>target="_blank"<?php endif; ?> href="<?php echo $link ?>"><?php echo $label ?></a>
                 </li>
-
             <?php endforeach; ?>
-
         </ul>
 
-        <a style="float:right" href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons orange-text">menu</i></a>
+        <div class="nav-social">
+            <?php foreach ($linkList as $label => $link) : ?>
+                <?php if (isset($socialIcons[$label])) : ?>
+                    <a class="nav-icon" title="<?php echo $label ?>" target="_blank" href="<?php echo $link ?>"><img src="<?php echo $socialIcons[$label] ?>" alt="<?php echo $label ?>"></a>
+                <?php endif; ?>
+            <?php endforeach; ?>
+        </div>
 
+        <button type="button" class="nav-toggle" aria-label="Menu" aria-expanded="false">
+            <?php echo IconApi::render('menu') ?>
+        </button>
+    </div>
 
-
+    <div class="nav-mobile">
+        <ul>
+            <?php foreach ($linkList as $label => $link) : ?>
+                <li <?php if ($link == $pageSelected) : ?>class="active"<?php endif; ?>>
+                    <a <?php if (in_array($label, $externalLabels)) : ?>target="_blank"<?php endif; ?> href="<?php echo $link ?>"><?php echo $label ?></a>
+                </li>
+            <?php endforeach; ?>
+        </ul>
     </div>
 </nav>

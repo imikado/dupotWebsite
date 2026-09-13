@@ -1,22 +1,23 @@
-<h2 class=""><?php echo $this->paramList['title'] ?></h2>
+<?php
 
+use MyWebsite\Apis\IconApi;
+?>
+<h2 style="margin-top: 20px;"><?php echo $this->paramList['title'] ?></h2>
 
-<ul class="collection">
+<ul class="link-list">
 
     <?php foreach ($this->paramList['contentList'] as $content) : ?>
 
-
-
-        <li class="collection-item avatar">
-            <img src="<?php echo $content['image'] ?>" alt="" class="circle">
-            <span class="title"><?php echo $content['title'] ?></span>
-            <p><?php echo $content['body'] ?><br />
-                <a href="<?php echo $content['link'] ?>" target="_blank" title="<?php echo $content['link_label'] ?>"><?php echo $content['link_label'] ?></a>
-            </p>
-            <a href="<?php echo $content['link'] ?>" target="_blank" title="<?php echo $content['link_label'] ?>" class="secondary-content"><i class="material-icons">insert_link</i></a>
+        <li>
+            <img src="<?php echo $content['image'] ?>" alt="">
+            <div class="link-list-text">
+                <strong><?php echo $content['title'] ?></strong>
+                <span><?php echo $content['body'] ?></span>
+            </div>
+            <a class="link-list-action" href="<?php echo $content['link'] ?>" target="_blank" title="<?php echo $content['link_label'] ?>">
+                <?php echo $content['link_label'] ?> <?php echo IconApi::render('link-external') ?>
+            </a>
         </li>
-
-
 
     <?php endforeach; ?>
 
