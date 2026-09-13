@@ -4,6 +4,7 @@ namespace MyWebsite\Pages;
 
 use Dupot\StaticGenerationFramework\Page\PageAbstract;
 use Dupot\StaticGenerationFramework\Page\PageInterface;
+use MyWebsite\Components\AppDesktopListComponent;
 use MyWebsite\Components\GameListComponent;
 use MyWebsite\Components\HomeBannerComponent;
 use MyWebsite\Components\NavComponent;
@@ -26,8 +27,10 @@ class HomePage extends PageAbstract implements PageInterface
                 'nav' => new NavComponent($this->getFilename()),
                 'contentList' => [
                     new HomeBannerComponent(),
-                    new SectionTitleComponent('Jeux en vedette', 'Voir tous les jeux', GamesPage::FILENAME),
-                    new GameListComponent()
+                    new SectionTitleComponent('Derniers Jeux', 'Voir tous les jeux', GamesPage::FILENAME),
+                    new GameListComponent(),
+                    new SectionTitleComponent('Dernières applications', 'Voir toutes les applications', AppsDestkopPage::FILENAME),
+                    new AppDesktopListComponent()
                 ]
             ]
         );
