@@ -56,7 +56,7 @@
         <a href="https://dupot-org.itch.io/" target="_blank">itch.io</a>
       </nav>
     </div>
-    <div class="container footer-bottom">&copy; <?php echo date('Y') ?> dupot.org &mdash; code source disponible sur GitHub</div>
+    <div class="container footer-bottom">&copy; <?php echo date('Y') ?> dupot.org &mdash; site généré avec <a href="https://github.com/imikado/dupotStaticGenerationFramework" target="_blank">dupot/static-generation-framework</a></div>
   </footer>
 
   <script src="js/nav.js"></script>
