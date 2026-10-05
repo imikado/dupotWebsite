@@ -36,7 +36,7 @@
                                             <li >
                     <a  href="games.html">Jeux</a>
                 </li>
-                                            <li class="active">
+                                            <li >
                     <a  href="desktop.html">Logiciels</a>
                 </li>
                                             <li >
@@ -45,7 +45,7 @@
                                             <li >
                     <a  href="project_article.html">Ressources d'articles</a>
                 </li>
-                                            <li >
+                                            <li class="active">
                     <a  href="resources.html">Librairies & co</a>
                 </li>
                                             <li >
@@ -67,7 +67,7 @@
                             <li >
                     <a  href="games.html">Jeux</a>
                 </li>
-                            <li class="active">
+                            <li >
                     <a  href="desktop.html">Logiciels</a>
                 </li>
                             <li >
@@ -76,7 +76,7 @@
                             <li >
                     <a  href="project_article.html">Ressources d'articles</a>
                 </li>
-                            <li >
+                            <li class="active">
                     <a  href="resources.html">Librairies & co</a>
                 </li>
                             <li >
@@ -95,25 +95,25 @@
   <div class="main">
     <div class="container">
 
-      <a class="back-link" href="desktop.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>Logiciels</a>
+      <a class="back-link" href="resources.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>Librairies & co</a>
 
-<div class="project-hero" style="--cover: url('/images/dupotEasyFlatpak_icon.jpg?v=20260824_2225')">
-    <img class="project-icon" src="images/dupotEasyFlatpak_icon.jpg?v=20260824_2225" alt="Easy Flatpak">
+<div class="project-hero" style="--cover: url('/images/dupotStaticGeneration_icon.png')">
+    <img class="project-icon" src="images/dupotStaticGeneration_icon.png" alt="Dupot static-generation-framework">
 
     <div class="project-hero-text">
-        <span class="chip">Application opensource</span>
-        <h1>Easy Flatpak</h1>
-        <p class="project-lead">La logithèque Flatpak simple et efficace : trouvez, installez et configurez vos applications Linux en quelques clics.</p>
+        <span class="chip">Librairie opensource</span>
+        <h1>Dupot static-generation-framework</h1>
+        <p class="project-lead">Générez des sites statiques en PHP pur : pas de moteur de template, pas de pipeline de build, zéro dépendance. Le framework qui propulse ce site !</p>
 
         <div class="project-links">
 
-                            <a target="_blank" href="https://github.com/imikado/dupotEasyFlatpak"><img src="css/images/button-github.png" alt="Disponible sur GitHub" /></a>
+                            <a target="_blank" href="https://github.com/imikado/dupotStaticGenerationFramework"><img src="css/images/button-github.png" alt="Disponible sur GitHub" /></a>
+            
+                            <a class="btn btn-ghost btn-store" href="https://packagist.org/packages/dupot/static-generation-framework" target="_blank"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>Packagist</a>
             
             
             
             
-            
-                            <a href="https://flathub.org/apps/org.dupot.easyflatpak" target="_blank"><img src="css/images/flathub-badge-en.png" alt="Disponible sur Flathub" /></a>
             
             
         </div>
@@ -123,21 +123,44 @@
     <div class="card content-card">
         <div class="project-body">
             
-<p>Installer des applications sous GNU/Linux n'a jamais été aussi simple. Easy Flatpak est une logithèque graphique claire et rapide : parcourez les catégories, recherchez une application, installez-la en un clic et retrouvez en un coup d'œil tout ce qui est déjà installé.</p>
-<p>Là où Easy Flatpak se démarque, c'est dans l'accompagnement : certaines applications ont besoin de droits supplémentaires pour fonctionner correctement, et il vous guide pour les configurer sans passer par la ligne de commande.</p>
-<p>Par exemple, pour des lanceurs de jeux comme Steam ou Heroic Games Launcher, il vous demande où sont stockés vos jeux et ajoute automatiquement l'autorisation d'accès à ce dossier.</p>
+<p>Construisez des sites statiques en <strong>PHP pur</strong> : pas de moteur de template, pas de pipeline de build, aucune dépendance à l'exécution.</p>
+<p>Dupot static-generation-framework est une toute petite librairie PHP pour générer des sites HTML statiques, prêts à être hébergés sur GitHub Pages, GitLab Pages, Netlify, un bucket S3 ou n'importe quel serveur web. Vous écrivez vos pages et vos composants sous forme de petites classes PHP, vous les rendez avec de simples vues PHP, et le framework écrit le résultat en fichiers <code>.html</code>. C'est tout.</p>
+<p>D'ailleurs, le site que vous êtes en train de lire est généré avec !</p>
+<h3>Pourquoi l'utiliser ?</h3>
 <ul>
-<li>Navigation par catégories et recherche</li>
-<li>Installation et gestion de vos applications Flatpak</li>
-<li>Assistant de configuration des permissions pour les applications qui en ont besoin</li>
-<li>Gratuit, open source et disponible sur Flathub</li>
+<li><strong>Léger</strong> : une poignée de classes et zéro dépendance Composer</li>
+<li><strong>Du PHP, rien que du PHP</strong> : vos vues sont des fichiers <code>.php</code>, pas de nouveau langage de template à apprendre</li>
+<li><strong>Basé sur des composants</strong> : découpez votre site en briques réutilisables (en-tête, menu, cartes, pied de page…)</li>
+<li><strong>Une classe par page</strong> : chaque page connaît son nom de fichier et sait comment se rendre</li>
+<li><strong>Hébergeable partout</strong> : le résultat est du HTML pur, rapide et sécurisé, sans code serveur en production</li>
+<li><strong>Entièrement sous votre contrôle</strong> : pas de magie ni de conventions imposées, il s'intègre à n'importe quel workflow (scripts, CI, GitHub Actions…)</li>
 </ul>
-<h3>Screenshots</h3>
-<p><img src="/images/screenshots/apps/dupotEasyFlatpak/Screenshot_home.png?v=20260515" alt="image" />
-<img src="/images/screenshots/apps/dupotEasyFlatpak/Screenshot_category.png?v=20260515" alt="image" />
-<img src="/images/screenshots/apps/dupotEasyFlatpak/Screenshot_search.png?v=20260515" alt="image" />
-<img src="/images/screenshots/apps/dupotEasyFlatpak/Screenshot_application_steam.png?v=20260515" alt="image" />
-<img src="/images/screenshots/apps/dupotEasyFlatpak/Screenshot_installed_applications.png?v=20260515" alt="image" /></p>        </div>
+<h3>Installation</h3>
+<pre><code class="language-bash">composer require dupot/static-generation-framework</code></pre>
+<p>Pour démarrer encore plus vite, utilisez le projet squelette prêt à l'emploi : <a href="https://github.com/imikado/dupotStaticGenerationSkeleton">dupotStaticGenerationSkeleton</a>.</p>
+<h3>Exemple : une page</h3>
+<pre><code class="language-php">class IndexPage extends PageAbstract implements PageInterface
+{
+    public function getFilename(): string
+    {
+        return 'index.html';
+    }
+
+    public function render(): string
+    {
+        return $this-&gt;renderLayoutWithParamList(__DIR__ . '/layouts/default.php', [
+            'title'   =&gt; 'Bienvenue',
+            'menu'    =&gt; (new MenuComponent())-&gt;render(),
+            'content' =&gt; '&lt;h1&gt;Hello world&lt;/h1&gt;',
+        ]);
+    }
+}</code></pre>
+<p>Puis générez le site :</p>
+<pre><code class="language-php">foreach ([new IndexPage(), new AboutPage()] as $page) {
+    $page-&gt;generateTo(__DIR__ . '/docs');
+}</code></pre>
+<p>Votre site statique est dans <code>docs/</code> : commitez, poussez, vous êtes en ligne.</p>
+<p>Publié sous licence <strong>LGPL</strong>.</p>        </div>
     </div>
 
     </div>

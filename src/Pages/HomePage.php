@@ -8,6 +8,7 @@ use MyWebsite\Components\AppDesktopListComponent;
 use MyWebsite\Components\GameListComponent;
 use MyWebsite\Components\HomeBannerComponent;
 use MyWebsite\Components\NavComponent;
+use MyWebsite\Components\ResourcesListComponent;
 use MyWebsite\Components\SectionTitleComponent;
 
 class HomePage extends PageAbstract implements PageInterface
@@ -30,7 +31,9 @@ class HomePage extends PageAbstract implements PageInterface
                     new SectionTitleComponent('Derniers Jeux', 'Voir tous les jeux', GamesPage::FILENAME),
                     new GameListComponent(),
                     new SectionTitleComponent('Dernières applications', 'Voir toutes les applications', AppsDestkopPage::FILENAME),
-                    new AppDesktopListComponent()
+                    new AppDesktopListComponent(),
+                    new SectionTitleComponent('Librairies & outils pour développeurs', 'Voir toutes les librairies', ResourcesPage::FILENAME),
+                    new ResourcesListComponent()
                 ]
             ]
         );

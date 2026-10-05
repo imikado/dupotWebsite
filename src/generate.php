@@ -3,6 +3,7 @@
 use MyWebsite\Apis\DataApi;
 use MyWebsite\Components\AppDesktopListComponent;
 use MyWebsite\Components\GameListComponent;
+use MyWebsite\Components\ResourcesListComponent;
 use MyWebsite\Pages\AboutPage;
 use MyWebsite\Pages\AppsDestkopPage;
 use MyWebsite\Pages\AppsPage;
@@ -44,6 +45,10 @@ foreach (GameListComponent::loadList() as $gameLoop) {
 
 foreach (AppDesktopListComponent::loadList() as $appDesktopLoop) {
     $pagesList[] = new ProjectDetailPage($appDesktopLoop, 'Application opensource', AppsDestkopPage::FILENAME, 'Logiciels');
+}
+
+foreach (ResourcesListComponent::loadList() as $resourceLoop) {
+    $pagesList[] = new ProjectDetailPage($resourceLoop, 'Librairie opensource', ResourcesPage::FILENAME, 'Librairies & co');
 }
 
 $appMobileApi = new DataApi(__DIR__ . '/data/AppMobileList.json');

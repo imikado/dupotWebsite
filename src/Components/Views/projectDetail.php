@@ -26,6 +26,10 @@ $modalContent = isset($content->modalContent) ? preg_replace('#^\s*<h2[^>]*>.*?<
                 <a target="_blank" href="<?php echo $content->github ?>"><img src="css/images/button-github.png" alt="Disponible sur GitHub" /></a>
             <?php endif; ?>
 
+            <?php if (isset($content->packagist)) : ?>
+                <a class="btn btn-ghost btn-store" href="<?php echo $content->packagist ?>" target="_blank"><?php echo IconApi::render('package') ?>Packagist</a>
+            <?php endif; ?>
+
             <?php if (isset($content->demo)) : ?>
                 <a class="btn btn-primary" href="<?php echo $content->demo ?>" target="_blank">DEMO</a>
             <?php endif; ?>

@@ -25,7 +25,7 @@ class ResourcesPage extends PageAbstract implements PageInterface
             [
                 'nav' => new NavComponent($this->getFilename()),
                 'contentList' => [
-                    new PageHeaderComponent('Librairies & co', 'Frameworks, plugins et outils que j\'ai développés et que je partage librement.', 'Open source'),
+                    new PageHeaderComponent('Librairies & co', 'Des frameworks PHP légers et des plugins pour accélérer vos projets web et vos créations de jeux. Libres, documentés et prêts à l\'emploi.', 'Pour les développeurs · Open source'),
                     new ResourcesListComponent()
                 ]
             ]

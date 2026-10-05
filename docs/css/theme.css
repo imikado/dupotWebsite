@@ -24,6 +24,10 @@
     --accent-2-soft: rgba(124, 92, 255, .14);
     --accent-2-border: rgba(124, 92, 255, .4);
 
+    --accent-3: #2dd4a7;
+    --accent-3-soft: rgba(45, 212, 167, .13);
+    --accent-3-border: rgba(45, 212, 167, .4);
+
     --radius-s: 8px;
     --radius-m: 14px;
     --radius-l: 20px;
@@ -245,6 +249,12 @@ img {
 
 .grid-3 {
     grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 960px) {
+    .activity-grid.grid-3 {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 760px) {
@@ -689,6 +699,24 @@ body.nav-open .nav-mobile {
     box-shadow: 0 16px 36px -16px rgba(124, 92, 255, .35);
 }
 
+.activity-card.is-libs {
+    --glow: var(--accent-3-soft);
+}
+
+.activity-card.is-libs:hover {
+    border-color: var(--accent-3-border);
+    box-shadow: 0 16px 36px -16px rgba(45, 212, 167, .3);
+}
+
+.activity-card.is-libs .activity-icon {
+    background: var(--accent-3-soft);
+    color: var(--accent-3);
+}
+
+.activity-card.is-libs:hover .activity-arrow {
+    color: var(--accent-3);
+}
+
 .activity-card .activity-icon {
     display: inline-flex;
     align-items: center;
@@ -950,12 +978,36 @@ body.nav-open .nav-mobile {
 }
 
 .project-body pre {
-    background: var(--bg-elevated-2);
+    background: var(--bg);
     border: 1px solid var(--border);
     border-radius: var(--radius-s);
-    padding: 14px;
+    padding: 16px 18px;
     overflow-x: auto;
     text-align: left;
+    margin: 0 0 1.2em 0;
+}
+
+.project-body code {
+    font-family: ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, monospace;
+    font-size: .86em;
+}
+
+.project-body :not(pre) > code {
+    padding: 2px 6px;
+    border-radius: 5px;
+    background: var(--bg-elevated-2);
+    border: 1px solid var(--border);
+    color: var(--accent-strong);
+}
+
+.project-body pre code {
+    color: #c9d4df;
+    line-height: 1.55;
+}
+
+.project-body a {
+    text-decoration-color: var(--accent-border);
+    text-underline-offset: 3px;
 }
 
 .project-links {
@@ -1084,6 +1136,14 @@ body.nav-open .nav-mobile {
 .project-links img {
     height: 44px;
     display: block;
+}
+
+.project-links .btn-store {
+    height: 44px;
+    padding: 0 18px;
+    background: #000;
+    border-color: #3a3a3a;
+    font-size: .98rem;
 }
 
 /* -------------------------------------------------------------------------

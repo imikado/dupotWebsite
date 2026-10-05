@@ -50,6 +50,7 @@
       <nav class="footer-links" aria-label="Pied de page">
         <a href="<?php echo \MyWebsite\Pages\GamesPage::FILENAME ?>">Jeux</a>
         <a href="<?php echo \MyWebsite\Pages\AppsDestkopPage::FILENAME ?>">Logiciels</a>
+        <a href="<?php echo \MyWebsite\Pages\ResourcesPage::FILENAME ?>">Librairies</a>
         <a href="<?php echo \MyWebsite\Pages\TutorialListPage::FILENAME ?>">Tutos</a>
         <a href="<?php echo \MyWebsite\Pages\AboutPage::FILENAME ?>">A propos</a>
         <a href="https://github.com/imikado" target="_blank">GitHub</a>

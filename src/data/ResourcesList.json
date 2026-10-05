@@ -1,20 +1,34 @@
 [
     {
+        "id": "dupotStaticGenerationFramework",
         "icon": "dupotStaticGeneration_icon.png",
         "title": "Dupot static-generation-framework",
-        "body": "Framework de generation de site statique en php",
-        "github": "https://github.com/imikado/dupotStaticGenerationFramework"
+        "body": "Générez des sites statiques en PHP pur : pas de moteur de template, pas de pipeline de build, zéro dépendance. Le framework qui propulse ce site !",
+        "github": "https://github.com/imikado/dupotStaticGenerationFramework",
+        "packagist": "https://packagist.org/packages/dupot/static-generation-framework",
+        "modal": {
+            "src": "/data/content/dupotStaticGenerationFramework.md"
+        }
     },
     {
+        "id": "dupotStaticManagementFramework",
         "icon": "dupotStaticManagement_icon.png",
         "title": "Dupot static-management-framework",
-        "body": "Framework d'administration pour générer des site statiques en php",
-        "github": "https://github.com/imikado/dupotStaticManagementFramework"
+        "body": "Le micro-framework PHP sans dépendance pour ajouter un back-office dynamique à vos sites statiques : routing JSON, pages, vues et sessions.",
+        "github": "https://github.com/imikado/dupotStaticManagementFramework",
+        "packagist": "https://packagist.org/packages/dupot/static-management-framework",
+        "modal": {
+            "src": "/data/content/dupotStaticManagementFramework.md"
+        }
     },
     {
+        "id": "kritaSpritesheetExporter",
         "icon": "kritaSpritesheetExporter_icon.png",
         "title": "Krita SpritesheetExporter",
-        "body": "Plugin Krita qui permet l'export d'animation en sprite horizontal",
-        "github": "https://github.com/imikado/kritaSpritesheetManager"
+        "body": "Transformez vos animations Krita en spritesheets prêtes pour votre moteur de jeu, en un clic : bande horizontale, fond transparent, nom du document.",
+        "github": "https://github.com/imikado/kritaSpritesheetManager",
+        "modal": {
+            "src": "/data/content/kritaSpritesheetExporter.md"
+        }
     }
 ]
