@@ -1,6 +1,14 @@
-## Dupot file browser
-Un navigateur de fichier linux différent
+## Dupot File browser
+Et si votre gestionnaire de fichiers sortait enfin des sentiers battus ?
 
+Dupot File browser propose une navigation en colonnes, inspirée de macOS : chaque dossier ouvert s'affiche à côté du précédent, pour garder en permanence une vue claire de l'arborescence et naviguer sans jamais se perdre.
+
+- **Navigation en colonnes** pour parcourir vos dossiers d'un simple coup d'œil
+- **Chemin éditable** : tapez directement l'emplacement où vous voulez aller
+- **Couleurs** : marquez vos fichiers et dossiers importants pour les repérer instantanément
+- **Plusieurs modes d'affichage** : liste, détails ou icônes, selon vos envies
+- **Propriétés des fichiers** et menu contextuel complet
+- Gratuit et open source
 
 ### Screenshots
 

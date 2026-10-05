@@ -1,10 +1,15 @@
 ## Dupot Easy Flatpak
 
-Ce projet est tout simplement un store graphique pour installer sous GNU/Linux vos applications Flatpak
+Installer des applications sous GNU/Linux n'a jamais été aussi simple. Easy Flatpak est une logithèque graphique claire et rapide : parcourez les catégories, recherchez une application, installez-la en un clic et retrouvez en un coup d'œil tout ce qui est déjà installé.
 
-Il inclue pour certaines applications qui le nécessite un accompagnement afin de paramétrer des droits supplémentaires pour certaines d'ente elles.
+Là où Easy Flatpak se démarque, c'est dans l'accompagnement : certaines applications ont besoin de droits supplémentaires pour fonctionner correctement, et il vous guide pour les configurer sans passer par la ligne de commande.
 
-Par exemple pour certaines applications de jeux comme Steam ou Heroic games launher, il demande le chemin où vous stoquer vos jeux afin d'ajouter l'autorisation d'accès à celle-ci.
+Par exemple, pour des lanceurs de jeux comme Steam ou Heroic Games Launcher, il vous demande où sont stockés vos jeux et ajoute automatiquement l'autorisation d'accès à ce dossier.
+
+- Navigation par catégories et recherche
+- Installation et gestion de vos applications Flatpak
+- Assistant de configuration des permissions pour les applications qui en ont besoin
+- Gratuit, open source et disponible sur Flathub
 
 ### Screenshots
 

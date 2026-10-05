@@ -5,6 +5,7 @@ namespace MyWebsite\Pages;
 use Dupot\StaticGenerationFramework\Page\PageAbstract;
 use Dupot\StaticGenerationFramework\Page\PageInterface;
 use MyWebsite\Components\NavComponent;
+use MyWebsite\Components\PageHeaderComponent;
 use MyWebsite\Components\TutorialListComponent;
 
 class TutorialListPage extends PageAbstract implements PageInterface
@@ -25,6 +26,7 @@ class TutorialListPage extends PageAbstract implements PageInterface
             [
                 'nav' => new NavComponent($this->getFilename()),
                 'contentList' => [
+                    new PageHeaderComponent('Tutos', 'Des guides pas à pas pour publier et distribuer vos applications Linux.', 'Guides'),
                     new TutorialListComponent()
                 ]
             ]

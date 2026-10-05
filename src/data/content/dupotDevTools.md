@@ -1,6 +1,14 @@
-## Dupot-dev-tools
+## Dupot dev tools
 
-Ce projet est le couteau suisse du développeur, il vous propose des petits outils pratique dans votre quotidien.
+Marre de jongler entre des dizaines de sites web pour convertir, encoder ou formater vos données ? Dupot dev tools réunit dans une seule application de bureau les petits outils dont un développeur a besoin au quotidien.
+
+- **Conversion** : passez d'un format à un autre en un instant
+- **Encodage** : encodez et décodez vos chaînes sans quitter votre poste
+- **Formatage** : rendez lisibles vos données brutes
+- **Chaînes de caractères** : les manipulations courantes à portée de clic
+- **SQL Viewer** : connectez-vous à votre base, posez vos tables sur un canevas interactif, visualisez leurs jointures et lancez vos requêtes
+
+Tout fonctionne en local : vos données restent sur votre machine. Gratuit et open source.
 
 ### Screenshots
 

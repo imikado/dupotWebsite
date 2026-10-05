@@ -3,7 +3,7 @@
         "id": "dupotDevTools",
         "icon": "dupotDevTools_icon.jpg?v=20260824_2225",
         "title": "Dupot dev tools",
-        "body": "Le couteau suisse du dev",
+        "body": "Le couteau suisse du développeur : conversion, encodage, formatage, SQL… tous vos petits outils du quotidien réunis dans une seule application.",
         "github": "https://github.com/imikado/dupotDevTools",
         "modal": {
             "src": "/data/content/dupotDevTools.md"
@@ -13,7 +13,7 @@
         "id": "dupotEasyFlatpak",
         "icon": "dupotEasyFlatpak_icon.jpg?v=20260824_2225",
         "title": "Easy Flatpak",
-        "body": "Un store graphique pour installer vos flatpak",
+        "body": "La logithèque Flatpak simple et efficace : trouvez, installez et configurez vos applications Linux en quelques clics.",
         "github": "https://github.com/imikado/dupotEasyFlatpak",
         "flathub": "https://flathub.org/apps/org.dupot.easyflatpak",
         "modal": {
@@ -24,7 +24,7 @@
         "id": "dupotFileBrowser",
         "icon": "dupotFileBrowser_icon.jpg?v=20260824_2225",
         "title": "Dupot File browser",
-        "body": "Un navigateur de fichier bien différent",
+        "body": "Un gestionnaire de fichiers Linux qui sort des sentiers battus : navigation en colonnes, chemin éditable, couleurs et plusieurs modes d'affichage.",
         "github": "https://github.com/imikado/dupotFileBrowser",
         "modal": {
             "src": "/data/content/dupotFileBrowser.md"

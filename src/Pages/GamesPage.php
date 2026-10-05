@@ -6,6 +6,7 @@ use Dupot\StaticGenerationFramework\Page\PageAbstract;
 use Dupot\StaticGenerationFramework\Page\PageInterface;
 use MyWebsite\Components\GameListComponent;
 use MyWebsite\Components\NavComponent;
+use MyWebsite\Components\PageHeaderComponent;
 
 class GamesPage extends PageAbstract implements PageInterface
 {
@@ -25,6 +26,7 @@ class GamesPage extends PageAbstract implements PageInterface
             [
                 'nav' => new NavComponent($this->getFilename()),
                 'contentList' => [
+                    new PageHeaderComponent('Jeux', 'Des jeux d\'action et d\'aventure en pixel art, gratuits et open source, à jouer sur Linux et sur itch.io.', 'Pixel art · Open source'),
                     new GameListComponent()
                 ]
             ]

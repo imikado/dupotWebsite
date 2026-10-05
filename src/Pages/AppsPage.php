@@ -6,6 +6,7 @@ use Dupot\StaticGenerationFramework\Page\PageAbstract;
 use Dupot\StaticGenerationFramework\Page\PageInterface;
 use MyWebsite\Components\AppMobileListComponent;
 use MyWebsite\Components\NavComponent;
+use MyWebsite\Components\PageHeaderComponent;
 
 class AppsPage extends PageAbstract implements PageInterface
 {
@@ -25,6 +26,7 @@ class AppsPage extends PageAbstract implements PageInterface
             [
                 'nav' => new NavComponent($this->getFilename()),
                 'contentList' => [
+                    new PageHeaderComponent('Apps mobile', 'Des applications Android simples et utiles.', 'Android'),
                     new AppMobileListComponent()
                 ]
             ]

@@ -1,5 +1,12 @@
 ## Beat Match to Pass
-Eliminer le nombre d'ennemies nécessaire pour désactiver les barrières et atteindre la fin de chaque niveau.
+Le chemin est barré et une seule solution s'offre à vous : vous battre !
+
+Chaque niveau est verrouillé par des barrières d'énergie. Pour les désactiver, éliminez le nombre d'ennemis demandé, puis foncez vers la sortie. Maniez l'épée au corps à corps et déchaînez vos attaques spéciales pour venir à bout des fourmis géantes et autres créatures qui vous barrent la route.
+
+- De l'action nerveuse en pixel art
+- Des combats à l'épée et des attaques spéciales
+- Des commandes tactiles pensées pour le mobile, jouable aussi au clavier
+- Gratuit, open source, disponible sur Linux (Flathub, Snapcraft) et itch.io
 
 ### Screenshots
 

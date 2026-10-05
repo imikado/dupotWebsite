@@ -5,7 +5,7 @@ namespace MyWebsite\Pages;
 use Dupot\StaticGenerationFramework\Page\PageAbstract;
 use Dupot\StaticGenerationFramework\Page\PageInterface;
 use MyWebsite\Components\NavComponent;
-use MyWebsite\Components\ProjectArticleIntroComponent;
+use MyWebsite\Components\PageHeaderComponent;
 use MyWebsite\Components\ProjectArticleListComponent;
 
 class ProjectArticlesPage extends PageAbstract implements PageInterface
@@ -24,7 +24,7 @@ class ProjectArticlesPage extends PageAbstract implements PageInterface
             [
                 'nav' => new NavComponent($this->getFilename()),
                 'contentList' => [
-                    new ProjectArticleIntroComponent(),
+                    new PageHeaderComponent('Ressources d\'articles', 'Le code source complet de mes articles publiés dans Linux Pratique et GNU/Linux Magazine.', 'Linux Pratique · GNU/Linux Magazine'),
                     new ProjectArticleListComponent()
                 ]
             ]

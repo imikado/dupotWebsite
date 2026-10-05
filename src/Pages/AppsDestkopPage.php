@@ -7,6 +7,7 @@ use Dupot\StaticGenerationFramework\Page\PageInterface;
 use MyWebsite\Components\AppDesktopListComponent;
 use MyWebsite\Components\AppListComponent;
 use MyWebsite\Components\NavComponent;
+use MyWebsite\Components\PageHeaderComponent;
 
 class AppsDestkopPage extends PageAbstract implements PageInterface
 {
@@ -24,6 +25,7 @@ class AppsDestkopPage extends PageAbstract implements PageInterface
             [
                 'nav' => new NavComponent($this->getFilename()),
                 'contentList' => [
+                    new PageHeaderComponent('Logiciels', 'Des applications libres pour GNU/Linux, pensées pour simplifier votre quotidien d\'utilisateur comme de développeur.', 'GNU/Linux · Open source'),
                     new AppDesktopListComponent()
                 ]
             ]

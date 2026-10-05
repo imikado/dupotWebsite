@@ -11,8 +11,8 @@ use MyWebsite\Pages\ProjectDetailPage;
 
         <?php if ($detailLink) : ?>
             <a class="card card-link" href="<?php echo $detailLink ?>">
-                <div class="card-image">
-                    <img src="images/<?php echo $content->icon ?>" alt="<?php echo $content->title ?>">
+                <div class="card-image" style="--cover: url('/images/<?php echo $content->icon ?>')">
+                    <img src="images/<?php echo $content->icon ?>" alt="<?php echo $content->title ?>" loading="lazy">
                 </div>
                 <div class="card-body">
                     <h3 class="card-title"><?php echo $content->title ?></h3>
@@ -22,8 +22,8 @@ use MyWebsite\Pages\ProjectDetailPage;
             </a>
         <?php else : ?>
             <div class="card">
-                <div class="card-image">
-                    <img src="images/<?php echo $content->icon ?>" alt="<?php echo $content->title ?>">
+                <div class="card-image" style="--cover: url('/images/<?php echo $content->icon ?>')">
+                    <img src="images/<?php echo $content->icon ?>" alt="<?php echo $content->title ?>" loading="lazy">
                 </div>
                 <div class="card-body">
                     <h3 class="card-title"><?php echo $content->title ?></h3>
