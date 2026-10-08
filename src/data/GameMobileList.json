@@ -5,7 +5,7 @@
         "thumbnail": "thumbnails/games/typeToFight.jpg",
         "title": "Type to Fight",
         "status": "En développement",
-        "body": "Apprenez la dactylographie en combattant : tapez la bonne touche pour frapper les ennemis, de la rangée de repos jusqu'au clavier complet.",
+        "body": "Apprenez la dactylographie en combattant : touche par touche en mode Entraînement, puis des mots entiers en mode Arcade pour frapper les ennemis.",
         "github": "https://github.com/imikado/dupotTypeToFight",
         "itchio": "https://dupot-org.itch.io/type-to-fight",
         "modal": {
