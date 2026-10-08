@@ -15,5 +15,10 @@
     "require": {
         "dupot/static-generation-framework": "2.*.*",
         "erusev/parsedown": "^1.7"
+    },
+    "config": {
+        "platform": {
+            "php": "7.4.33"
+        }
     }
 }

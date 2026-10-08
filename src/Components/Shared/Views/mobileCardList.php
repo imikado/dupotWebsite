@@ -11,8 +11,16 @@ use MyWebsite\Pages\ProjectDetailPage;
 
         <?php if ($detailLink) : ?>
             <a class="card card-link" href="<?php echo $detailLink ?>">
+                <?php if (isset($content->thumbnail)) : ?>
+                <div class="card-image card-image-thumbnail">
+                    <img src="images/<?php echo $content->thumbnail ?>" alt="<?php echo $content->title ?>" loading="lazy">
+                <?php else : ?>
                 <div class="card-image" style="--cover: url('/images/<?php echo $content->icon ?>')">
                     <img src="images/<?php echo $content->icon ?>" alt="<?php echo $content->title ?>" loading="lazy">
+                <?php endif; ?>
+                    <?php if (isset($content->status)) : ?>
+                        <span class="status-badge"><?php echo $content->status ?></span>
+                    <?php endif; ?>
                 </div>
                 <div class="card-body">
                     <h3 class="card-title"><?php echo $content->title ?></h3>
@@ -24,6 +32,9 @@ use MyWebsite\Pages\ProjectDetailPage;
             <div class="card">
                 <div class="card-image" style="--cover: url('/images/<?php echo $content->icon ?>')">
                     <img src="images/<?php echo $content->icon ?>" alt="<?php echo $content->title ?>" loading="lazy">
+                    <?php if (isset($content->status)) : ?>
+                        <span class="status-badge"><?php echo $content->status ?></span>
+                    <?php endif; ?>
                 </div>
                 <div class="card-body">
                     <h3 class="card-title"><?php echo $content->title ?></h3>

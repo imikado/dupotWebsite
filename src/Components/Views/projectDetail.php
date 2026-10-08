@@ -17,6 +17,9 @@ $modalContent = isset($content->modalContent) ? preg_replace('#^\s*<h2[^>]*>.*?<
 
     <div class="project-hero-text">
         <span class="chip"><?php echo $category ?></span>
+        <?php if (isset($content->status)) : ?>
+            <span class="status-badge"><?php echo $content->status ?></span>
+        <?php endif; ?>
         <h1><?php echo $content->title ?></h1>
         <p class="project-lead"><?php echo $content->body ?></p>
 
