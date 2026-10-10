@@ -22,6 +22,8 @@ Un jeu d'arcade pour apprendre la dactylographie en s'amusant, avec deux modes d
 - Les erreurs sont expliquées sur un clavier, et les touches mal maîtrisées reviennent plus souvent
 - 94 % de précision pour débloquer le niveau suivant (réglable), avec des statistiques par touche
 - Chaque niveau atteint reste débloqué et rejouable, avec les meilleurs scores pour chaque mode
+- Musique chiptune et effets sonores 8-bit pour chaque touche, coup et niveau (désactivables séparément)
+- Une police pixel facile à lire : les caractères qui se ressemblent restent distincts (5 et S, 0 et O…) et tous les accents français s'affichent
 - Disponible en français et en anglais
 - Gratuit, open source, jouable dans le navigateur sur itch.io ; les versions Flathub et Snapcraft arriveront une fois le développement plus avancé
 
