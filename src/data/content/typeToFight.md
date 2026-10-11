@@ -3,8 +3,6 @@
 <img src="/images/promo/games/typeToFight/training.gif" alt="Mode Entraînement : la touche à taper tombe au centre de l'écran et le héros frappe les ennemis" />
 </figure>
 
-**🚧 Projet en cours de développement** : le jeu est déjà jouable dans le navigateur, mais il évolue encore (nouvelles fonctionnalités, ajustements, corrections). Vos retours sont les bienvenus !
-
 Les ennemis arrivent sans relâche par la droite. La prochaine touche à taper tombe au centre de l'écran : tapez-la pour frapper l'ennemi, ou foncez vers lui s'il est encore loin. Trop d'erreurs, et ils vous rattrapent !
 
 Un jeu d'arcade pour apprendre la dactylographie en s'amusant, avec deux modes de jeu :
@@ -25,7 +23,7 @@ Un jeu d'arcade pour apprendre la dactylographie en s'amusant, avec deux modes d
 - Musique chiptune et effets sonores 8-bit pour chaque touche, coup et niveau (désactivables séparément)
 - Une police pixel facile à lire : les caractères qui se ressemblent restent distincts (5 et S, 0 et O…) et tous les accents français s'affichent
 - Disponible en français et en anglais
-- Gratuit, open source, jouable dans le navigateur sur itch.io ; les versions Flathub et Snapcraft arriveront une fois le développement plus avancé
+- Gratuit, open source, disponible sur Linux (Snapcraft) et jouable dans le navigateur sur itch.io
 
 ### Screenshots
 

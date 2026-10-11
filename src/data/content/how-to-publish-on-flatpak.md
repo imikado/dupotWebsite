@@ -16,7 +16,7 @@ Sur votre ordinateur
 ```
 mkdir github
 cd github
-git clone github.com/votre_identifiant_github/votre_jeu.git
+git clone --branch=new-pr https://github.com/votre_identifiant_github/flathub.git
 cd votre_jeu
 ```
 nous allons ici créer l'arborescence suivante, histoire d'organiser le tout proprement
