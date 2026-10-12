@@ -9,8 +9,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/theme.css?v=20261011104045">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Pixelify+Sans:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/theme.css?v=20261012211233">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZVG5R211FM"></script>
@@ -39,7 +39,7 @@
                                             <li >
                     <a  href="desktop.html">Logiciels</a>
                 </li>
-                                            <li >
+                                            <li class="active">
                     <a  href="tutorials.html">Tutos</a>
                 </li>
                                             <li >
@@ -70,7 +70,7 @@
                             <li >
                     <a  href="desktop.html">Logiciels</a>
                 </li>
-                            <li >
+                            <li class="active">
                     <a  href="tutorials.html">Tutos</a>
                 </li>
                             <li >
@@ -95,14 +95,44 @@
   <div class="main">
     <div class="container">
 
-      <div class="card content-card">
-    <div class="project-body">
-        <h2>Publier un jeu Godot sur Flathub</h2>
+      <a class="back-link" href="tutorials.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>Tutos</a>
+
+<header class="tutorial-hero">
+    <span class="chip">Tuto</span>
+    <h1>Publier un jeu Godot sur Flathub</h1>
+    <p class="project-lead">Un simple tutorial pour comprendre comment publier votre jeu Godot sur Flathub</p>
+
+    <div class="tutorial-hero-meta">
+        <span class="tutorial-meta"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>5 min de lecture</span>
+        <span class="tutorial-meta"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>7 étapes</span>
+                                    <span class="tag-pill">Godot</span>
+                            <span class="tag-pill">Flathub</span>
+                            <span class="tag-pill">Flatpak</span>
+                        </div>
+</header>
+
+<div class="tutorial-layout">
+            <nav class="tutorial-toc card" aria-label="Sommaire">
+            <span class="availability-label"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>Au programme</span>
+            <ol>
+                                    <li><a href="#etape-1">Créer un compte github</a></li>
+                                    <li><a href="#etape-2">Créer un projet pour votre jeu</a></li>
+                                    <li><a href="#etape-3">Exporter votre jeu vers Linux</a></li>
+                                    <li><a href="#etape-4">Finissons le setup sur notre dépot Github</a></li>
+                                    <li><a href="#etape-5">Forker le dépot flathub</a></li>
+                                    <li><a href="#etape-6">Créer la fiche d'identité Flathub</a></li>
+                                    <li><a href="#etape-7">Conclusion</a></li>
+                            </ol>
+        </nav>
+    
+    <div class="card content-card">
+        <div class="project-body tutorial-body">
+            
 <p>Cet article vous montre comment publier un jeu Godot sur Flathub, je n'aborde pas ici d'autre moteur de jeu,  mais ce tuto peut vous aider à comprendre la mécanique utilisée.</p>
-<h4>Créer un compte github</h4>
+<h4 id="etape-1">Créer un compte github</h4>
 <p>Vous allez avoir besoin d'un compte github dans cet article, si ce n'est pas déjà fait, je vous invite à en créer un sur <a href="https://github.com">https://github.com</a></p>
 <p>J'y ferais réference dans cet article avec le nom &quot;votre_identifiant_github&quot;</p>
-<h4>Créer un projet pour votre jeu</h4>
+<h4 id="etape-2">Créer un projet pour votre jeu</h4>
 <p>Sur github, créez un projet pour votre jeu, vous y stoquerez la version compilé de celui-ci pour linux</p>
 <p>Une fois ce dépot créé, nous l'appelrons ici github.com/votre_identifiant_github/votre_jeu</p>
 <p>Sur votre ordinateur</p>
@@ -114,14 +144,14 @@ cd votre_jeu</code></pre>
 <pre><code>mkdir -p export/linux/flatpak
 mkdir -p export/linux/screenshots
 </code></pre>
-<h4>Exporter votre jeu vers Linux</h4>
+<h4 id="etape-3">Exporter votre jeu vers Linux</h4>
 <p>Dans Godot, export</p>
 <ul>
 <li>Linux / X11</li>
 </ul>
 <p>et définissez comme destination le répertoire export/linux que l'on vient de créer </p>
 <p>Vous pouvez en profitez pour faire quelques screenshots et les déposer dans export/linux/screenshots</p>
-<h4>Finissons le setup sur notre dépot Github</h4>
+<h4 id="etape-4">Finissons le setup sur notre dépot Github</h4>
 <p>Nous revenons sur notre dépot github du jeu</p>
 <p>Vous avez donc dans export/linux 2 fichiers: votre_jeu.x86_64 et votre_jeu.pck</p>
 <p>Il nous faut créer 3 autres fichiers:</p>
@@ -169,7 +199,7 @@ Categories=Game</code></pre>
 <p>Faites un commit + push, récupéré le commit id pour venir le remplacer dans l'url des screenshots</p>
 <p>Faites un second commit + push, et cette fois copier le commit ID, nous allons en avoir besoin</p>
 <p>nous l'appelerons identifiant_du_dernier_commit</p>
-<h4>Forker le dépot flathub</h4>
+<h4 id="etape-5">Forker le dépot flathub</h4>
 <p>Sur votre ordinateur, </p>
 <pre><code>mkdir github
 cd github
@@ -185,7 +215,7 @@ com.github.votre_identifiant_github.votre_jeu</p>
 <pre><code>cd flathub
 git checkout -b com.github.votre_identifiant_github.votre_jeu</code></pre>
 <p>j'utiliserais pour y faire réference dans cet article com.domain.votre_jeu</p>
-<h4>Créer la fiche d'identité Flathub</h4>
+<h4 id="etape-6">Créer la fiche d'identité Flathub</h4>
 <p>Vous allez créer ici 2 fichiers flathub.json et com.domain.votre_jeu.yml</p>
 <pre><code>touch flathub.json
 touch com.domain.votre_jeu.yml</code></pre>
@@ -233,10 +263,12 @@ modules:
 <p>et faites un pull request de votre branche de jeu vers &quot;new-pr&quot;</p>
 <p>S'ensuite une phase de validation de votre envoi, avec souvent un chat avec les mainteneurs du projet</p>
 <p>Une fois que tout est validé, flathub devrait créer une branche de votre jeu sur son dépôt</p>
-<h4>Conclusion</h4>
+<h4 id="etape-7">Conclusion</h4>
 <p>Comme vous avez pu le voir, c'est ici très simple de packager votre jeu sur Flathub</p>
-<p>C'est impressionnant de voir la mécanique totalement automatisé de gestion de nouveaux paquets, les builds...</p>    </div>
+<p>C'est impressionnant de voir la mécanique totalement automatisé de gestion de nouveaux paquets, les builds...</p>        </div>
+    </div>
 </div>
+
     </div>
   </div>
 
@@ -262,6 +294,7 @@ modules:
 
   <script src="js/nav.js"></script>
   <script src="js/gallery.js"></script>
+  <script src="js/copy.js"></script>
 
 </body>
 

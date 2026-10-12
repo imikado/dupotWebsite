@@ -26,13 +26,30 @@ class ResourcesListComponent extends ComponentAbstract implements ComponentInter
         return $resourceList;
     }
 
+    protected $isCompact;
+
+    // version compacte (cartes) pour l'accueil, version détaillée pour la page Librairies & co
+    public function __construct(bool $isCompact = false)
+    {
+        $this->isCompact = $isCompact;
+    }
+
     public function render(): string
     {
         $props = (object)[
             'contentList' => self::loadList()
         ];
 
-        $component = new MobileCardListComponent($props);
-        return $component->render();
+        if ($this->isCompact) {
+            $component = new MobileCardListComponent($props);
+            return $component->render();
+        }
+
+        return $this->renderViewWithParamList(
+            __DIR__ . '/Views/resourceList.php',
+            [
+                'contentList' => $props->contentList,
+            ]
+        );
     }
 }

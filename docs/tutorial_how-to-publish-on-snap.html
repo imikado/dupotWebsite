@@ -9,8 +9,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/theme.css?v=20261011104045">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Pixelify+Sans:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/theme.css?v=20261012211233">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZVG5R211FM"></script>
@@ -39,7 +39,7 @@
                                             <li >
                     <a  href="desktop.html">Logiciels</a>
                 </li>
-                                            <li >
+                                            <li class="active">
                     <a  href="tutorials.html">Tutos</a>
                 </li>
                                             <li >
@@ -70,7 +70,7 @@
                             <li >
                     <a  href="desktop.html">Logiciels</a>
                 </li>
-                            <li >
+                            <li class="active">
                     <a  href="tutorials.html">Tutos</a>
                 </li>
                             <li >
@@ -95,21 +95,54 @@
   <div class="main">
     <div class="container">
 
-      <div class="card content-card">
-    <div class="project-body">
-        <h2>Publier un jeu Godot sur Snap (store ubuntu)</h2>
+      <a class="back-link" href="tutorials.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>Tutos</a>
+
+<header class="tutorial-hero">
+    <span class="chip">Tuto</span>
+    <h1>Publier un jeu Godot sur Ubuntu</h1>
+    <p class="project-lead">Un simple tutorial pour comprendre comment publier votre jeu Godot sur le store Ubuntu</p>
+
+    <div class="tutorial-hero-meta">
+        <span class="tutorial-meta"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>4 min de lecture</span>
+        <span class="tutorial-meta"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>10 étapes</span>
+                                    <span class="tag-pill">Godot</span>
+                            <span class="tag-pill">Snap</span>
+                            <span class="tag-pill">Ubuntu</span>
+                        </div>
+</header>
+
+<div class="tutorial-layout">
+            <nav class="tutorial-toc card" aria-label="Sommaire">
+            <span class="availability-label"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>Au programme</span>
+            <ol>
+                                    <li><a href="#etape-1">Créer un compte Ubuntu One</a></li>
+                                    <li><a href="#etape-2">Organiser votre projet</a></li>
+                                    <li><a href="#etape-3">Exporter votre jeu vers Linux</a></li>
+                                    <li><a href="#etape-4">Installer snapd et snapcraft</a></li>
+                                    <li><a href="#etape-5">Créer le fichier snapcraft.yaml</a></li>
+                                    <li><a href="#etape-6">Builder votre snap</a></li>
+                                    <li><a href="#etape-7">Tester votre snap en local</a></li>
+                                    <li><a href="#etape-8">Créer un compte développeur et enregistrer le nom</a></li>
+                                    <li><a href="#etape-9">Publier votre snap</a></li>
+                                    <li><a href="#etape-10">Conclusion</a></li>
+                            </ol>
+        </nav>
+    
+    <div class="card content-card">
+        <div class="project-body tutorial-body">
+            
 <p>Cet article vous montre comment publier un jeu Godot sur le store Ubuntu (snap), je n'aborde pas ici d'autre moteur de jeu,  mais ce tuto peut vous aider à comprendre la mécanique utilisée.</p>
-<h4>Créer un compte Ubuntu One</h4>
+<h4 id="etape-1">Créer un compte Ubuntu One</h4>
 <p>Pour publier sur le Snap Store, vous avez besoin d'un compte Ubuntu One, si ce n'est pas déjà fait, créez en un sur <a href="https://login.ubuntu.com">https://login.ubuntu.com</a></p>
-<h4>Organiser votre projet</h4>
+<h4 id="etape-2">Organiser votre projet</h4>
 <p>Comme pour un export classique, on va créer un peu d'arborescence pour ranger les fichiers</p>
 <pre><code>mkdir -p export/linux/snap
 cd export/linux/snap
 mkdir -p snap/gui</code></pre>
-<h4>Exporter votre jeu vers Linux</h4>
+<h4 id="etape-3">Exporter votre jeu vers Linux</h4>
 <p>Dans Godot, faites un export Linux et définissez comme destination le répertoire export/linux/snap</p>
 <p>Vous avez 2 fichiers: votre_jeu.x86_64 et votre_jeu.pck</p>
-<h4>Installer snapd et snapcraft</h4>
+<h4 id="etape-4">Installer snapd et snapcraft</h4>
 <p>snapd est le service qui permet d'installer et de faire tourner des snaps, snapcraft est l'outil qui sert à faire le build</p>
 <p>Sur les distribution ubuntu et dérivés (mint..), snapd est déjà installé, sinon, par example sur ma LMDE (basée sur debian), besoin de mon coté d'installer également lxd</p>
 <pre><code>sudo apt install snapd</code></pre>
@@ -118,7 +151,7 @@ mkdir -p snap/gui</code></pre>
 <p>Sur ma distribution basée sur debian j'ai du installer lxd et m'assurer d'avoir les bonnes permissions avec:</p>
 <pre><code>sudo apt install snapd lxd
 lxd init --auto</code></pre>
-<h4>Créer le fichier snapcraft.yaml</h4>
+<h4 id="etape-5">Créer le fichier snapcraft.yaml</h4>
 <p>On créé maintenant la fiche de construction snapcraft.yaml dans export/linux/snap</p>
 <pre><code>vi snap/snapcraft.yaml</code></pre>
 <p>Contenu de snap/snapcraft.yaml</p>
@@ -167,24 +200,24 @@ parts:
 <li>une partie (part) qui vient récupérer les fichiers exportés (le .x86_64 et le .pck) et les inclure dans le snap</li>
 </ul>
 <p>L'extension gnome apporte les librairies graphiques et audio courantes, ça évite de devoir toutes les lister soi même</p>
-<h4>Builder votre snap</h4>
+<h4 id="etape-6">Builder votre snap</h4>
 <p>Aller dans export/linux/snap</p>
 <pre><code>cd /path/vers/votre/jeu/export/linux/snap
 snapcraft pack</code></pre>
 <p>snapcraft va télécharger un environnement de build (via LXD ou multipass la première fois), puis fabriquer votre paquet</p>
 <p>Vous devriez obtenir un fichier votredomaine-votre-jeu_1.0_amd64.snap</p>
-<h4>Tester votre snap en local</h4>
+<h4 id="etape-7">Tester votre snap en local</h4>
 <p>Pour tester l'installation de l'application en snap</p>
 <pre><code>sudo snap install votredomaine-votre-jeu_1.0_amd64.snap --dangerous</code></pre>
 <p>Le flag --dangerous permet d'installer un snap qui n'est pas signé par le store, indispensable en local</p>
 <p>pour lancer, simplement</p>
 <pre><code>votredomaine-votre-jeu</code></pre>
-<h4>Créer un compte développeur et enregistrer le nom</h4>
+<h4 id="etape-8">Créer un compte développeur et enregistrer le nom</h4>
 <p>On se connecte avec le compte Ubuntu One</p>
 <pre><code>snapcraft login</code></pre>
 <p>Puis on réserve le nom de votre snap sur le store, nom du style xx.votredomain.votrejeu</p>
 <pre><code>snapcraft register votredomaine-votre-jeu</code></pre>
-<h4>Publier votre snap</h4>
+<h4 id="etape-9">Publier votre snap</h4>
 <p>On envoie le paquet construit précédemment sur le store, en le publiant directement sur le canal stable</p>
 <pre><code>snapcraft upload votredomaine-votre-jeu_1.0_amd64.snap --release=stable</code></pre>
 <p>Il existe aussi d'autres canaux (edge, beta, candidate) qui permettent de publier des versions de test avant de les faire passer en stable</p>
@@ -194,9 +227,11 @@ snapcraft pack</code></pre>
 <pre><code>snapcraft release votredomaine-votre-jeu N stable</code></pre>
 <p>Une fois publié, je vous invite à vous rendre sur <a href="https://snapcraft.io/">https://snapcraft.io/</a> pour aller ajouter les screenshot et autres améliorations concernant la fiche de votre application</p>
 <pre><code>sudo snap install votredomaine-votre-jeu</code></pre>
-<h4>Conclusion</h4>
-<p>Comme vous voyez il est très simple de publier des snaps</p>    </div>
+<h4 id="etape-10">Conclusion</h4>
+<p>Comme vous voyez il est très simple de publier des snaps</p>        </div>
+    </div>
 </div>
+
     </div>
   </div>
 
@@ -222,6 +257,7 @@ snapcraft pack</code></pre>
 
   <script src="js/nav.js"></script>
   <script src="js/gallery.js"></script>
+  <script src="js/copy.js"></script>
 
 </body>
 

@@ -4,9 +4,11 @@ namespace MyWebsite\Pages;
 
 use Dupot\StaticGenerationFramework\Page\PageAbstract;
 use Dupot\StaticGenerationFramework\Page\PageInterface;
+use MyWebsite\Components\AboutCommunityComponent;
 use MyWebsite\Components\AboutContributionComponent;
 use MyWebsite\Components\AboutPreviousContributionComponent;
 use MyWebsite\Components\AboutIntroComponent;
+use MyWebsite\Components\AboutLinkSectionsComponent;
 use MyWebsite\Components\AboutSiteListComponent;
 use MyWebsite\Components\NavComponent;
 
@@ -28,9 +30,12 @@ class AboutPage extends PageAbstract implements PageInterface
                 'nav' => new NavComponent($this->getFilename()),
                 'contentList' => [
                     new AboutIntroComponent(),
-                    new AboutSiteListComponent(),
-                    new AboutContributionComponent(),
-                    new AboutPreviousContributionComponent()
+                    new AboutLinkSectionsComponent([
+                        new AboutSiteListComponent(),
+                        new AboutContributionComponent(),
+                        new AboutCommunityComponent(),
+                        new AboutPreviousContributionComponent()
+                    ])
 
                 ]
             ]

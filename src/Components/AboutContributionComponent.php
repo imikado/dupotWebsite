@@ -29,15 +29,6 @@ class AboutContributionComponent extends ComponentAbstract implements ComponentI
             ),
 
             array(
-                self::ABOUT_IMAGE => 'css/images/about_glf.png?v=20260824',
-                self::ABOUT_TITLE => 'Gaming Linux FR',
-                self::ABOUT_BODY => 'Membre actif de la communauté Gaming Linux FR',
-                self::ABOUT_LINK => 'https://www.gaminglinux.fr',
-                self::ABOUT_LINK_LABEL => 'www.gaminglinux.fr',
-
-            ),
-
-            array(
                 self::ABOUT_IMAGE => 'css/images/about_glfos.png?v=20260824',
                 self::ABOUT_TITLE => 'GLF OS',
                 self::ABOUT_BODY => 'Dans l\'équipe de la distribution GNU/Linux GLF OS (basée sur NixOs)',
@@ -45,20 +36,6 @@ class AboutContributionComponent extends ComponentAbstract implements ComponentI
                 self::ABOUT_LINK_LABEL => 'glfos.org',
 
             ),
-
-
-
-            array(
-                self::ABOUT_IMAGE => 'css/images/about_techcafe.png',
-                self::ABOUT_TITLE => 'TechCaf&eacute;',
-                self::ABOUT_BODY => 'Membre actif de la communauté TecCaf&eacute;',
-                self::ABOUT_LINK => 'https://techcafe.fr/',
-                self::ABOUT_LINK_LABEL => 'techcafe.fr',
-
-            ),
-
-
-
 
         );
 

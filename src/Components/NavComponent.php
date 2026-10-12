@@ -6,7 +6,6 @@ use Dupot\StaticGenerationFramework\Component\ComponentAbstract;
 use Dupot\StaticGenerationFramework\Component\ComponentInterface;
 use MyWebsite\Pages\AboutPage;
 use MyWebsite\Pages\AppsDestkopPage;
-use MyWebsite\Pages\AppsPage;
 use MyWebsite\Pages\GamesPage;
 use MyWebsite\Pages\ProjectArticlesPage;
 use MyWebsite\Pages\ResourcesPage;
@@ -26,7 +25,6 @@ class NavComponent extends ComponentAbstract implements ComponentInterface
     {
         $linkList = [
             'Jeux' => GamesPage::FILENAME,
-            //'Apps mobile' => AppsPage::FILENAME,
             'Logiciels' => AppsDestkopPage::FILENAME,
 
             'Tutos' => TutorialListPage::FILENAME,

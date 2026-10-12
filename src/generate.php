@@ -6,7 +6,6 @@ use MyWebsite\Components\GameListComponent;
 use MyWebsite\Components\ResourcesListComponent;
 use MyWebsite\Pages\AboutPage;
 use MyWebsite\Pages\AppsDestkopPage;
-use MyWebsite\Pages\AppsPage;
 use MyWebsite\Pages\GamesPage;
 use MyWebsite\Pages\HomePage;
 use MyWebsite\Pages\PolicyPage;
@@ -22,7 +21,6 @@ $pagesList = [
 
     new HomePage(),
     new GamesPage(),
-    new AppsPage(),
     new AppsDestkopPage(),
     new ResourcesPage(),
     new AboutPage(),
@@ -49,13 +47,6 @@ foreach (AppDesktopListComponent::loadList() as $appDesktopLoop) {
 
 foreach (ResourcesListComponent::loadList() as $resourceLoop) {
     $pagesList[] = new ProjectDetailPage($resourceLoop, 'Librairie opensource', ResourcesPage::FILENAME, 'Librairies & co');
-}
-
-$appMobileApi = new DataApi(__DIR__ . '/data/AppMobileList.json');
-foreach ($appMobileApi->findAll() as $appMobileLoop) {
-    if (isset($appMobileLoop->id)) {
-        $pagesList[] = new ProjectDetailPage($appMobileLoop, 'Application mobile', AppsPage::FILENAME, 'Apps mobile');
-    }
 }
 
 foreach ($pagesList as $pageLoop) {

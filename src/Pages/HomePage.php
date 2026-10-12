@@ -33,7 +33,7 @@ class HomePage extends PageAbstract implements PageInterface
                     new SectionTitleComponent('Dernières applications', 'Voir toutes les applications', AppsDestkopPage::FILENAME),
                     new AppDesktopListComponent(),
                     new SectionTitleComponent('Librairies & outils pour développeurs', 'Voir toutes les librairies', ResourcesPage::FILENAME),
-                    new ResourcesListComponent()
+                    new ResourcesListComponent(true)
                 ]
             ]
         );

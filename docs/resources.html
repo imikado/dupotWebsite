@@ -9,8 +9,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/theme.css?v=20261011104045">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Pixelify+Sans:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/theme.css?v=20261012211233">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZVG5R211FM"></script>
@@ -100,44 +100,94 @@
         <h1>Librairies & co</h1>
             <p>Des frameworks PHP légers et des plugins pour accélérer vos projets web et vos créations de jeux. Libres, documentés et prêts à l'emploi.</p>
     </header>
-<div class="grid grid-3">
+<div class="lib-list">
 
     
-                    <a class="card card-link" href="app_dupotStaticGenerationFramework.html">
-                                <div class="card-image" style="--cover: url('/images/dupotStaticGeneration_icon.png')">
-                    <img src="images/dupotStaticGeneration_icon.png" alt="Dupot static-generation-framework" loading="lazy">
-                                                    </div>
-                <div class="card-body">
-                    <h3 class="card-title">Dupot static-generation-framework</h3>
-                    <p>Générez des sites statiques en PHP pur : pas de moteur de template, pas de pipeline de build, zéro dépendance. Le framework qui propulse ce site !</p>
-                    <span class="card-more">En savoir plus <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-                </div>
-            </a>
-        
+        <article class="card lib-card">
+            <a class="lib-visual" href="app_dupotStaticGenerationFramework.html" style="--cover: url('/images/dupotStaticGeneration_icon.png')">
+                <img src="images/dupotStaticGeneration_icon.png" alt="Dupot static-generation-framework" loading="lazy">
+                                    <span class="lib-badge">Propulse ce site</span>
+                            </a>
+
+            <div class="lib-content">
+                <div class="card-platforms">
+                                            <span class="tag-pill">PHP</span>
+                                            <span class="tag-pill">Composer</span>
+                                    </div>
+
+                <h3 class="lib-title"><a href="app_dupotStaticGenerationFramework.html">Dupot static-generation-framework</a></h3>
+                <p>Générez des sites statiques en PHP pur : pas de moteur de template, pas de pipeline de build, zéro dépendance. Le framework qui propulse ce site !</p>
+
+                                    <div class="lib-install">
+                        <span class="lib-install-label">Composer</span>
+                                                    <code><span class="lib-install-prompt">$</span> composer require dupot/static-generation-framework</code>
+                            <button type="button" class="lib-copy" data-copy="composer require dupot/static-generation-framework" aria-label="Copier la commande"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span>Copier</span></button>
+                                            </div>
+                
+                <div class="lib-actions">
+                    <a class="btn btn-primary" href="app_dupotStaticGenerationFramework.html">En savoir plus <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                                            <a class="btn btn-ghost btn-repo" href="https://github.com/imikado/dupotStaticGenerationFramework" target="_blank"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.9 1.55 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.33 2.74-1.05 2.74-1.05.56 1.42.21 2.47.1 2.73.65.72 1.03 1.64 1.03 2.76 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>GitHub</a>
+                                                                <a class="btn btn-ghost" href="https://packagist.org/packages/dupot/static-generation-framework" target="_blank"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>Packagist</a>
+                                    </div>
+            </div>
+        </article>
+
     
-                    <a class="card card-link" href="app_dupotStaticManagementFramework.html">
-                                <div class="card-image" style="--cover: url('/images/dupotStaticManagement_icon.png')">
-                    <img src="images/dupotStaticManagement_icon.png" alt="Dupot static-management-framework" loading="lazy">
-                                                    </div>
-                <div class="card-body">
-                    <h3 class="card-title">Dupot static-management-framework</h3>
-                    <p>Le micro-framework PHP sans dépendance pour ajouter un back-office dynamique à vos sites statiques : routing JSON, pages, vues et sessions.</p>
-                    <span class="card-more">En savoir plus <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-                </div>
-            </a>
-        
+        <article class="card lib-card">
+            <a class="lib-visual" href="app_dupotStaticManagementFramework.html" style="--cover: url('/images/dupotStaticManagement_icon.png')">
+                <img src="images/dupotStaticManagement_icon.png" alt="Dupot static-management-framework" loading="lazy">
+                            </a>
+
+            <div class="lib-content">
+                <div class="card-platforms">
+                                            <span class="tag-pill">PHP</span>
+                                            <span class="tag-pill">Composer</span>
+                                    </div>
+
+                <h3 class="lib-title"><a href="app_dupotStaticManagementFramework.html">Dupot static-management-framework</a></h3>
+                <p>Le micro-framework PHP sans dépendance pour ajouter un back-office dynamique à vos sites statiques : routing JSON, pages, vues et sessions.</p>
+
+                                    <div class="lib-install">
+                        <span class="lib-install-label">Composer</span>
+                                                    <code><span class="lib-install-prompt">$</span> composer require dupot/static-management-framework</code>
+                            <button type="button" class="lib-copy" data-copy="composer require dupot/static-management-framework" aria-label="Copier la commande"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span>Copier</span></button>
+                                            </div>
+                
+                <div class="lib-actions">
+                    <a class="btn btn-primary" href="app_dupotStaticManagementFramework.html">En savoir plus <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                                            <a class="btn btn-ghost btn-repo" href="https://github.com/imikado/dupotStaticManagementFramework" target="_blank"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.9 1.55 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.33 2.74-1.05 2.74-1.05.56 1.42.21 2.47.1 2.73.65.72 1.03 1.64 1.03 2.76 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>GitHub</a>
+                                                                <a class="btn btn-ghost" href="https://packagist.org/packages/dupot/static-management-framework" target="_blank"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>Packagist</a>
+                                    </div>
+            </div>
+        </article>
+
     
-                    <a class="card card-link" href="app_kritaSpritesheetExporter.html">
-                                <div class="card-image" style="--cover: url('/images/kritaSpritesheetExporter_icon.png')">
-                    <img src="images/kritaSpritesheetExporter_icon.png" alt="Krita SpritesheetExporter" loading="lazy">
-                                                    </div>
-                <div class="card-body">
-                    <h3 class="card-title">Krita SpritesheetExporter</h3>
-                    <p>Transformez vos animations Krita en spritesheets prêtes pour votre moteur de jeu, en un clic : bande horizontale, fond transparent, nom du document.</p>
-                    <span class="card-more">En savoir plus <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-                </div>
-            </a>
-        
+        <article class="card lib-card">
+            <a class="lib-visual" href="app_kritaSpritesheetExporter.html" style="--cover: url('/images/kritaSpritesheetExporter_icon.png')">
+                <img src="images/kritaSpritesheetExporter_icon.png" alt="Krita SpritesheetExporter" loading="lazy">
+                            </a>
+
+            <div class="lib-content">
+                <div class="card-platforms">
+                                            <span class="tag-pill">Python</span>
+                                            <span class="tag-pill">Plugin Krita</span>
+                                    </div>
+
+                <h3 class="lib-title"><a href="app_kritaSpritesheetExporter.html">Krita SpritesheetExporter</a></h3>
+                <p>Transformez vos animations Krita en spritesheets prêtes pour votre moteur de jeu, en un clic : bande horizontale, fond transparent, nom du document.</p>
+
+                                    <div class="lib-install">
+                        <span class="lib-install-label">Dans Krita</span>
+                                                    <span class="lib-install-text">Outils › Scripts › Importer un module externe Python depuis un fichier…</span>
+                                            </div>
+                
+                <div class="lib-actions">
+                    <a class="btn btn-primary" href="app_kritaSpritesheetExporter.html">En savoir plus <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                                            <a class="btn btn-ghost btn-repo" href="https://github.com/imikado/kritaSpritesheetManager" target="_blank"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.9 1.55 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.33 2.74-1.05 2.74-1.05.56 1.42.21 2.47.1 2.73.65.72 1.03 1.64 1.03 2.76 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>GitHub</a>
+                                                        </div>
+            </div>
+        </article>
+
     </div>
 
     </div>
@@ -165,6 +215,7 @@
 
   <script src="js/nav.js"></script>
   <script src="js/gallery.js"></script>
+  <script src="js/copy.js"></script>
 
 </body>
 

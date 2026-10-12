@@ -1,97 +1,160 @@
 [
     {
-        "date": "2024 novembre",
-        "magazine": "Linux Magazine 170",
-        "article": "Kanban : Créer une Google Drive App",
-        "body": "Aprenez comment créer votre propre extension Google Drive",
-        "github": "https://github.com/imikado/articleLMkanbanWithGdrive"
+        "year": "2024",
+        "month": "novembre",
+        "magazine": "GNU/Linux Magazine",
+        "issues": ["170"],
+        "special": false,
+        "article": "Kanban : créer une Google Drive App",
+        "body": "Apprenez comment créer votre propre extension Google Drive.",
+        "tags": ["Google Drive", "Kanban"],
+        "repos": [
+            {"url": "https://github.com/imikado/articleLMkanbanWithGdrive"}
+        ]
     },
     {
-        "date": "2023 mars",
-        "magazine": "Linux Magazine HS 124",
-        "article": "Découvrez comment héberger facilement vos sites web statiques à moindre coût avec Github Pages.",
-        "body": "Un simple projet de site statique utilisant le framework dupot/static-generation-framework",
-        "github": "https://github.com/imikado/articleLMmyBlogWebsite"
+        "year": "2023",
+        "month": "mars",
+        "magazine": "GNU/Linux Magazine",
+        "issues": ["124"],
+        "special": true,
+        "article": "Hébergez facilement vos sites web statiques à moindre coût avec GitHub Pages",
+        "body": "Un simple projet de site statique utilisant le framework dupot/static-generation-framework.",
+        "tags": ["PHP", "GitHub Pages"],
+        "repos": [
+            {"url": "https://github.com/imikado/articleLMmyBlogWebsite"}
+        ]
     },
     {
-        "date": "2022 octobre",
-        "magazine": "Linux Magazine HS 121",
+        "year": "2022",
+        "month": "octobre",
+        "magazine": "GNU/Linux Magazine",
+        "issues": ["121"],
+        "special": true,
         "article": "Créer une application GraphQL avec Kotlin",
-        "body": "Un backend graphQL écrit en Kotlin",
-        "github": "https://github.com/imikado/articleLMgraphQLwithKotlin"
+        "body": "Un backend GraphQL écrit en Kotlin.",
+        "tags": ["Kotlin", "GraphQL"],
+        "repos": [
+            {"url": "https://github.com/imikado/articleLMgraphQLwithKotlin"}
+        ]
     },
     {
-        "date": "2022 juillet",
-        "magazine": "Linux Magazine 258",
+        "year": "2022",
+        "month": "juillet",
+        "magazine": "GNU/Linux Magazine",
+        "issues": ["258"],
+        "special": false,
         "article": "Créer un Escape Game VR avec Godot",
-        "body": "Jeu mobile android: un Escape Game VR, développé avec Godot",
-        "github": "https://github.com/imikado/articleLMGodotLittleEscapeVR"
+        "body": "Un jeu mobile Android : un Escape Game en réalité virtuelle, développé avec Godot.",
+        "tags": ["Godot", "VR", "Android"],
+        "repos": [
+            {"url": "https://github.com/imikado/articleLMGodotLittleEscapeVR"}
+        ]
     },
     {
-        "date": "2022 mai",
-        "magazine": "Linux Magazine 257",
+        "year": "2022",
+        "month": "mai",
+        "magazine": "GNU/Linux Magazine",
+        "issues": ["257"],
+        "special": false,
         "article": "Faire de la clean architecture avec Symfony",
-        "body": "Exemple de projet symfony en respectant la clean architecture",
-        "github": "https://github.com/imikado/articleLMCleanArchitectureSymfony"
+        "body": "Un exemple de projet Symfony qui respecte la clean architecture.",
+        "tags": ["PHP", "Symfony"],
+        "repos": [
+            {"url": "https://github.com/imikado/articleLMCleanArchitectureSymfony"}
+        ]
     },
     {
-        "date": "2022 Janvier",
-        "magazine": "Linux Magazine 255",
+        "year": "2022",
+        "month": "janvier",
+        "magazine": "GNU/Linux Magazine",
+        "issues": ["255"],
+        "special": false,
         "article": "Créer une application React avec Recoil plutôt que Redux",
-        "body": "Project React.js utilisant Recoil comme gestionnaire de state partagé ",
-        "github": "https://github.com/imikado/articleLMreactJsRecoil"
+        "body": "Un projet React.js utilisant Recoil comme gestionnaire de state partagé.",
+        "tags": ["React", "Recoil"],
+        "repos": [
+            {"url": "https://github.com/imikado/articleLMreactJsRecoil"}
+        ]
     },
     {
-        "date": "2021 Décembre",
-        "magazine": "Linux Magazine 254",
-        "article": "Créer une application avec graphQL plutôt que REST",
-        "body": "Une application front/back graphQL-symfony/react: partie Backend ",
-        "github": "https://github.com/imikado/articleLMgraphQLbackend"
+        "year": "2021",
+        "month": "décembre",
+        "magazine": "GNU/Linux Magazine",
+        "issues": ["254"],
+        "special": false,
+        "article": "Créer une application avec GraphQL plutôt que REST",
+        "body": "Une application complète GraphQL : backend Symfony et frontend React.",
+        "tags": ["GraphQL", "Symfony", "React"],
+        "repos": [
+            {"label": "Backend", "url": "https://github.com/imikado/articleLMgraphQLbackend"},
+            {"label": "Frontend", "url": "https://github.com/imikado/articleLMgraphQLfrontend"}
+        ]
     },
     {
-        "date": "2021 Décembre",
-        "magazine": "Linux Magazine 254",
-        "article": "Créer une application avec graphQL plutôt que REST",
-        "body": "Une application front/back graphQL-symfony/react: partie Frontend ",
-        "github": "https://github.com/imikado/articleLMgraphQLfrontend"
+        "year": "2021",
+        "month": "mars, juin, juillet",
+        "magazine": "GNU/Linux Magazine",
+        "issues": ["247", "249", "250"],
+        "special": false,
+        "article": "Godot : comment créer un jeu d'aventure en pixel art (parties 1, 2 et 3)",
+        "body": "La création d'un jeu mobile d'aventure en pixel art, développé avec Godot.",
+        "tags": ["Godot", "Pixel art"],
+        "repos": [
+            {"url": "https://github.com/imikado/articleLMGodotLittleAdventure"}
+        ]
     },
     {
-        "date": "2021 Mars,Juin, Juillet",
-        "magazine": "Linux Magazine 247,249,250",
-        "article": "Godot : comment créer un jeu d’aventure en pixel art partie 1,2,3",
-        "body": "Création d'un jeu mobile d'aventure en pixel art, développé avec Godot",
-        "github": "https://github.com/imikado/articleLMGodotLittleAdventure"
-    },
-    {
-        "date": "2020 Septembre",
-        "magazine": "Linux Magazine HS 110",
+        "year": "2020",
+        "month": "septembre",
+        "magazine": "GNU/Linux Magazine",
+        "issues": ["110"],
+        "special": true,
         "article": "Découvrez React Native en créant une liste de courses",
-        "body": "Une application de liste de courses avec React native",
-        "github": "https://github.com/imikado/articleLMintroductionReactNative"
+        "body": "Une application de liste de courses avec React Native.",
+        "tags": ["React Native", "Mobile"],
+        "repos": [
+            {"url": "https://github.com/imikado/articleLMintroductionReactNative"}
+        ]
     },
     {
-        "date": "2020 Mai",
-        "magazine": "Linux Magazine HS 108",
-        "article": "Introduction au framework Javascript Vue.js",
-        "body": "Une application de type kanban-board écrit avec Vue.js",
-        "github": "https://github.com/imikado/articleLMintroductionVueJsKanban"
+        "year": "2020",
+        "month": "mai",
+        "magazine": "GNU/Linux Magazine",
+        "issues": ["108"],
+        "special": true,
+        "article": "Introduction au framework JavaScript Vue.js",
+        "body": "Une application de type kanban-board écrite avec Vue.js.",
+        "tags": ["Vue.js", "JavaScript"],
+        "repos": [
+            {"url": "https://github.com/imikado/articleLMintroductionVueJsKanban"}
+        ]
     },
     {
-        "date": "2020 Février,Mars,Avril",
-        "magazine": "Linux Magazine 235,236,237",
-        "article": "Apprendre a développer sous Android - partie 1,2 et 3 ",
-        "github": "https://github.com/imikado/articleLMcreerJeuAndroidExemple"
+        "year": "2020",
+        "month": "février, mars, avril",
+        "magazine": "GNU/Linux Magazine",
+        "issues": ["235", "236", "237"],
+        "special": false,
+        "article": "Apprendre à développer sous Android (parties 1, 2 et 3)",
+        "body": "Un exemple de jeu Android, construit pas à pas au fil des trois parties.",
+        "tags": ["Android", "Mobile"],
+        "repos": [
+            {"url": "https://github.com/imikado/articleLMcreerJeuAndroidExemple"}
+        ]
     },
     {
-        "date": "2019 Septembre",
-        "magazine": "Linux Magazine 230",
-        "article": "Introduction à socket.io, partie serveur",
-        "github": "https://github.com/imikado/articleLMsocketio_server"
-    },
-    {
-        "date": "2019 Septembre",
-        "magazine": "Linux Magazine 230",
-        "article": "Introduction à socket.io, partie client",
-        "github": "https://github.com/imikado/articleLMsocketio_client"
+        "year": "2019",
+        "month": "septembre",
+        "magazine": "GNU/Linux Magazine",
+        "issues": ["230"],
+        "special": false,
+        "article": "Introduction à socket.io",
+        "body": "Une application temps réel avec socket.io : la partie serveur et la partie client.",
+        "tags": ["Node.js", "socket.io"],
+        "repos": [
+            {"label": "Serveur", "url": "https://github.com/imikado/articleLMsocketio_server"},
+            {"label": "Client", "url": "https://github.com/imikado/articleLMsocketio_client"}
+        ]
     }
 ]

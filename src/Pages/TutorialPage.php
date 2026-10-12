@@ -35,7 +35,7 @@ class TutorialPage extends PageAbstract implements PageInterface
         return $this->renderLayoutWithParamList(
             __DIR__ . '/layout/default.php',
             [
-                'nav' => new NavComponent($this->getFilename()),
+                'nav' => new NavComponent(TutorialListPage::FILENAME),
                 'contentList' => [
                     new TutorialComponent((object)['id' => $this->id])
                 ]
