@@ -1222,7 +1222,6 @@ body.nav-open .nav-mobile {
     border: 1px solid var(--border);
     background: var(--bg-elevated-2);
     box-shadow: var(--shadow-card);
-    image-rendering: pixelated;
 }
 
 /* screenshot gallery (built from markdown images by js/gallery.js) */

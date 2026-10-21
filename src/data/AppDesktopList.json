@@ -1,9 +1,9 @@
 [
     {
         "id": "dupotDevTools",
-        "icon": "dupotDevTools_icon.jpg?v=20260824_2225",
-        "title": "Dupot dev tools",
-        "body": "Le couteau suisse du développeur : conversion, encodage, formatage, SQL… tous vos petits outils du quotidien réunis dans une seule application.",
+        "icon": "dupotDevTools_icon.jpg?v=20261021",
+        "title": "Dupot Dev Tools",
+        "body": "Le couteau suisse du développeur : 16 outils (JSON, SQL, JWT, regex, hash, diff, cron…) réunis dans une application native, rapide et 100 % locale.",
         "github": "https://github.com/imikado/dupotDevTools",
         "modal": {
             "src": "/data/content/dupotDevTools.md"

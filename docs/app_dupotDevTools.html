@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Pixelify+Sans:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/theme.css?v=20261012211233">
+  <link rel="stylesheet" href="css/theme.css?v=20261021214212">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZVG5R211FM"></script>
@@ -97,13 +97,13 @@
 
       <a class="back-link" href="desktop.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>Logiciels</a>
 
-<div class="project-hero" style="--cover: url('/images/dupotDevTools_icon.jpg?v=20260824_2225')">
-    <img class="project-icon" src="images/dupotDevTools_icon.jpg?v=20260824_2225" alt="Dupot dev tools">
+<div class="project-hero" style="--cover: url('/images/dupotDevTools_icon.jpg?v=20261021')">
+    <img class="project-icon" src="images/dupotDevTools_icon.jpg?v=20261021" alt="Dupot Dev Tools">
 
     <div class="project-hero-text">
         <span class="chip">Application opensource</span>
-                        <h1>Dupot dev tools</h1>
-        <p class="project-lead">Le couteau suisse du développeur : conversion, encodage, formatage, SQL… tous vos petits outils du quotidien réunis dans une seule application.</p>
+                        <h1>Dupot Dev Tools</h1>
+        <p class="project-lead">Le couteau suisse du développeur&nbsp;: 16 outils (JSON, SQL, JWT, regex, hash, diff, cron…) réunis dans une application native, rapide et 100 % locale.</p>
 
         <div class="project-availability">
 
@@ -123,21 +123,42 @@
     <div class="card content-card">
         <div class="project-body">
             
-<p>Marre de jongler entre des dizaines de sites web pour convertir, encoder ou formater vos données ? Dupot dev tools réunit dans une seule application de bureau les petits outils dont un développeur a besoin au quotidien.</p>
+<figure class="project-media">
+<img src="/images/screenshots/apps/dupotDevTools/home.png?v=20261021" alt="Accueil de Dupot Dev Tools : la liste des outils par catégorie, avec la recherche" />
+</figure>
+<p>Combien de fois par jour collez-vous un JWT, un bloc JSON ou une requête SQL dans un site web inconnu, juste pour le lire&nbsp;? Dupot Dev Tools réunit tous ces petits outils du quotidien dans <strong>une seule application de bureau</strong>.</p>
 <ul>
-<li><strong>Conversion</strong> : passez d'un format à un autre en un instant</li>
-<li><strong>Encodage</strong> : encodez et décodez vos chaînes sans quitter votre poste</li>
-<li><strong>Formatage</strong> : rendez lisibles vos données brutes</li>
-<li><strong>Chaînes de caractères</strong> : les manipulations courantes à portée de clic</li>
-<li><strong>SQL Viewer</strong> : connectez-vous à votre base, posez vos tables sur un canevas interactif, visualisez leurs jointures et lancez vos requêtes</li>
+<li>🔒 <strong>100 % local</strong>&nbsp;: vos tokens, vos données et vos requêtes ne quittent jamais votre machine</li>
+<li>⚡ <strong>Natif et léger</strong>&nbsp;: un seul binaire Rust en GTK 4, sans Electron ni navigateur</li>
+<li>🎨 <strong>Bien intégré au bureau</strong>&nbsp;: interface Libadwaita, thèmes clair et sombre, mise en page adaptative et recherche parmi les outils</li>
+<li>🐧 <strong>Linux et Windows</strong></li>
 </ul>
-<p>Tout fonctionne en local : vos données restent sur votre machine. Gratuit et open source.</p>
+<h3>16 outils</h3>
+<ul>
+<li>🗄️ <strong>Base de données</strong>&nbsp;: SQL Viewer, pour explorer vos bases SQLite, PostgreSQL et MySQL</li>
+<li>🎨 <strong>Formatage</strong>&nbsp;: JSON (embellir ou minifier), SQL et XML</li>
+<li>🔄 <strong>Conversion</strong>&nbsp;: timestamp ↔ date (UTC, local, ISO 8601, RFC 2822, temps relatif), YAML ↔ JSON, HTML vers texte</li>
+<li>🔐 <strong>Encodage</strong>&nbsp;: Base64, encodage d'URL, entités HTML et décodeur de JWT</li>
+<li>🔤 <strong>Texte</strong>&nbsp;: générateur de hash (MD5, SHA-1, SHA-2, SHA-3, BLAKE2b), testeur de regex avec groupes de capture et remplacement, comparaison de textes, générateur UUID v4 / v7 et ULID</li>
+<li>🧮 <strong>Analyse</strong>&nbsp;: explication d'une expression cron en clair, avec ses prochaines exécutions</li>
+</ul>
+<p>Chaque outil texte présente l'entrée et la sortie côte à côte, avec coloration syntaxique et copie en un clic. Timestamp, UUID, regex, diff et cron se mettent à jour pendant la saisie.</p>
+<h3>Zoom sur le SQL Viewer</h3>
+<p>Un constructeur visuel de requêtes pour comprendre une base de données d'un coup d'œil&nbsp;:</p>
+<ul>
+<li><strong>Connectez-vous</strong> à SQLite, PostgreSQL ou MySQL&nbsp;: les pilotes sont intégrés, rien d'autre à installer</li>
+<li><strong>Posez vos tables</strong> sur un canevas, sous forme de cartes déplaçables et redimensionnables</li>
+<li><strong>Tracez les jointures</strong> en reliant les colonnes entre les tables</li>
+<li><strong>Choisissez vos colonnes</strong>&nbsp;: la requête SQL est générée pour vous, puis modifiable librement</li>
+<li><strong>Lancez-la</strong>, parcourez les résultats et <strong>exportez-les en CSV</strong></li>
+</ul>
+<p>Gratuit et open source (licence LGPL-2.1), écrit en Rust avec une architecture propre&nbsp;: chaque outil est un petit module testé, et ajouter le vôtre ne demande que quelques lignes.</p>
 <h3>Screenshots</h3>
-<p><img src="/images/screenshots/apps/dupotDevTools/database_section.png?v=20260824" alt="image" />
-<img src="/images/screenshots/apps/dupotDevTools/sqlviewer_new_connection.png?v=20260824" alt="image" />
-<img src="/images/screenshots/apps/dupotDevTools/sqlviewer_add_table.png?v=20260824" alt="image" />
-<img src="/images/screenshots/apps/dupotDevTools/sqlviewer_joins.png?v=20260824" alt="image" />
-<img src="/images/screenshots/apps/dupotDevTools/sqlviewer_request.png?v=20260824" alt="image" /></p>        </div>
+<p><img src="/images/screenshots/apps/dupotDevTools/home.png?v=20261021" alt="Accueil : tous les outils" />
+<img src="/images/screenshots/apps/dupotDevTools/sqlviewer_new_connection.png?v=20260824" alt="SQL Viewer : nouvelle connexion" />
+<img src="/images/screenshots/apps/dupotDevTools/sqlviewer_add_table.png?v=20260824" alt="SQL Viewer : ajout d&#039;une table" />
+<img src="/images/screenshots/apps/dupotDevTools/sqlviewer_joins.png?v=20260824" alt="SQL Viewer : les jointures" />
+<img src="/images/screenshots/apps/dupotDevTools/sqlviewer_request.png?v=20260824" alt="SQL Viewer : la requête et ses résultats" /></p>        </div>
     </div>
 
     </div>
