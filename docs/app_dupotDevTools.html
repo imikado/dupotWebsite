@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Pixelify+Sans:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/theme.css?v=20261021214212">
+  <link rel="stylesheet" href="css/theme.css?v=20261022220804">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZVG5R211FM"></script>
@@ -124,7 +124,7 @@
         <div class="project-body">
             
 <figure class="project-media">
-<img src="/images/screenshots/apps/dupotDevTools/home.png?v=20261021" alt="Accueil de Dupot Dev Tools : la liste des outils par catégorie, avec la recherche" />
+<img src="/images/promo/apps/dupotDevTools/promo.gif?v=20261023" alt="Dupot Dev Tools en action : construire une requête sur le canevas du SQL Viewer, la filtrer, l'exécuter, puis taper du SQL et le voir redessiné" />
 </figure>
 <p>Combien de fois par jour collez-vous un JWT, un bloc JSON ou une requête SQL dans un site web inconnu, juste pour le lire&nbsp;? Dupot Dev Tools réunit tous ces petits outils du quotidien dans <strong>une seule application de bureau</strong>.</p>
 <ul>
@@ -144,21 +144,25 @@
 </ul>
 <p>Chaque outil texte présente l'entrée et la sortie côte à côte, avec coloration syntaxique et copie en un clic. Timestamp, UUID, regex, diff et cron se mettent à jour pendant la saisie.</p>
 <h3>Zoom sur le SQL Viewer</h3>
-<p>Un constructeur visuel de requêtes pour comprendre une base de données d'un coup d'œil&nbsp;:</p>
+<p>Un constructeur visuel de requêtes, dans l'esprit de SQL Server Management Studio, pour comprendre une base de données d'un coup d'œil&nbsp;:</p>
 <ul>
 <li><strong>Connectez-vous</strong> à SQLite, PostgreSQL ou MySQL&nbsp;: les pilotes sont intégrés, rien d'autre à installer</li>
-<li><strong>Posez vos tables</strong> sur un canevas, sous forme de cartes déplaçables et redimensionnables</li>
-<li><strong>Tracez les jointures</strong> en reliant les colonnes entre les tables</li>
-<li><strong>Choisissez vos colonnes</strong>&nbsp;: la requête SQL est générée pour vous, puis modifiable librement</li>
-<li><strong>Lancez-la</strong>, parcourez les résultats et <strong>exportez-les en CSV</strong></li>
+<li><strong>Enregistrez vos connexions</strong> dans un fichier JSON et rouvrez-les (le dernier fichier est rechargé au démarrage). Les mots de passe ne sont jamais enregistrés&nbsp;: ils sont demandés une fois par session</li>
+<li><strong>Posez vos tables</strong> sur un canevas, sous forme de cartes déplaçables et redimensionnables qui affichent chaque colonne, son type et ses clés étrangères</li>
+<li><strong>Les jointures se tracent toutes seules</strong> à partir des clés étrangères&nbsp;; reliez vous-même deux colonnes, ou cliquez sur un lien pour le modifier ou le supprimer</li>
+<li><strong>Grille de critères</strong>&nbsp;: pour chaque colonne, un alias, l'affichage, le tri (et son ordre) et des filtres&nbsp;: <code>&gt; 8</code>, <code>LIKE 'A%'</code>, <code>IS NULL</code> ou une simple valeur</li>
+<li><strong>Le SQL suit le canevas et la grille</strong> tant que vous ne le modifiez pas. Tapez ou collez un <code>SELECT</code>&nbsp;: il est redessiné sur le canevas et dans la grille</li>
+<li><strong>Lancez la requête</strong> (Ctrl+Entrée), parcourez les résultats et <strong>exportez-les en CSV</strong></li>
+<li><strong>Quatre panneaux redimensionnables</strong>&nbsp;: <em>Diagramme</em>, <em>Critères</em>, <em>SQL</em> et <em>Résultats</em>, chacun affichable ou masquable depuis la barre d'outils</li>
 </ul>
 <p>Gratuit et open source (licence LGPL-2.1), écrit en Rust avec une architecture propre&nbsp;: chaque outil est un petit module testé, et ajouter le vôtre ne demande que quelques lignes.</p>
 <h3>Screenshots</h3>
-<p><img src="/images/screenshots/apps/dupotDevTools/home.png?v=20261021" alt="Accueil : tous les outils" />
-<img src="/images/screenshots/apps/dupotDevTools/sqlviewer_new_connection.png?v=20260824" alt="SQL Viewer : nouvelle connexion" />
-<img src="/images/screenshots/apps/dupotDevTools/sqlviewer_add_table.png?v=20260824" alt="SQL Viewer : ajout d&#039;une table" />
-<img src="/images/screenshots/apps/dupotDevTools/sqlviewer_joins.png?v=20260824" alt="SQL Viewer : les jointures" />
-<img src="/images/screenshots/apps/dupotDevTools/sqlviewer_request.png?v=20260824" alt="SQL Viewer : la requête et ses résultats" /></p>        </div>
+<p><img src="/images/screenshots/apps/dupotDevTools/home.png?v=20261023" alt="Accueil : tous les outils" />
+<img src="/images/screenshots/apps/dupotDevTools/sqlviewer_new_connection.png?v=20261023" alt="SQL Viewer : nouvelle connexion" />
+<img src="/images/screenshots/apps/dupotDevTools/sqlviewer_add_table.png?v=20261023" alt="SQL Viewer : ajout d&#039;une table, les jointures suivent les clés étrangères" />
+<img src="/images/screenshots/apps/dupotDevTools/sqlviewer_joins.png?v=20261023" alt="SQL Viewer : les jointures" />
+<img src="/images/screenshots/apps/dupotDevTools/sqlviewer_request.png?v=20261023" alt="SQL Viewer : grille de critères (alias, filtre, tri) puis exécution" />
+<img src="/images/screenshots/apps/dupotDevTools/sqlviewer_sql_to_canvas.png?v=20261023" alt="SQL Viewer : un SELECT tapé est redessiné sur le canevas et dans la grille" /></p>        </div>
     </div>
 
     </div>
