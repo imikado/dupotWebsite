@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Pixelify+Sans:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/theme.css?v=20261022220804">
+  <link rel="stylesheet" href="css/theme.css?v=20261023214134">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZVG5R211FM"></script>
@@ -97,13 +97,13 @@
 
       <a class="back-link" href="desktop.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>Logiciels</a>
 
-<div class="project-hero" style="--cover: url('/images/dupotFileBrowser_icon.jpg?v=20260824_2225')">
-    <img class="project-icon" src="images/dupotFileBrowser_icon.jpg?v=20260824_2225" alt="Dupot File browser">
+<div class="project-hero" style="--cover: url('/images/dupotFileBrowser_icon.jpg?v=20261023')">
+    <img class="project-icon" src="images/dupotFileBrowser_icon.jpg?v=20261023" alt="Dupot File browser">
 
     <div class="project-hero-text">
         <span class="chip">Application opensource</span>
                         <h1>Dupot File browser</h1>
-        <p class="project-lead">Un gestionnaire de fichiers Linux qui sort des sentiers battus : navigation en colonnes, chemin éditable, couleurs et plusieurs modes d'affichage.</p>
+        <p class="project-lead">Un gestionnaire de fichiers Linux simple et léger : navigation en colonnes, onglets, corbeille, archives, couleurs et plusieurs modes d'affichage.</p>
 
         <div class="project-availability">
 
@@ -123,27 +123,60 @@
     <div class="card content-card">
         <div class="project-body">
             
-<p>Et si votre gestionnaire de fichiers sortait enfin des sentiers battus ?</p>
-<p>Dupot File browser propose une navigation en colonnes, inspirée de macOS : chaque dossier ouvert s'affiche à côté du précédent, pour garder en permanence une vue claire de l'arborescence et naviguer sans jamais se perdre.</p>
+<figure class="project-media">
+<img src="/images/promo/apps/dupotFileBrowser/promo.gif?v=20261023" alt="Dupot File browser en action : navigation en colonnes, vues grille et détails, onglets" />
+</figure>
+<p>La plupart des gestionnaires de fichiers veulent tout faire. Dupot File browser se concentre sur ce que vous faites chaque jour&nbsp;: <strong>trouver, ouvrir et ranger vos fichiers</strong>, dans une interface épurée façon GNOME qui s'intègre à n'importe quel bureau Linux moderne.</p>
 <ul>
-<li><strong>Navigation en colonnes</strong> pour parcourir vos dossiers d'un simple coup d'œil</li>
-<li><strong>Chemin éditable</strong> : tapez directement l'emplacement où vous voulez aller</li>
-<li><strong>Couleurs</strong> : marquez vos fichiers et dossiers importants pour les repérer instantanément</li>
-<li><strong>Plusieurs modes d'affichage</strong> : liste, détails ou icônes, selon vos envies</li>
-<li><strong>Propriétés des fichiers</strong> et menu contextuel complet</li>
-<li>Gratuit et open source</li>
+<li>⚡ <strong>Simple et léger</strong>&nbsp;: un seul binaire Rust en GTK 4 / Libadwaita</li>
+<li>🗂️ <strong>Navigation en colonnes</strong> inspirée de macOS&nbsp;: chaque dossier ouvert s'affiche à côté du précédent, pour ne jamais perdre le fil de l'arborescence</li>
+<li>🌍 Disponible en français, anglais et italien</li>
 </ul>
+<h3>Navigation</h3>
+<ul>
+<li><strong>Trois modes d'affichage</strong>&nbsp;: <strong>colonnes</strong> (par défaut), <strong>grille</strong> avec curseur de taille des icônes (idéal pour parcourir vos photos) et <strong>détails</strong></li>
+<li><strong>Onglets</strong> pour ouvrir plusieurs dossiers côte à côte (Ctrl+T / Ctrl+W)</li>
+<li><strong>Chemin éditable</strong>&nbsp;: tapez l'emplacement voulu et validez avec Entrée</li>
+<li><strong>Barre latérale</strong> avec Dossier personnel, Corbeille, vos favoris et des raccourcis vers <code>/etc</code> et <code>/usr</code> de l'hôte (pratique depuis le bac à sable Flatpak)&nbsp;; elle se replie sur les fenêtres étroites</li>
+<li><strong>Ouvrir un dossier depuis la ligne de commande</strong>&nbsp;: <code>dupot-file-browser ~/Projets</code> (réutilise la fenêtre ouverte)</li>
+<li>Ouverture en <strong>simple clic</strong> et affichage des <strong>fichiers cachés</strong> en option</li>
+</ul>
+<h3>Opérations sur les fichiers</h3>
+<ul>
+<li>Copier, couper / déplacer, coller, renommer et <strong>mettre à la corbeille</strong></li>
+<li><strong>Page Corbeille</strong>&nbsp;: restaurez ou supprimez définitivement, videz la corbeille</li>
+<li>Une notification confirme chaque copie, déplacement, compression ou extraction terminé</li>
+<li><strong>Compresser</strong> fichiers et dossiers en <code>.zip</code>, <code>.tar</code>, <code>.tar.gz</code>, <code>.tar.bz2</code>, <code>.tar.xz</code></li>
+<li><strong>Extraire</strong> les archives, y compris les <code>.rar</code></li>
+<li><strong>Ouvrir avec…</strong> n'importe quelle application, et choisir l'application par défaut d'un type de fichier</li>
+<li><strong>Ouvrir un terminal ici</strong> et <strong>copier le chemin</strong> depuis le menu contextuel</li>
+</ul>
+<h3>Organisation</h3>
+<ul>
+<li><strong>Couleurs</strong>&nbsp;: marquez vos dossiers importants pour les repérer instantanément</li>
+<li><strong>Ajoutez des dossiers aux favoris</strong> de la barre latérale</li>
+<li><strong>Propriétés</strong>&nbsp;: taille (calculée pour les dossiers), type, dates, propriétaire et <strong>permissions</strong> modifiables</li>
+<li><strong>Définir une image comme fond d'écran</strong> directement depuis ses propriétés</li>
+</ul>
+<h3>Apparence</h3>
+<ul>
+<li>Thème clair, sombre ou celui du système</li>
+<li>Icônes de fichiers intégrées ou <strong>thème d'icônes du système</strong></li>
+<li><strong>Raccourcis clavier</strong>&nbsp;: Ctrl+1 / 2 / 3 pour changer de vue, Ctrl+L pour éditer le chemin, Alt+↑ pour le dossier parent, F9 pour la barre latérale, Ctrl+, pour les paramètres</li>
+<li>Taille de la fenêtre, mode d'affichage et préférences sont mémorisés</li>
+</ul>
+<p>Gratuit et open source (licence LGPL-2.1), écrit en Rust avec une architecture propre et testée.</p>
 <h3>Screenshots</h3>
-<p><img src="/images/screenshots/apps/dupotFileBrowser/homepage.png?v=20260824" alt="image" />
-<img src="/images/screenshots/apps/dupotFileBrowser/columns_navigation.png?v=20260824" alt="image" />
-<img src="/images/screenshots/apps/dupotFileBrowser/folder_menu.png?v=20260824" alt="image" />
-<img src="/images/screenshots/apps/dupotFileBrowser/path_editable.png?v=20260824" alt="image" />
-<img src="/images/screenshots/apps/dupotFileBrowser/add_color.png?v=20260824" alt="image" />
-<img src="/images/screenshots/apps/dupotFileBrowser/file_properties.png?v=20260824" alt="image" />
-<img src="/images/screenshots/apps/dupotFileBrowser/display_mode_list.png?v=20260824" alt="image" />
-<img src="/images/screenshots/apps/dupotFileBrowser/display_mode_details.png?v=20260824" alt="image" />
-<img src="/images/screenshots/apps/dupotFileBrowser/display_mode_icons.png?v=20260824" alt="image" />
-<img src="/images/screenshots/apps/dupotFileBrowser/parameters.png?v=20260824" alt="image" /></p>        </div>
+<p><img src="/images/screenshots/apps/dupotFileBrowser/homepage.png?v=20261023" alt="Dossier personnel" />
+<img src="/images/screenshots/apps/dupotFileBrowser/columns_navigation.png?v=20261023" alt="Navigation en colonnes" />
+<img src="/images/screenshots/apps/dupotFileBrowser/display_mode_icons.png?v=20261023" alt="Vue grille avec miniatures des images" />
+<img src="/images/screenshots/apps/dupotFileBrowser/display_mode_details.png?v=20261023" alt="Vue détails" />
+<img src="/images/screenshots/apps/dupotFileBrowser/display_mode_list.png?v=20261023" alt="Thème sombre" />
+<img src="/images/screenshots/apps/dupotFileBrowser/path_editable.png?v=20261023" alt="Chemin éditable" />
+<img src="/images/screenshots/apps/dupotFileBrowser/folder_menu.png?v=20261023" alt="Menu contextuel d&#039;un dossier" />
+<img src="/images/screenshots/apps/dupotFileBrowser/add_color.png?v=20261023" alt="Marquer un dossier d&#039;une couleur" />
+<img src="/images/screenshots/apps/dupotFileBrowser/file_properties.png?v=20261023" alt="Propriétés d&#039;un fichier" />
+<img src="/images/screenshots/apps/dupotFileBrowser/parameters.png?v=20261023" alt="Paramètres" /></p>        </div>
     </div>
 
     </div>

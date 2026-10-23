@@ -29,7 +29,7 @@ Un constructeur visuel de requêtes, dans l'esprit de SQL Server Management Stud
 - **Enregistrez vos connexions** dans un fichier JSON et rouvrez-les (le dernier fichier est rechargé au démarrage). Les mots de passe ne sont jamais enregistrés&nbsp;: ils sont demandés une fois par session
 - **Posez vos tables** sur un canevas, sous forme de cartes déplaçables et redimensionnables qui affichent chaque colonne, son type et ses clés étrangères
 - **Les jointures se tracent toutes seules** à partir des clés étrangères&nbsp;; reliez vous-même deux colonnes, ou cliquez sur un lien pour le modifier ou le supprimer
-- **Grille de critères**&nbsp;: pour chaque colonne, un alias, l'affichage, le tri (et son ordre) et des filtres&nbsp;: `> 8`, `LIKE 'A%'`, `IS NULL` ou une simple valeur
+- **Grille de critères**&nbsp;: pour chaque colonne, un alias, l'affichage, le tri (et son ordre) et des filtres&nbsp;: `> 8`, `LIKE 'A%'`, `IS NULL` ou une simple valeur. Les lignes doivent respecter tous les *Filtres* ou tous les *Ou…*
 - **Le SQL suit le canevas et la grille** tant que vous ne le modifiez pas. Tapez ou collez un `SELECT`&nbsp;: il est redessiné sur le canevas et dans la grille
 - **Lancez la requête** (Ctrl+Entrée), parcourez les résultats et **exportez-les en CSV**
 - **Quatre panneaux redimensionnables**&nbsp;: *Diagramme*, *Critères*, *SQL* et *Résultats*, chacun affichable ou masquable depuis la barre d'outils

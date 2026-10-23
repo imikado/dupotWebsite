@@ -22,9 +22,9 @@
     },
     {
         "id": "dupotFileBrowser",
-        "icon": "dupotFileBrowser_icon.jpg?v=20260824_2225",
+        "icon": "dupotFileBrowser_icon.jpg?v=20261023",
         "title": "Dupot File browser",
-        "body": "Un gestionnaire de fichiers Linux qui sort des sentiers battus : navigation en colonnes, chemin éditable, couleurs et plusieurs modes d'affichage.",
+        "body": "Un gestionnaire de fichiers Linux simple et léger : navigation en colonnes, onglets, corbeille, archives, couleurs et plusieurs modes d'affichage.",
         "github": "https://github.com/imikado/dupotFileBrowser",
         "modal": {
             "src": "/data/content/dupotFileBrowser.md"
