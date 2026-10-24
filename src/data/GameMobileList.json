@@ -49,6 +49,7 @@
         "github": "https://github.com/imikado/dupotLittleAdventure",
         "itchio": "https://dupot-org.itch.io/little-adventure",
         "flathub": "https://flathub.org/fr/apps/org.dupot.littleadventure",
+        "snapcraft": "https://snapcraft.io/dupot-little-adventure",
         "modal": {
             "src": "/data/content/littleAdventure.md"
         }
