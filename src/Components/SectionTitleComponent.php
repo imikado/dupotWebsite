@@ -11,12 +11,14 @@ class SectionTitleComponent extends ComponentAbstract implements ComponentInterf
     protected $title;
     protected $seeAllLabel;
     protected $seeAllLink;
+    protected $subtitle;
 
-    public function __construct(string $title, ?string $seeAllLabel = null, ?string $seeAllLink = null)
+    public function __construct(string $title, ?string $seeAllLabel = null, ?string $seeAllLink = null, ?string $subtitle = null)
     {
         $this->title = $title;
         $this->seeAllLabel = $seeAllLabel;
         $this->seeAllLink = $seeAllLink;
+        $this->subtitle = $subtitle;
     }
 
     public function render(): string
@@ -27,6 +29,7 @@ class SectionTitleComponent extends ComponentAbstract implements ComponentInterf
                 'title' => $this->title,
                 'seeAllLabel' => $this->seeAllLabel,
                 'seeAllLink' => $this->seeAllLink,
+                'subtitle' => $this->subtitle,
             ]
         );
     }

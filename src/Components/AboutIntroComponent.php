@@ -17,6 +17,7 @@ class AboutIntroComponent extends ComponentAbstract implements ComponentInterfac
     {
         $gameApi = new DataApi(__DIR__ . '/../data/GameMobileList.json');
         $appDesktopApi = new DataApi(__DIR__ . '/../data/AppDesktopList.json');
+        $appGlfOsApi = new DataApi(__DIR__ . '/../data/AppGlfOsList.json');
         $articleApi = new DataApi(__DIR__ . '/../data/ProjectArticleList.json');
 
         return $this->renderViewWithParamList(
@@ -26,7 +27,7 @@ class AboutIntroComponent extends ComponentAbstract implements ComponentInterfac
                 'yearCount' => (int)date('Y') - self::START_YEAR,
                 'gameCount' => count($gameApi->findAll()),
                 'gamePage' => GamesPage::FILENAME,
-                'appCount' => count($appDesktopApi->findAll()),
+                'appCount' => count($appDesktopApi->findAll()) + count($appGlfOsApi->findAll()),
                 'appPage' => AppsDestkopPage::FILENAME,
                 'articleCount' => count($articleApi->findAll()),
                 'articlePage' => ProjectArticlesPage::FILENAME,

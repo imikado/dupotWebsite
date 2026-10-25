@@ -714,7 +714,7 @@ body.nav-open .nav-mobile {
     background: linear-gradient(var(--accent-strong), var(--accent-2));
 }
 
-.section-title-row a {
+.section-title-row > a {
     display: inline-flex;
     align-items: center;
     gap: 6px;
@@ -725,9 +725,15 @@ body.nav-open .nav-mobile {
     white-space: nowrap;
 }
 
-.section-title-row a svg {
+.section-title-row > a svg {
     width: 14px;
     height: 14px;
+}
+
+.section-title-row .section-subtitle {
+    flex-basis: 100%;
+    margin: -4px 0 0 16px;
+    color: var(--text-muted);
 }
 
 /* -------------------------------------------------------------------------

@@ -2,6 +2,7 @@
 
 use MyWebsite\Apis\DataApi;
 use MyWebsite\Components\AppDesktopListComponent;
+use MyWebsite\Components\AppGlfOsListComponent;
 use MyWebsite\Components\GameListComponent;
 use MyWebsite\Components\ResourcesListComponent;
 use MyWebsite\Pages\AboutPage;
@@ -43,6 +44,10 @@ foreach (GameListComponent::loadList() as $gameLoop) {
 
 foreach (AppDesktopListComponent::loadList() as $appDesktopLoop) {
     $pagesList[] = new ProjectDetailPage($appDesktopLoop, 'Application opensource', AppsDestkopPage::FILENAME, 'Logiciels');
+}
+
+foreach (AppGlfOsListComponent::loadList() as $appGlfOsLoop) {
+    $pagesList[] = new ProjectDetailPage($appGlfOsLoop, 'Application GLF OS', AppsDestkopPage::FILENAME, 'Logiciels');
 }
 
 foreach (ResourcesListComponent::loadList() as $resourceLoop) {

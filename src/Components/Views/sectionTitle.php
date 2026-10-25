@@ -8,4 +8,8 @@ use MyWebsite\Apis\IconApi;
     <?php if ($this->paramList['seeAllLink']) : ?>
         <a href="<?php echo $this->paramList['seeAllLink'] ?>"><?php echo $this->paramList['seeAllLabel'] ?> <?php echo IconApi::render('arrow-right') ?></a>
     <?php endif; ?>
+
+    <?php if ($this->paramList['subtitle']) : ?>
+        <p class="section-subtitle"><?php echo $this->paramList['subtitle'] ?></p>
+    <?php endif; ?>
 </div>

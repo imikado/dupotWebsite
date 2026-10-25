@@ -1,0 +1,22 @@
+[
+    {
+        "id": "glfosWelcomeScreen",
+        "icon": "glfosWelcomeScreen_icon.jpg?v=20261025",
+        "title": "GLF OS Welcome Screen",
+        "body": "L'écran d'accueil de GLF OS : une visite guidée des fonctionnalités du système et un lanceur pour ses outils maison.",
+        "github": "https://github.com/imikado/glfos-welcome-screen",
+        "modal": {
+            "src": "/data/content/glfosWelcomeScreen.md"
+        }
+    },
+    {
+        "id": "glfosNixSamba",
+        "icon": "glfosNixSamba_icon.jpg?v=20261025",
+        "title": "GLF OS Nix Samba",
+        "body": "Gérez vos partages Samba sous GLF OS sans éditer de fichiers Nix : montez les partages de votre NAS et partagez vos dossiers sur le réseau.",
+        "github": "https://github.com/imikado/glfos-nix-samba",
+        "modal": {
+            "src": "/data/content/glfosNixSamba.md"
+        }
+    }
+]

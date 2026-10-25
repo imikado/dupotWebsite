@@ -15,6 +15,7 @@ class HomeBannerComponent extends ComponentAbstract implements ComponentInterfac
     {
         $gameApi = new DataApi(__DIR__ . '/../data/GameMobileList.json');
         $appDesktopApi = new DataApi(__DIR__ . '/../data/AppDesktopList.json');
+        $appGlfOsApi = new DataApi(__DIR__ . '/../data/AppGlfOsList.json');
         $resourceApi = new DataApi(__DIR__ . '/../data/ResourcesList.json');
 
         return $this->renderViewWithParamList(
@@ -22,7 +23,7 @@ class HomeBannerComponent extends ComponentAbstract implements ComponentInterfac
             [
                 'gameCount' => count($gameApi->findAll()),
                 'gamePage' => GamesPage::FILENAME,
-                'appCount' => count($appDesktopApi->findAll()),
+                'appCount' => count($appDesktopApi->findAll()) + count($appGlfOsApi->findAll()),
                 'appPage' => AppsDestkopPage::FILENAME,
                 'libCount' => count($resourceApi->findAll()),
                 'libPage' => ResourcesPage::FILENAME,
