@@ -1,5 +1,17 @@
 [
     {
+        "id": "littleEscape",
+        "icon": "mobile_littleEscape_icon.png",
+        "thumbnail": "thumbnails/games/littleEscape.jpg",
+        "title": "Little Escape",
+        "body": "Enfermé dans un petit appartement : fouillez chaque pièce, trouvez les indices, les clés et les codes pour ouvrir la porte de sortie.",
+        "github": "https://github.com/imikado/dupotLittleEscape",
+        "itchio": "https://dupot-org.itch.io/little-escape",
+        "modal": {
+            "src": "/data/content/littleEscape.md"
+        }
+    },
+    {
         "id": "typeToFight",
         "icon": "mobile_typeToFight_icon.png",
         "thumbnail": "thumbnails/games/typeToFight.jpg",
