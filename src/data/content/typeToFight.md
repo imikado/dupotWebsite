@@ -23,7 +23,7 @@ Un jeu d'arcade pour apprendre la dactylographie en s'amusant, avec deux modes d
 - Musique chiptune et effets sonores 8-bit pour chaque touche, coup et niveau (désactivables séparément)
 - Une police pixel facile à lire : les caractères qui se ressemblent restent distincts (5 et S, 0 et O…) et tous les accents français s'affichent
 - Disponible en français et en anglais
-- Gratuit, open source, disponible sur Linux (Snapcraft) et jouable dans le navigateur sur itch.io
+- Gratuit, open source, disponible sur Linux (Flathub, Snapcraft) et jouable dans le navigateur sur itch.io
 
 ### Screenshots
 
