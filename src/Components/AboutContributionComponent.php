@@ -29,7 +29,7 @@ class AboutContributionComponent extends ComponentAbstract implements ComponentI
             ),
 
             array(
-                self::ABOUT_IMAGE => 'css/images/about_glfos.png?v=20260824',
+                self::ABOUT_IMAGE => 'css/images/about_glfos.png',
                 self::ABOUT_TITLE => 'GLF OS',
                 self::ABOUT_BODY => 'Dans l\'équipe de la distribution GNU/Linux GLF OS (basée sur NixOs)',
                 self::ABOUT_LINK => 'https://glfos.org/',

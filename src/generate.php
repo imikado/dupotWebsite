@@ -1,5 +1,6 @@
 <?php
 
+use MyWebsite\Apis\AssetVersionApi;
 use MyWebsite\Apis\DataApi;
 use MyWebsite\Components\AppDesktopListComponent;
 use MyWebsite\Components\AppGlfOsListComponent;
@@ -17,6 +18,14 @@ use MyWebsite\Pages\TutorialListPage;
 use MyWebsite\Pages\TutorialPage;
 
 require __DIR__ . '/../vendor/autoload.php';
+
+$docsPath = __DIR__ . '/../docs';
+
+function generatePage($page, string $docsPath): void
+{
+    print("Generate " . $page->getFilename() . "\n");
+    file_put_contents($docsPath . '/' . $page->getFilename(), AssetVersionApi::apply($page->render(), $docsPath));
+}
 
 $pagesList = [
 
@@ -55,8 +64,7 @@ foreach (ResourcesListComponent::loadList() as $resourceLoop) {
 }
 
 foreach ($pagesList as $pageLoop) {
-    print("Generate " . $pageLoop->getFilename() . "\n");
-    $pageLoop->generateTo(__DIR__ . '/../docs/');
+    generatePage($pageLoop, $docsPath);
 }
 
 $tutorialApi = new DataApi(__DIR__ . '//data/TutorialList.json');
@@ -64,6 +72,5 @@ $tutorialList = $tutorialApi->findAll();
 
 foreach ($tutorialList as $tutorialLoop) {
     $tutorialPage = new TutorialPage($tutorialLoop->id);
-    print("Generate " . $tutorialPage->getFilename() . "\n");
-    $tutorialPage->generateTo(__DIR__ . '/../docs/');
+    generatePage($tutorialPage, $docsPath);
 }

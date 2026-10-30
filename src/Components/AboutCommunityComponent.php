@@ -20,7 +20,7 @@ class AboutCommunityComponent extends ComponentAbstract implements ComponentInte
         $contentList = array(
 
             array(
-                self::ABOUT_IMAGE => 'css/images/about_glf.png?v=20260824',
+                self::ABOUT_IMAGE => 'css/images/about_glf.png',
                 self::ABOUT_TITLE => 'Gaming Linux FR',
                 self::ABOUT_BODY => 'Membre actif de la communauté Gaming Linux FR',
                 self::ABOUT_LINK => 'https://www.gaminglinux.fr',
