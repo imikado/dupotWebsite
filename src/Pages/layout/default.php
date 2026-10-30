@@ -63,6 +63,7 @@
   <script src="js/nav.js"></script>
   <script src="js/gallery.js"></script>
   <script src="js/copy.js"></script>
+  <script src="js/fx.js"></script>
 
 </body>
 

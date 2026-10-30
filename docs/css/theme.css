@@ -2659,3 +2659,131 @@ a.px-hud-item:hover {
         transform: translateX(55vw);
     }
 }
+
+/* -------------------------------------------------------------------------
+   Finitions : trame du hero, halo des cartes, apparition au défilement
+   ------------------------------------------------------------------------- */
+
+.hero {
+    position: relative;
+    isolation: isolate;
+}
+
+/* trame de points qui s'estompe vers les bords */
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: -60px -20px -40px -20px;
+    z-index: -1;
+    background-image: radial-gradient(rgba(255, 255, 255, .09) 1px, transparent 1.4px);
+    background-size: 22px 22px;
+    -webkit-mask-image: radial-gradient(ellipse 60% 70% at 50% 45%, #000 20%, transparent 75%);
+    mask-image: radial-gradient(ellipse 60% 70% at 50% 45%, #000 20%, transparent 75%);
+    pointer-events: none;
+}
+
+.hero h1 {
+    background-image: linear-gradient(120deg, var(--accent-strong), #b3a2ff 50%, var(--accent-strong));
+    background-size: 200% 100%;
+    animation: hero-shine 9s ease-in-out infinite alternate;
+}
+
+@keyframes hero-shine {
+    to { background-position: 100% 0; }
+}
+
+.brand-mark {
+    transition: transform .25s cubic-bezier(.34, 1.56, .64, 1);
+}
+
+.brand:hover .brand-mark {
+    transform: rotate(-10deg) scale(1.1);
+}
+
+.site-nav {
+    transition: box-shadow .25s ease, background .25s ease;
+}
+
+.site-nav.is-scrolled {
+    background: rgba(11, 15, 20, .94);
+    box-shadow: 0 10px 30px -18px rgba(0, 0, 0, .9);
+}
+
+/* halo qui suit le pointeur (position fournie par js/fx.js) */
+.card-link,
+.activity-card {
+    background:
+        radial-gradient(420px circle at var(--mx, 50%) var(--my, -200px), var(--glow, rgba(255, 150, 66, .09)), transparent 45%),
+        var(--bg-elevated);
+}
+
+.site-footer {
+    position: relative;
+}
+
+.site-footer::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent) 30%, var(--accent-2) 70%, transparent);
+    opacity: .7;
+}
+
+/* apparition au défilement : on utilise "translate" pour ne pas entrer en
+   conflit avec le "transform" des effets de survol */
+.fx-ready .fx-reveal {
+    opacity: 0;
+    translate: 0 18px;
+    transition: opacity .6s ease, translate .6s cubic-bezier(.2, .7, .2, 1), transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+    transition-delay: var(--fx-delay, 0s), var(--fx-delay, 0s), 0s, 0s, 0s;
+}
+
+.fx-ready .fx-reveal.is-visible {
+    opacity: 1;
+    translate: 0 0;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 90;
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid var(--accent-border);
+    background: rgba(20, 27, 35, .9);
+    color: var(--accent-strong);
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    translate: 0 12px;
+    transition: opacity .25s ease, translate .25s ease, background .15s ease, color .15s ease;
+}
+
+.back-to-top.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+    translate: 0 0;
+}
+
+.back-to-top:hover {
+    background: var(--accent);
+    color: #180c02;
+}
+
+.back-to-top svg {
+    width: 20px;
+    height: 20px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero h1 { animation: none; }
+    .fx-ready .fx-reveal { opacity: 1; translate: none; }
+}
