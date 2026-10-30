@@ -1,6 +1,6 @@
 ## Little Escape
 <figure class="project-media">
-<img src="/images/promo/games/littleEscape/little_escape.gif" alt="Une visite de la chambre, du salon et de la cuisine, puis un gros plan sur l'échiquier" />
+<img src="/images/promo/games/littleEscape/little_escape.gif" alt="Une visite de la chambre, du salon et de la cuisine, un gros plan sur l'échiquier, puis l'écran de fin" />
 </figure>
 
 Vous vous réveillez enfermé dans un petit appartement. La seule issue, c'est la porte de sortie… et sa clé est bien cachée.

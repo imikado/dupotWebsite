@@ -16,7 +16,7 @@ Sur votre ordinateur
 ```
 mkdir github
 cd github
-git clone --branch=new-pr https://github.com/votre_identifiant_github/flathub.git
+git clone --branch=new-pr https://github.com/votre_identifiant_github/votre_jeu.git
 cd votre_jeu
 ```
 nous allons ici créer l'arborescence suivante, histoire d'organiser le tout proprement
@@ -106,7 +106,7 @@ Sur votre ordinateur,
 ```
 mkdir github
 cd github
-git clone --branch=new-pr git@github.com:votre_identifiant_github/flathub.git
+git clone --branch=new-pr https://github.com/votre_identifiant_github/flathub.git
 ```
 
 Vous avez forké le dépot flathub sur votre compte github, allez dedans pour créer une branche pour votre jeu
