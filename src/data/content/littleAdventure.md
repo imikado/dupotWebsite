@@ -18,5 +18,5 @@ C'est à Gordon de le réparer. Pour retrouver les pièces manquantes, il va dev
 ![Dans la forêt](/images/screenshots/games/littleAdventure/Screenshot_05.png)
 ![Combat contre une araignée](/images/screenshots/games/littleAdventure/Screenshot_06.png)
 ![Le village des crabes](/images/screenshots/games/littleAdventure/Screenshot_08.png)
-![image](/images/screenshots/games/littleAdventure/Screenshot_03.png)
-![image](/images/screenshots/games/littleAdventure/Screenshot_07.png)
+![Le village dans les arbres](/images/screenshots/games/littleAdventure/Screenshot_03.png)
+![Sur la route du village des crabes](/images/screenshots/games/littleAdventure/Screenshot_07.png)
