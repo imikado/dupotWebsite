@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Pixelify+Sans:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/theme.css?v=20261101161648">
+  <link rel="stylesheet" href="css/theme.css?v=20261105121751">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZVG5R211FM"></script>
@@ -122,7 +122,14 @@
 <li>fichier d'identifiants, UID/GID, montage automatique systemd et délais d'attente</li>
 <li>favori dans le gestionnaire de fichiers (GTK ou KDE) et raccourci sur le bureau en option</li>
 </ul></li>
+<li>🔍 <strong>Découverte réseau</strong>&nbsp;: plus besoin de connaître l'adresse exacte du partage, une fenêtre vous aide à la remplir
+<ul>
+<li>détection automatique des serveurs Samba de votre réseau (mDNS), ou saisie de leur nom ou adresse IP</li>
+<li>liste des partages du serveur choisi, en anonyme, avec le fichier d'identifiants ou avec un nom d'utilisateur et un mot de passe</li>
+<li>un clic sur <strong>Sélectionner</strong> remplit l'adresse distante (<code>//serveur/partage</code>)</li>
+</ul></li>
 <li>🔑 <strong>Fichier d'identifiants</strong>&nbsp;: créez un fichier d'identifiants Samba protégé (<code>chmod 600</code>)</li>
+<li>📂 <strong>Sélecteur de dossier</strong>&nbsp;: choisissez le point de montage, le dossier partagé ou l'emplacement du fichier d'identifiants d'un clic</li>
 <li>📁 <strong>Partages locaux (serveur Samba)</strong>&nbsp;: partagez un dossier sur votre réseau
 <ul>
 <li>accès public (invité) ou réservé à certains utilisateurs</li>
@@ -135,14 +142,15 @@
 <p>Vos modifications restent en mémoire jusqu'au clic sur <strong>Enregistrer sur le disque</strong>, et l'application demande confirmation si vous fermez la fenêtre sans avoir enregistré.</p>
 <p>Écrit en Python avec GTK 4 et Libadwaita, il est livré avec GLF OS.</p>
 <h3>Screenshots</h3>
-<p><img src="/images/screenshots/apps/glfosNixSamba/01-home.png?v=20261025" alt="Accueil" />
-<img src="/images/screenshots/apps/glfosNixSamba/02-remote-list.png?v=20261025" alt="Liste des partages distants" />
-<img src="/images/screenshots/apps/glfosNixSamba/03-remote-edit.png?v=20261025" alt="Modifier un partage distant" />
-<img src="/images/screenshots/apps/glfosNixSamba/04-remote-add.png?v=20261025" alt="Ajouter un partage distant" />
-<img src="/images/screenshots/apps/glfosNixSamba/05-credentials.png?v=20261025" alt="Créer un fichier d&#039;identifiants" />
-<img src="/images/screenshots/apps/glfosNixSamba/06-local-list.png?v=20261025" alt="Liste des partages locaux" />
-<img src="/images/screenshots/apps/glfosNixSamba/07-local-edit.png?v=20261025" alt="Modifier un partage local" />
-<img src="/images/screenshots/apps/glfosNixSamba/08-local-add.png?v=20261025" alt="Ajouter un partage local" /></p>        </div>
+<p><img src="/images/screenshots/apps/glfosNixSamba/01-home.png?v=20261105" alt="Accueil" />
+<img src="/images/screenshots/apps/glfosNixSamba/02-remote-list.png?v=20261105" alt="Liste des partages distants" />
+<img src="/images/screenshots/apps/glfosNixSamba/03-remote-edit.png?v=20261105" alt="Modifier un partage distant" />
+<img src="/images/screenshots/apps/glfosNixSamba/04-remote-add.png?v=20261105" alt="Ajouter un partage distant" />
+<img src="/images/screenshots/apps/glfosNixSamba/09-remote-browse.png?v=20261105" alt="Parcourir le réseau" />
+<img src="/images/screenshots/apps/glfosNixSamba/05-credentials.png?v=20261105" alt="Créer un fichier d&#039;identifiants" />
+<img src="/images/screenshots/apps/glfosNixSamba/06-local-list.png?v=20261105" alt="Liste des partages locaux" />
+<img src="/images/screenshots/apps/glfosNixSamba/07-local-edit.png?v=20261105" alt="Modifier un partage local" />
+<img src="/images/screenshots/apps/glfosNixSamba/08-local-add.png?v=20261105" alt="Ajouter un partage local" /></p>        </div>
     </div>
 
     </div>
