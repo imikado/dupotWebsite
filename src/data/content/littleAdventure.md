@@ -1,4 +1,8 @@
 ## Little Adventure
+<figure class="project-media">
+<img src="/images/promo/games/littleAdventure/promo.gif" alt="L'écran titre, Gordon chez lui, la carte du monde, un combat contre une araignée, un essaim d'abeilles, un passage en plateforme et le village des crabes" />
+</figure>
+
 Catastrophe au village : le puits est en panne et plus personne n'a d'eau !
 
 C'est à Gordon de le réparer. Pour retrouver les pièces manquantes, il va devoir quitter la maison et partir explorer le monde… et prendre garde aux panneaux d'avertissement : ils ne sont pas là pour décorer.
