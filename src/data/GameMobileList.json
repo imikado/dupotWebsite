@@ -44,7 +44,7 @@
         "icon": "mobile_beatMatchToPass_icon.png",
         "thumbnail": "thumbnails/games/beatMatchToPass.jpg",
         "title": "Beat Match to Pass",
-        "body": "Épée en main, battez les bons ennemis pour éteindre les barrières électriques qui vous barrent la route. Choisissez vos cibles pour avancer !",
+        "body": "Épée en main, seul ou à deux sur le même écran, battez les bons ennemis pour éteindre les barrières électriques qui vous barrent la route. Choisissez vos cibles pour avancer !",
         "github": "https://github.com/imikado/dupotBeatAndMatchToPass",
         "itchio": "https://dupot-org.itch.io/beat-and-match-to-pass",
         "flathub": "https://flathub.org/fr/apps/org.dupot.beatmatchtopass",
