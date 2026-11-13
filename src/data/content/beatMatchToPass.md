@@ -11,7 +11,9 @@ Pas question de taper au hasard : choisissez vos cibles, entretenez votre combo 
 
 ### Jouez à deux sur un seul écran
 
-![Les deux héros combattent côte à côte](/images/screenshots/games/beatMatchToPass/Screenshot_07.png)
+<figure class="project-media">
+<img src="/images/screenshots/games/beatMatchToPass/Screenshot_07.png" alt="Les deux héros combattent côte à côte" loading="lazy" />
+</figure>
 
 - **Toute l'aventure en coopération**, niveaux bonus compris
 - Toutes les configurations : deux joueurs sur **un seul clavier**, **clavier + manette** ou **deux manettes**
