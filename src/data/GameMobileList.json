@@ -7,6 +7,7 @@
         "body": "Enfermé dans un petit appartement : fouillez chaque pièce, trouvez les indices, les clés et les codes pour ouvrir la porte de sortie.",
         "github": "https://github.com/imikado/dupotLittleEscape",
         "itchio": "https://dupot-org.itch.io/little-escape",
+        "flathub": "https://flathub.org/fr/apps/org.dupot.littleescape",
         "modal": {
             "src": "/data/content/littleEscape.md"
         }

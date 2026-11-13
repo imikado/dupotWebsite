@@ -14,7 +14,7 @@ Un escape game au style cartoon : fouillez chaque pièce, résolvez les énigmes
 - 🎨 **Un look cartoon** : couleurs en aplat, contours marqués et un thème de couleur par pièce
 - Jouable au clavier, à la manette et avec des commandes tactiles
 - Disponible en français et en anglais
-- Gratuit, open source, disponible sur Linux et jouable dans le navigateur sur itch.io
+- Gratuit, open source, disponible sur Linux (Flathub) et jouable dans le navigateur sur itch.io
 
 ### Screenshots
 
